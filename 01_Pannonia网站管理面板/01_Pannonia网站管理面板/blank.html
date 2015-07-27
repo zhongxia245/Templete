@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Pannonia - premium responsive admin template by Eugene Kopyov</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+
+
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+
+<script type="text/javascript" src="js/files/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/files/functions_blank.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Fixed top -->
+	<div id="top">
+		<div class="fixed">
+			<a href="index.html" title="" class="logo"><img src="img/logo.png" alt="" /></a>
+			<ul class="top-menu">
+				<li><a class="fullview"></a></li>
+				<li><a class="showmenu"></a></li>
+				<li><a href="#" title="" class="messages"><i class="new-message"></i></a></li>
+				<li class="dropdown">
+					<a class="user-menu" data-toggle="dropdown"><img src="img/userpic.png" alt="" /><span>Howdy, Eugene! <b class="caret"></b></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#" title=""><i class="icon-user"></i>Profile</a></li>
+						<li><a href="#" title=""><i class="icon-inbox"></i>Messages<span class="badge badge-info">9</span></a></li>
+						<li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+						<li><a href="#" title=""><i class="icon-remove"></i>Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /fixed top -->
+
+
+	<!-- Content container -->
+	<div id="container">
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+
+			<div class="sidebar-tabs">
+		        <ul class="tabs-nav two-items">
+		            <li><a href="#general" title=""><i class="icon-reorder"></i></a></li>
+		            <li><a href="#stuff" title=""><i class="icon-cogs"></i></a></li>
+		        </ul>
+
+		        <div id="general">
+
+				    <!-- Main navigation -->
+			        <ul class="navigation widget">
+			            <li><a href="index.html" title=""><i class="icon-home"></i>Dashboard</a></li>
+			            <li><a href="#" title="" class="expand"><i class="icon-reorder"></i>Form elements<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="forms.html" title="">Form components</a></li>
+			                    <li><a href="wysiwyg.html" title="">WYSIWYG editor</a></li>
+			                    <li><a href="form_wizards.html" title="">Wizards</a></li>
+			                </ul>
+			            </li>
+			            <li class="active"><a href="#" title="" class="expand" id="current"><i class="icon-tasks"></i>Components<strong>4</strong></a>
+			                <ul>
+			                    <li><a href="components.html" title="">Content components</a></li>
+			                    <li><a href="content_grid.html" title="">Content grid</a></li>
+			                    <li><a href="blank.html" title="" class="current">Blank page</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="media.html" title=""><i class="icon-picture"></i>Media</a></li>
+			            <li><a href="icons.html" title=""><i class="icon-th"></i>Icons</a></li>
+			            <li><a href="charts.html" title=""><i class="icon-signal"></i>Charts &amp; graphs</a></li>
+			            <li><a href="invoice.html" title=""><i class="icon-copy"></i>Invoice</a></li>
+			            <li><a href="tables.html" title=""><i class="icon-table"></i>Tables</a></li>
+			            <li><a href="#" title="" class="expand"><i class="icon-warning-sign"></i>Error pages<strong>6</strong></a>
+			                <ul>
+			                    <li><a href="403.html" title="">403 page</a></li>
+			                    <li><a href="404.html" title="">404 page</a></li>
+			                    <li><a href="405.html" title="">405 page</a></li>
+			                    <li><a href="500.html" title="">500 page</a></li>
+			                    <li><a href="503.html" title="">503 page</a></li>
+			                    <li><a href="offline.html" title="">Offline page</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="typography.html" title=""><i class="icon-text-height"></i>Typography</a></li>
+			            <li><a href="calendar.html" title=""><i class="icon-calendar"></i>Calendar</a></li>
+			            <li><a href="file_management.html" title=""><i class="icon-cogs"></i>File management</a></li>
+	                    <li><a href="#" title="" class="expand"><i class="icon-indent-right"></i>Menu levels<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="#" title="">Link</a></li>
+			                    <li><a href="#" title="" class="expand">Link with submenu</a>
+					                <ul>
+					                    <li><a href="#" title="">Lorem ipsum</a></li>
+					                    <li><a href="#" title="">Dolor sit amet</a></li>
+					                </ul>
+			                    </li>
+			                    <li><a href="#" title="">Link</a></li>
+			                </ul>
+	                    </li>
+			            <li><a href="#" title="" class="expand"><i class="icon-sitemap"></i>Page layouts<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="no_sidebar_tabs.html" title="">No sidebar tabs</a></li>
+			                    <li><a href="no_action_tabs.html" title="">No action tabs</a></li>
+			                    <li><a href="actions_on_top.html" title="">Action tabs on top</a></li>
+			                    <li><a href="no_breadcrumbs.html" title="">No breadcrumbs line</a></li>
+			                </ul>
+			            </li>
+			        </ul>
+			        <!-- /main navigation -->
+
+		        </div>
+
+		        <div id="stuff">
+
+		        	<!-- Action buttons -->
+	                <div class="widget">
+	                	<button class="btn btn-block btn-danger">Action button</button>
+	                </div>
+	                <!-- /action buttons -->
+
+		        </div>
+
+		    </div>
+		</div>
+		<!-- /sidebar -->
+
+
+		<!-- Content -->
+		<div id="content">
+
+		    <!-- Content wrapper -->
+		    <div class="wrapper">
+
+			    <!-- Breadcrumbs line -->
+			    <div class="crumbs">
+		            <ul id="breadcrumbs" class="breadcrumb"> 
+		                <li><a href="index.html">Dashboard</a></li>
+		                <li class="active"><a href="calendar.html" title="">Calendar</a></li>
+		            </ul>
+			        
+		            <ul class="alt-buttons">
+		                <li><a href="#" title=""><i class="icon-signal"></i><span>Stats</span></a></li>
+		                <li><a href="#" title=""><i class="icon-comments"></i><span>Messages</span></a></li>
+		                <li class="dropdown"><a href="#" title="" data-toggle="dropdown"><i class="icon-tasks"></i><span>Tasks</span> <strong>(+16)</strong></a>
+		                	<ul class="dropdown-menu pull-right">
+		                        <li><a href="#" title=""><i class="icon-plus"></i>Add new task</a></li>
+		                        <li><a href="#" title=""><i class="icon-reorder"></i>Statement</a></li>
+		                        <li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+		                	</ul>
+		                </li>
+		            </ul>
+			    </div>
+			    <!-- /breadcrumbs line -->
+
+			    <!-- Page header -->
+			    <div class="page-header">
+			    	<div class="page-title">
+				    	<h5>Blank page</h5>
+				    	<span>Only necessary js and html</span>
+			    	</div>
+			    </div>
+			    <!-- /page header -->
+
+			    <!-- Action tabs -->
+			    <div class="actions-wrapper">
+				    <div class="actions">
+
+				    	<div id="user-stats">
+				    		<div class="action-title">
+					    		<a href="media.html" title="">Pannonia blank page</a>
+					    		<span>Here you can add any content or remove tabs at all</span>
+					    	</div>
+				    	</div>
+
+				    	<div id="map">
+				    		<div id="google-map"></div>
+				    	</div>
+
+				    	<ul class="action-tabs">
+				    		<li><a href="#user-stats" title="">Quick actions</a></li>
+				    		<li><a href="#map" title="" id="map-link">Google map</a></li>
+				    	</ul>
+				    </div>
+				</div>
+			    <!-- /action tabs -->
+
+                <!-- Full size widget -->
+                <div class="widget">
+					<div class="navbar"><div class="navbar-inner"><h6>Full size widget</h6></div></div>
+                    <div class="well body">Full size widget</div>
+                </div>
+                <!-- /full size widget -->
+
+                <!-- Grid widgets -->
+                <div class="row-fluid">
+                	<div class="span6">
+		                <div class="widget">
+							<div class="navbar"><div class="navbar-inner"><h6>Grid widget</h6></div></div>
+		                    <div class="well body">Grid widget</div>
+		                </div>
+                	</div>
+                	<div class="span6">
+		                <div class="widget">
+							<div class="navbar"><div class="navbar-inner"><h6>Grid widget</h6></div></div>
+		                    <div class="well body">Grid widget</div>
+		                </div>
+                	</div>
+                </div>
+                <!-- /grid widgets -->
+
+		    </div>
+		    <!-- /content wrapper -->
+
+		</div>
+		<!-- /content -->
+
+	</div>
+	<!-- /content container -->
+
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="copyrights">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+		<ul class="footer-links">
+			<li><a href="" title=""><i class="icon-cogs"></i>Contact admin</a></li>
+			<li><a href="" title=""><i class="icon-screenshot"></i>Report bug</a></li>
+		</ul>
+	</div>
+	<!-- /footer -->
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

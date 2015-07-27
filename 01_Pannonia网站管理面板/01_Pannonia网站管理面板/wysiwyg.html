@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Pannonia - premium responsive admin template by Eugene Kopyov</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.bootbox.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fullcalendar.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.elfinder.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputmask.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.select2.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.listbox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validation.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.form.js"></script>
+
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="js/files/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/files/functions.js"></script>
+
+<script type="text/javascript">
+$(function()
+	{CKEDITOR.replace('editor');
+});
+</script>
+
+</head>
+
+<body>
+
+	<!-- Fixed top -->
+	<div id="top">
+		<div class="fixed">
+			<a href="index.html" title="" class="logo"><img src="img/logo.png" alt="" /></a>
+			<ul class="top-menu">
+				<li><a class="fullview"></a></li>
+				<li><a class="showmenu"></a></li>
+				<li><a href="#" title="" class="messages"><i class="new-message"></i></a></li>
+				<li class="dropdown">
+					<a class="user-menu" data-toggle="dropdown"><img src="img/userpic.png" alt="" /><span>Howdy, Eugene! <b class="caret"></b></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#" title=""><i class="icon-user"></i>Profile</a></li>
+						<li><a href="#" title=""><i class="icon-inbox"></i>Messages<span class="badge badge-info">9</span></a></li>
+						<li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+						<li><a href="#" title=""><i class="icon-remove"></i>Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /fixed top -->
+
+
+	<!-- Content container -->
+	<div id="container">
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+
+			<div class="sidebar-tabs">
+		        <ul class="tabs-nav two-items">
+		            <li><a href="#general" title=""><i class="icon-reorder"></i></a></li>
+		            <li><a href="#stuff" title=""><i class="icon-cogs"></i></a></li>
+		        </ul>
+
+		        <div id="general">
+
+			        <!-- Sidebar user -->
+			        <div class="sidebar-user widget">
+						<div class="navbar"><div class="navbar-inner"><h6>Wazzup, Eugene!</h6></div></div>
+			            <a href="#" title="" class="user"><img src="http://placehold.it/210x110" alt="" /></a>
+			            <ul class="user-links">
+			            	<li><a href="" title="">New users<strong>+12</strong></a></li>
+			            	<li><a href="" title="">New orders<strong>+156</strong></a></li>
+			            	<li><a href="" title="">New messages<strong>+45</strong></a></li>
+			            </ul>
+			        </div>
+			        <!-- /sidebar user -->
+
+			        <div class="general-stats widget">
+				        <ul class="head">
+				        	<li><span>Users</span></li>
+				        	<li><span>Orders</span></li>
+				        	<li><span>Visits</span></li>
+				        </ul>
+				        <ul class="body">
+				        	<li><strong>116k+</strong></li>
+				        	<li><strong>1290</strong></li>
+				        	<li><strong>554</strong></li>
+				        </ul>
+				    </div>
+
+				    <!-- Main navigation -->
+			        <ul class="navigation widget">
+			            <li><a href="index.html" title=""><i class="icon-home"></i>Dashboard</a></li>
+			            <li class="active"><a href="#" title="" class="expand" id="current"><i class="icon-reorder"></i>Form elements<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="forms.html" title="">Form components</a></li>
+			                    <li><a href="wysiwyg.html" title="" class="current">WYSIWYG editor</a></li>
+			                    <li><a href="form_wizards.html" title="">Wizards</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="#" title="" class="expand"><i class="icon-tasks"></i>Components<strong>4</strong></a>
+			                <ul>
+			                    <li><a href="components.html" title="">Content components</a></li>
+			                    <li><a href="content_grid.html" title="">Content grid</a></li>
+			                    <li><a href="blank.html" title="">Blank page</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="media.html" title=""><i class="icon-picture"></i>Media</a></li>
+			            <li><a href="icons.html" title=""><i class="icon-th"></i>Icons</a></li>
+			            <li><a href="charts.html" title=""><i class="icon-signal"></i>Charts &amp; graphs</a></li>
+			            <li><a href="invoice.html" title=""><i class="icon-copy"></i>Invoice</a></li>
+			            <li><a href="tables.html" title=""><i class="icon-table"></i>Tables</a></li>
+			            <li><a href="#" title="" class="expand"><i class="icon-warning-sign"></i>Error pages<strong>6</strong></a>
+			                <ul>
+			                    <li><a href="403.html" title="">403 page</a></li>
+			                    <li><a href="404.html" title="">404 page</a></li>
+			                    <li><a href="405.html" title="">405 page</a></li>
+			                    <li><a href="500.html" title="">500 page</a></li>
+			                    <li><a href="503.html" title="">503 page</a></li>
+			                    <li><a href="offline.html" title="">Offline page</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="typography.html" title=""><i class="icon-text-height"></i>Typography</a></li>
+			            <li><a href="calendar.html" title=""><i class="icon-calendar"></i>Calendar</a></li>
+			            <li><a href="file_management.html" title=""><i class="icon-cogs"></i>File management</a></li>
+	                    <li><a href="#" title="" class="expand"><i class="icon-indent-right"></i>Menu levels<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="#" title="">Link</a></li>
+			                    <li><a href="#" title="" class="expand">Link with submenu</a>
+					                <ul>
+					                    <li><a href="#" title="">Lorem ipsum</a></li>
+					                    <li><a href="#" title="">Dolor sit amet</a></li>
+					                </ul>
+			                    </li>
+			                    <li><a href="#" title="">Link</a></li>
+			                </ul>
+	                    </li>
+			            <li><a href="#" title="" class="expand"><i class="icon-sitemap"></i>Page layouts<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="no_sidebar_tabs.html" title="">No sidebar tabs</a></li>
+			                    <li><a href="no_action_tabs.html" title="">No action tabs</a></li>
+			                    <li><a href="actions_on_top.html" title="">Action tabs on top</a></li>
+			                    <li><a href="no_breadcrumbs.html" title="">No breadcrumbs line</a></li>
+			                </ul>
+			            </li>
+			        </ul>
+			        <!-- /main navigation -->
+
+		        </div>
+
+		        <div id="stuff">
+
+			        <!-- Social stats -->
+			        <div class="widget">
+			        	<h6 class="widget-name"><i class="icon-twitter"></i>Social statistics</h6>
+			        	<ul class="social-stats">
+			        		<li>
+			        			<a href="" title="" class="orange-square"><i class="icon-rss"></i></a>
+			        			<div>
+				        			<h4>1,286</h4>
+				        			<span>total feed subscribers</span>
+				        		</div>
+			        		</li>
+			        		<li>
+			        			<a href="" title="" class="blue-square"><i class="icon-twitter"></i></a>
+			        			<div>
+				        			<h4>12,683</h4>
+				        			<span>total twitter followers</span>
+				        		</div>
+			        		</li>
+			        		<li>
+			        			<a href="" title="" class="dark-blue-square"><i class="icon-facebook"></i></a>
+			        			<div>
+				        			<h4>530,893</h4>
+				        			<span>total facebook likes</span>
+				        		</div>
+			        		</li>
+			        	</ul>
+			        </div>
+			        <!-- /social stats -->
+
+
+			        <!-- Datepicker -->
+		        	<div class="widget">
+		        		<h6 class="widget-name"><i class="icon-calendar"></i>Datepicker</h6>
+		                <div class="inlinepicker datepicker-liquid"></div>
+		            </div>
+		            <!-- /datepicker -->
+
+
+		            <!-- Form elements -->
+		            <form action="#" class="widget">
+		            	<h6 class="widget-name"><i class="icon-search"></i>Form elements</h6>
+		                <input type="text" value="" placeholder="Your name" />
+		                <input type="password" value="" placeholder="Your password" />
+		                <input type="file" class="styled" />
+		                <select name="select2" class="styled" >
+		                    <option value="opt1">Usual select box</option>
+		                    <option value="opt2">Option 2</option>
+		                    <option value="opt3">Option 3</option>
+		                    <option value="opt4">Option 4</option>
+		                    <option value="opt5">Option 5</option>
+		                    <option value="opt6">Option 6</option>
+		                    <option value="opt7">Option 7</option>
+		                    <option value="opt8">Option 8</option>
+		                </select>
+		                <select data-placeholder="Choose a Country..." class="select" tabindex="2">
+		                    <option value=""></option> 
+		                    <option value="Cambodia">Cambodia</option> 
+		                    <option value="Cameroon">Cameroon</option> 
+		                    <option value="Canada">Canada</option> 
+		                    <option value="Cape Verde">Cape Verde</option> 
+		                </select>
+		                <div class="sidebar-checks">
+		                    <label class="checkbox"><input type="checkbox" name="checkbox1" class="styled" value="" checked="checked" />Checkbox checked</label>
+		                    <label class="radio"><input type="radio" name="radio" class="styled" value="" />Unchecked radio</label>
+		                    <label class="radio"><input type="radio" name="radio" class="styled" value="" checked="checked" />Checked radio</label>
+		                </div>
+		                <textarea cols="4" rows="4" placeholder="Your message"></textarea>
+		                <div class="form-actions">
+		                    <input type="submit" value="Submit form" class="btn btn-info pull-left" />
+		                    <input type="reset" value="Reset form" class="btn btn-danger pull-right" />
+		                </div>
+		            </form>
+		            <!-- /form elements -->
+
+		        	<!-- Action buttons -->
+	                <div class="widget">
+	                	<h6 class="widget-name"><i class="icon-search"></i>Action buttons</h6>
+	                	<button class="btn btn-block btn-danger">Action button</button>
+	                	<button class="btn btn-block btn-info">Action button</button>
+	                	<button class="btn btn-block btn-success">Action button</button>
+	                </div>
+	                <!-- /action buttons -->
+
+			        <!-- Tags input -->
+					<div class="widget">
+						<h6 class="widget-name"><i class="icon-search"></i>Tags input</h6>
+						<input type="text" id="tags1" class="tags" value="these,are,sample,tags" />
+					</div>
+					<!-- /tags input -->
+
+		        </div>
+
+		    </div>
+		</div>
+		<!-- /sidebar -->
+
+		<!-- Content -->
+		<div id="content">
+
+		    <!-- Content wrapper -->
+		    <div class="wrapper">
+
+			    <!-- Breadcrumbs line -->
+			    <div class="crumbs">
+		            <ul id="breadcrumbs" class="breadcrumb"> 
+		                <li><a href="index.html">Dashboard</a></li>
+		                <li><a href="forms.html">Form elements</a></li>
+		                <li class="active"><a href="wysiwyg.html" title="">WYSIWYG editor</a></li>
+		            </ul>
+			        
+		            <ul class="alt-buttons">
+		                <li><a href="#" title=""><i class="icon-signal"></i><span>Stats</span></a></li>
+		                <li><a href="#" title=""><i class="icon-comments"></i><span>Messages</span></a></li>
+		                <li class="dropdown"><a href="#" title="" data-toggle="dropdown"><i class="icon-tasks"></i><span>Tasks</span> <strong>(+16)</strong></a>
+		                	<ul class="dropdown-menu pull-right">
+		                        <li><a href="#" title=""><i class="icon-plus"></i>Add new task</a></li>
+		                        <li><a href="#" title=""><i class="icon-reorder"></i>Statement</a></li>
+		                        <li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+		                	</ul>
+		                </li>
+		            </ul>
+			    </div>
+			    <!-- /breadcrumbs line -->
+
+			    <!-- Page header -->
+			    <div class="page-header">
+			    	<div class="page-title">
+				    	<h5>WYSIWYG editor</h5>
+				    	<span>Based on CKeditor plugin</span>
+			    	</div>
+
+			    	<ul class="page-stats">
+			    		<li>
+			    			<div class="showcase">
+			    				<span>New visits</span>
+			    				<h2>22.504</h2>
+			    			</div>
+			    			<div id="total-visits" class="chart">10,14,8,45,23,41,22,31,19,12, 28, 21, 24, 20</div>
+			    		</li>
+			    		<li>
+			    			<div class="showcase">
+			    				<span>My balance</span>
+			    				<h2>$16.290</h2>
+			    			</div>
+			    			<div id="balance" class="chart">10,14,8,45,23,41,22,31,19,12, 28, 21, 24, 20</div>
+			    		</li>
+			    	</ul>
+			    </div>
+			    <!-- /page header -->
+
+			    <!-- Action tabs -->
+			    <div class="actions-wrapper">
+				    <div class="actions">
+
+				    	<div id="user-stats">
+					        <ul class="round-buttons">
+					            <li><div class="depth"><a href="" title="Add new post" class="tip"><i class="icon-plus"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="View statement" class="tip"><i class="icon-signal"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Media posts" class="tip"><i class="icon-reorder"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="RSS feed" class="tip"><i class="icon-rss"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Create new task" class="tip"><i class="icon-tasks"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Layout settings" class="tip"><i class="icon-cogs"></i></a></div></li>
+					        </ul>
+				    	</div>
+
+				    	<div id="quick-actions">
+				    		<ul class="statistics">
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="blue-square"><i class="icon-plus"></i></a>
+					    				<strong>12,476</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 60%;"></div></div>
+									<span>User registrations</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="red-square"><i class="icon-hand-up"></i></a>
+					    				<strong>621,873</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 20%;"></div></div>
+									<span>Total clicks</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="purple-square"><i class="icon-shopping-cart"></i></a>
+					    				<strong>562</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 90%;"></div></div>
+									<span>New orders</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="green-square"><i class="icon-ok"></i></a>
+					    				<strong>$45,360</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 70%;"></div></div>
+									<span>General balance</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="sea-square"><i class="icon-group"></i></a>
+					    				<strong>562K+</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 50%;"></div></div>
+									<span>Total users</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="dark-blue-square"><i class="icon-facebook"></i></a>
+					    				<strong>36,290</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 93%;"></div></div>
+									<span>Facebook fans</span>
+				    			</li>
+				    		</ul>
+				    	</div>
+
+				    	<div id="map">
+				    		<div id="google-map"></div>
+				    	</div>
+
+				    	<ul class="action-tabs">
+				    		<li><a href="#user-stats" title="">Quick actions</a></li>
+				    		<li><a href="#quick-actions" title="">Website statistics</a></li>
+				    		<li><a href="#map" title="" id="map-link">Google map</a></li>
+				    	</ul>
+				    </div>
+				</div>
+			    <!-- /action tabs -->
+
+		    	<!-- Search widget -->
+		    	<form class="search widget" action="#">
+		    		<div class="autocomplete-append">
+			    		<ul class="search-options">
+			    			<li><a href="#" title="Go to search page" class="go-option tip"></a></li>
+			    			<li><a href="#" title="Advanced search" class="advanced-option tip"></a></li>
+			    			<li><a href="#" title="Settings" class="settings-option tip"></a></li>
+			    		</ul>
+			    		<input type="text" placeholder="search website..." id="autocomplete" />
+			    		<input type="submit" class="btn btn-info" value="Search" />
+			    	</div>
+		    	</form>
+		    	<!-- /search widget -->
+
+
+	    		<!-- WYSIWYG editor -->
+	            <div class="widget">
+	                <div class="navbar">
+	                	<div class="navbar-inner">
+	                		<h6>WYSIWYG editor</h6>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+                                <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+                                <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+                            </ul>
+	                	</div>
+	                </div>
+	                
+                	<textarea name="editor">
+&lt;h1&gt;&lt;img alt=&quot;Saturn V carrying Apollo 11&quot; class=&quot;right&quot; src=&quot;img/demo/sample.jpg&quot;/&gt; Apollo 11&lt;/h1&gt; &lt;p&gt;&lt;b&gt;Apollo 11&lt;/b&gt; was the spaceflight that landed the first humans, Americans &lt;a href=&quot;http://en.wikipedia.org/wiki/Neil_Armstrong&quot; title=&quot;Neil Armstrong&quot;&gt;Neil Armstrong&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Buzz_Aldrin&quot; title=&quot;Buzz Aldrin&quot;&gt;Buzz Aldrin&lt;/a&gt;, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.&lt;/p&gt; &lt;p&gt;Armstrong spent about &lt;strike&gt;three and a half&lt;/strike&gt; two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&amp;nbsp;kg) of lunar material for return to Earth. A third member of the mission, &lt;a href=&quot;http://en.wikipedia.org/wiki/Michael_Collins_(astronaut)&quot; title=&quot;Michael Collins (astronaut)&quot;&gt;Michael Collins&lt;/a&gt;, piloted the &lt;a href=&quot;http://en.wikipedia.org/wiki/Apollo_Command/Service_Module&quot; title=&quot;Apollo Command/Service Module&quot;&gt;command&lt;/a&gt; spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.&lt;/p&gt; &lt;h2&gt;Broadcasting and &lt;em&gt;quotes&lt;/em&gt; &lt;a id=&quot;quotes&quot; name=&quot;quotes&quot;&gt;&lt;/a&gt;&lt;/h2&gt; &lt;p&gt;Broadcast on live TV to a world-wide audience, Armstrong stepped onto the lunar surface and described the event as:&lt;/p&gt; &lt;blockquote&gt;&lt;p&gt;One small step for [a] man, one giant leap for mankind.&lt;/p&gt;&lt;/blockquote&gt; &lt;p&gt;Apollo 11 effectively ended the &lt;a href=&quot;http://en.wikipedia.org/wiki/Space_Race&quot; title=&quot;Space Race&quot;&gt;Space Race&lt;/a&gt; and fulfilled a national goal proposed in 1961 by the late U.S. President &lt;a href=&quot;http://en.wikipedia.org/wiki/John_F._Kennedy&quot; title=&quot;John F. Kennedy&quot;&gt;John F. Kennedy&lt;/a&gt; in a speech before the United States Congress:&lt;/p&gt; &lt;blockquote&gt;&lt;p&gt;[...] before this decade is out, of landing a man on the Moon and returning him safely to the Earth.&lt;/p&gt;&lt;/blockquote&gt; &lt;h2&gt;Technical details &lt;a id=&quot;tech-details&quot; name=&quot;tech-details&quot;&gt;&lt;/a&gt;&lt;/h2&gt; &lt;table align=&quot;right&quot; border=&quot;1&quot; bordercolor=&quot;#ccc&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; style=&quot;border-collapse:collapse;margin:10px 0 10px 15px;&quot;&gt; &lt;caption&gt;&lt;strong&gt;Mission crew&lt;/strong&gt;&lt;/caption&gt; &lt;thead&gt; &lt;tr&gt; &lt;th scope=&quot;col&quot;&gt;Position&lt;/th&gt; &lt;th scope=&quot;col&quot;&gt;Astronaut&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Commander&lt;/td&gt; &lt;td&gt;Neil A. Armstrong&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Command Module Pilot&lt;/td&gt; &lt;td&gt;Michael Collins&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Lunar Module Pilot&lt;/td&gt; &lt;td&gt;Edwin &amp;quot;Buzz&amp;quot; E. Aldrin, Jr.&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;p&gt;Launched by a &lt;strong&gt;Saturn V&lt;/strong&gt; rocket from &lt;a href=&quot;http://en.wikipedia.org/wiki/Kennedy_Space_Center&quot; title=&quot;Kennedy Space Center&quot;&gt;Kennedy Space Center&lt;/a&gt; in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of &lt;a href=&quot;http://en.wikipedia.org/wiki/NASA&quot; title=&quot;NASA&quot;&gt;NASA&lt;/a&gt;&amp;#39;s Apollo program. The Apollo spacecraft had three parts:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;strong&gt;Command Module&lt;/strong&gt; with a cabin for the three astronauts which was the only part which landed back on Earth&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Service Module&lt;/strong&gt; which supported the Command Module with propulsion, electrical power, oxygen and water&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Lunar Module&lt;/strong&gt; for landing on the Moon.&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;After being sent to the Moon by the Saturn V&amp;#39;s upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the &lt;a href=&quot;http://en.wikipedia.org/wiki/Mare_Tranquillitatis&quot; title=&quot;Mare Tranquillitatis&quot;&gt;Sea of Tranquility&lt;/a&gt;. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the &lt;a href=&quot;http://en.wikipedia.org/wiki/Pacific_Ocean&quot; title=&quot;Pacific Ocean&quot;&gt;Pacific Ocean&lt;/a&gt; on July 24.&lt;/p&gt; &lt;hr/&gt; &lt;p style=&quot;text-align: right;&quot;&gt;&lt;small&gt;Source: &lt;a href=&quot;http://en.wikipedia.org/wiki/Apollo_11&quot;&gt;Wikipedia.org&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+                	</textarea>
+	            </div>
+	            <!-- /WYSIWYG editor -->
+	                        
+		    </div>
+		    <!-- /content wrapper -->
+
+		</div>
+		<!-- /content -->
+
+	</div>
+	<!-- /content container -->
+
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="copyrights">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+		<ul class="footer-links">
+			<li><a href="" title=""><i class="icon-cogs"></i>Contact admin</a></li>
+			<li><a href="" title=""><i class="icon-screenshot"></i>Report bug</a></li>
+		</ul>
+	</div>
+	<!-- /footer -->
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

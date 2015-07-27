@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Pannonia - premium responsive admin template by Eugene Kopyov</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.bootbox.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fullcalendar.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.elfinder.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputmask.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.select2.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.listbox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validation.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.form.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="js/files/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/files/functions.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Fixed top -->
+	<div id="top">
+		<div class="fixed">
+			<a href="index.html" title="" class="logo"><img src="img/logo.png" alt="" /></a>
+			<ul class="top-menu">
+				<li><a class="fullview"></a></li>
+				<li><a class="showmenu"></a></li>
+				<li><a href="#" title="" class="messages"><i class="new-message"></i></a></li>
+				<li class="dropdown">
+					<a class="user-menu" data-toggle="dropdown"><img src="img/userpic.png" alt="" /><span>Howdy, Eugene! <b class="caret"></b></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#" title=""><i class="icon-user"></i>Profile</a></li>
+						<li><a href="#" title=""><i class="icon-inbox"></i>Messages<span class="badge badge-info">9</span></a></li>
+						<li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+						<li><a href="#" title=""><i class="icon-remove"></i>Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /fixed top -->
+
+
+	<!-- Content container -->
+	<div id="container">
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+
+			<div class="sidebar-tabs">
+		        <ul class="tabs-nav two-items">
+		            <li><a href="#general" title=""><i class="icon-reorder"></i></a></li>
+		            <li><a href="#stuff" title=""><i class="icon-cogs"></i></a></li>
+		        </ul>
+
+		        <div id="general">
+
+			        <!-- Sidebar user -->
+			        <div class="sidebar-user widget">
+						<div class="navbar"><div class="navbar-inner"><h6>Wazzup, Eugene!</h6></div></div>
+			            <a href="#" title="" class="user"><img src="http://placehold.it/210x110" alt="" /></a>
+			            <ul class="user-links">
+			            	<li><a href="" title="">New users<strong>+12</strong></a></li>
+			            	<li><a href="" title="">New orders<strong>+156</strong></a></li>
+			            	<li><a href="" title="">New messages<strong>+45</strong></a></li>
+			            </ul>
+			        </div>
+			        <!-- /sidebar user -->
+
+			        <div class="general-stats widget">
+				        <ul class="head">
+				        	<li><span>Users</span></li>
+				        	<li><span>Orders</span></li>
+				        	<li><span>Visits</span></li>
+				        </ul>
+				        <ul class="body">
+				        	<li><strong>116k+</strong></li>
+				        	<li><strong>1290</strong></li>
+				        	<li><strong>554</strong></li>
+				        </ul>
+				    </div>
+
+				    <!-- Main navigation -->
+			        <ul class="navigation widget">
+			            <li><a href="index.html" title=""><i class="icon-home"></i>Dashboard</a></li>
+			            <li><a href="#" title="" class="expand"><i class="icon-reorder"></i>Form elements<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="forms.html" title="">Form components</a></li>
+			                    <li><a href="wysiwyg.html" title="">WYSIWYG editor</a></li>
+			                    <li><a href="form_wizards.html" title="">Wizards</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="#" title="" class="expand"><i class="icon-tasks"></i>Components<strong>4</strong></a>
+			                <ul>
+			                    <li><a href="components.html" title="">Content components</a></li>
+			                    <li><a href="content_grid.html" title="">Content grid</a></li>
+			                    <li><a href="blank.html" title="">Blank page</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="media.html" title=""><i class="icon-picture"></i>Media</a></li>
+			            <li class="active"><a href="icons.html" title=""><i class="icon-th"></i>Icons</a></li>
+			            <li><a href="charts.html" title=""><i class="icon-signal"></i>Charts &amp; graphs</a></li>
+			            <li><a href="invoice.html" title=""><i class="icon-copy"></i>Invoice</a></li>
+			            <li><a href="tables.html" title=""><i class="icon-table"></i>Tables</a></li>
+			            <li><a href="#" title="" class="expand"><i class="icon-warning-sign"></i>Error pages<strong>6</strong></a>
+			                <ul>
+			                    <li><a href="403.html" title="">403 page</a></li>
+			                    <li><a href="404.html" title="">404 page</a></li>
+			                    <li><a href="405.html" title="">405 page</a></li>
+			                    <li><a href="500.html" title="">500 page</a></li>
+			                    <li><a href="503.html" title="">503 page</a></li>
+			                    <li><a href="offline.html" title="">Offline page</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="typography.html" title=""><i class="icon-text-height"></i>Typography</a></li>
+			            <li><a href="calendar.html" title=""><i class="icon-calendar"></i>Calendar</a></li>
+			            <li><a href="file_management.html" title=""><i class="icon-cogs"></i>File management</a></li>
+	                    <li><a href="#" title="" class="expand"><i class="icon-indent-right"></i>Menu levels<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="#" title="">Link</a></li>
+			                    <li><a href="#" title="" class="expand">Link with submenu</a>
+					                <ul>
+					                    <li><a href="#" title="">Lorem ipsum</a></li>
+					                    <li><a href="#" title="">Dolor sit amet</a></li>
+					                </ul>
+			                    </li>
+			                    <li><a href="#" title="">Link</a></li>
+			                </ul>
+	                    </li>
+			            <li><a href="#" title="" class="expand"><i class="icon-sitemap"></i>Page layouts<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="no_sidebar_tabs.html" title="">No sidebar tabs</a></li>
+			                    <li><a href="no_action_tabs.html" title="">No action tabs</a></li>
+			                    <li><a href="actions_on_top.html" title="">Action tabs on top</a></li>
+			                    <li><a href="no_breadcrumbs.html" title="">No breadcrumbs line</a></li>
+			                </ul>
+			            </li>
+			        </ul>
+			        <!-- /main navigation -->
+
+		        </div>
+
+		        <div id="stuff">
+
+			        <!-- Social stats -->
+			        <div class="widget">
+			        	<h6 class="widget-name"><i class="icon-twitter"></i>Social statistics</h6>
+			        	<ul class="social-stats">
+			        		<li>
+			        			<a href="" title="" class="orange-square"><i class="icon-rss"></i></a>
+			        			<div>
+				        			<h4>1,286</h4>
+				        			<span>total feed subscribers</span>
+				        		</div>
+			        		</li>
+			        		<li>
+			        			<a href="" title="" class="blue-square"><i class="icon-twitter"></i></a>
+			        			<div>
+				        			<h4>12,683</h4>
+				        			<span>total twitter followers</span>
+				        		</div>
+			        		</li>
+			        		<li>
+			        			<a href="" title="" class="dark-blue-square"><i class="icon-facebook"></i></a>
+			        			<div>
+				        			<h4>530,893</h4>
+				        			<span>total facebook likes</span>
+				        		</div>
+			        		</li>
+			        	</ul>
+			        </div>
+			        <!-- /social stats -->
+
+
+			        <!-- Categories -->
+			        <div class="widget">
+			        	<h6 class="widget-name"><i class="icon-list"></i>Categories</h6>
+				        <ul class="plus-list categories">
+				        	<li>
+				        		<a href="#" title="">Company documents</a>
+				        		<strong>1232</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Media entries</a>
+				        		<strong>7638</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Blog posts</a>
+				        		<strong>221</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Job positions</a>
+				        		<strong>49</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Team members</a>
+				        		<strong>80</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Projects</a>
+				        		<strong>43</strong>
+				        	</li>
+				        </ul>
+				    </div>
+				    <!-- /categories -->
+
+
+				    <!-- Gallery thumbs -->
+				    <div class="widget">
+				    	<h6 class="widget-name"><i class="icon-picture"></i>Gallery thumbs</h6>
+				    	<div class="row-fluid thumbs">
+					    	<div class="span6">
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    	</div>
+					    	<div class="span6">
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    	</div>
+					    </div>
+				    </div>
+				    <!-- /gallery thumbs -->
+
+		        	<!-- Action buttons -->
+	                <div class="widget">
+	                	<h6 class="widget-name"><i class="icon-search"></i>Action buttons</h6>
+	                	<button class="btn btn-block btn-danger">Action button</button>
+	                	<button class="btn btn-block btn-info">Action button</button>
+	                	<button class="btn btn-block btn-success">Action button</button>
+	                </div>
+	                <!-- /action buttons -->
+
+			        <!-- Tags input -->
+					<div class="widget">
+						<h6 class="widget-name"><i class="icon-search"></i>Tags input</h6>
+						<input type="text" id="tags1" class="tags" value="these,are,sample,tags" />
+					</div>
+					<!-- /tags input -->
+
+		        </div>
+
+		    </div>
+		</div>
+		<!-- /sidebar -->
+
+
+		<!-- Content -->
+		<div id="content">
+
+		    <!-- Content wrapper -->
+		    <div class="wrapper">
+
+			    <!-- Breadcrumbs line -->
+			    <div class="crumbs">
+		            <ul id="breadcrumbs" class="breadcrumb"> 
+		                <li><a href="index.html">Dashboard</a></li>
+		                <li class="active"><a href="icons.html" title="">Icons</a></li>
+		            </ul>
+			        
+		            <ul class="alt-buttons">
+		                <li><a href="#" title=""><i class="icon-signal"></i><span>Stats</span></a></li>
+		                <li><a href="#" title=""><i class="icon-comments"></i><span>Messages</span></a></li>
+		                <li class="dropdown"><a href="#" title="" data-toggle="dropdown"><i class="icon-tasks"></i><span>Tasks</span> <strong>(+16)</strong></a>
+		                	<ul class="dropdown-menu pull-right">
+		                        <li><a href="#" title=""><i class="icon-plus"></i>Add new task</a></li>
+		                        <li><a href="#" title=""><i class="icon-reorder"></i>Statement</a></li>
+		                        <li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+		                	</ul>
+		                </li>
+		            </ul>
+			    </div>
+			    <!-- /breadcrumbs line -->
+
+			    <!-- Page header -->
+			    <div class="page-header">
+			    	<div class="page-title">
+				    	<h5>Icons</h5>
+				    	<span>3 types of icons included</span>
+			    	</div>
+
+			    	<ul class="page-stats">
+			    		<li>
+			    			<div class="showcase">
+			    				<span>New visits</span>
+			    				<h2>22.504</h2>
+			    			</div>
+			    			<div id="total-visits" class="chart">10,14,8,45,23,41,22,31,19,12, 28, 21, 24, 20</div>
+			    		</li>
+			    		<li>
+			    			<div class="showcase">
+			    				<span>My balance</span>
+			    				<h2>$16.290</h2>
+			    			</div>
+			    			<div id="balance" class="chart">10,14,8,45,23,41,22,31,19,12, 28, 21, 24, 20</div>
+			    		</li>
+			    	</ul>
+			    </div>
+			    <!-- /page header -->
+
+			    <!-- Action tabs -->
+			    <div class="actions-wrapper">
+				    <div class="actions">
+
+				    	<div id="user-stats">
+					        <ul class="round-buttons">
+					            <li><div class="depth"><a href="" title="Add new post" class="tip"><i class="icon-plus"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="View statement" class="tip"><i class="icon-signal"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Media posts" class="tip"><i class="icon-reorder"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="RSS feed" class="tip"><i class="icon-rss"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Create new task" class="tip"><i class="icon-tasks"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Layout settings" class="tip"><i class="icon-cogs"></i></a></div></li>
+					        </ul>
+				    	</div>
+
+				    	<div id="quick-actions">
+				    		<ul class="statistics">
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="blue-square"><i class="icon-plus"></i></a>
+					    				<strong>12,476</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 60%;"></div></div>
+									<span>User registrations</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="red-square"><i class="icon-hand-up"></i></a>
+					    				<strong>621,873</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 20%;"></div></div>
+									<span>Total clicks</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="purple-square"><i class="icon-shopping-cart"></i></a>
+					    				<strong>562</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 90%;"></div></div>
+									<span>New orders</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="green-square"><i class="icon-ok"></i></a>
+					    				<strong>$45,360</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 70%;"></div></div>
+									<span>General balance</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="sea-square"><i class="icon-group"></i></a>
+					    				<strong>562K+</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 50%;"></div></div>
+									<span>Total users</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="dark-blue-square"><i class="icon-facebook"></i></a>
+					    				<strong>36,290</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 93%;"></div></div>
+									<span>Facebook fans</span>
+				    			</li>
+				    		</ul>
+				    	</div>
+
+				    	<div id="map">
+				    		<div id="google-map"></div>
+				    	</div>
+
+				    	<ul class="action-tabs">
+				    		<li><a href="#user-stats" title="">Quick actions</a></li>
+				    		<li><a href="#quick-actions" title="">Website statistics</a></li>
+				    		<li><a href="#map" title="" id="map-link">Google map</a></li>
+				    	</ul>
+				    </div>
+				</div>
+			    <!-- /action tabs -->
+
+		    	<!-- Search widget -->
+		    	<form class="search widget" action="#">
+		    		<div class="autocomplete-append">
+			    		<ul class="search-options">
+			    			<li><a href="#" title="Go to search page" class="go-option tip"></a></li>
+			    			<li><a href="#" title="Advanced search" class="advanced-option tip"></a></li>
+			    			<li><a href="#" title="Settings" class="settings-option tip"></a></li>
+			    		</ul>
+			    		<input type="text" placeholder="search website..." id="autocomplete" />
+			    		<input type="submit" class="btn btn-info" value="Search" />
+			    	</div>
+		    	</form>
+		    	<!-- /search widget -->
+
+
+		    	<h5 class="widget-name"><i class="icon-thumbs-up"></i>Font Awesome, Glyphicons and FamFam icons</h5>
+
+                <!-- Icons -->
+                <div class="tabbable widget">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#glyphs" data-toggle="tab">Icon glyphs</a></li>
+                        <li><a href="#fontawesome" data-toggle="tab">Font Awesome</a></li>
+                        <li><a href="#famfam" data-toggle="tab">FamFam icons</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="glyphs">
+                            <ul class="clearfix icons-showcase">
+                                <li><i class="ico-glass"></i> ico-glass</li>
+                                <li><i class="ico-music"></i> ico-music</li>
+                                <li><i class="ico-search"></i> ico-search</li>
+                                <li><i class="ico-envelope"></i> ico-envelope</li>
+                                <li><i class="ico-heart"></i> ico-heart</li>
+                                <li><i class="ico-star"></i> ico-star</li>
+                                <li><i class="ico-star-empty"></i> ico-star-empty</li>
+                                <li><i class="ico-user"></i> ico-user</li>
+                                <li><i class="ico-film"></i> iconfilm</li>
+                                <li><i class="ico-th-large"></i> ico-th-large</li>
+                                <li><i class="ico-th"></i> ico-th</li>
+                                <li><i class="ico-th-list"></i> ico-th-list</li>
+                                <li><i class="ico-ok"></i> ico-ok</li>
+                                <li><i class="ico-remove"></i> ico-remove</li>
+                                <li><i class="ico-zoom-in"></i> ico-zoom-in</li>
+                                <li><i class="ico-zoom-out"></i> ico-zoom-out</li>
+                                <li><i class="ico-off"></i> ico-off</li>
+                                <li><i class="ico-signal"></i> ico-signal</li>
+                                <li><i class="ico-cog"></i> ico-cog</li>
+                                <li><i class="ico-trash"></i> ico-trash</li>
+                                <li><i class="ico-home"></i> ico-home</li>
+                                <li><i class="ico-file"></i> ico-file</li>
+                                <li><i class="ico-time"></i> ico-time</li>
+                                <li><i class="ico-road"></i> ico-road</li>
+                                <li><i class="ico-download-alt"></i> ico-download-alt</li>
+                                <li><i class="ico-download"></i> ico-download</li>
+                                <li><i class="ico-upload"></i> ico-upload</li>
+                                <li><i class="ico-inbox"></i> ico-inbox</li>
+                                
+                                <li><i class="ico-play-circle"></i> ico-play-circle</li>
+                                <li><i class="ico-repeat"></i> ico-repeat</li>
+                                <li><i class="ico-refresh"></i> ico-refresh</li>
+                                <li><i class="ico-list-alt"></i> ico-list-alt</li>
+                                <li><i class="ico-lock"></i> ico-lock</li>
+                                <li><i class="ico-flag"></i> ico-flag</li>
+                                <li><i class="ico-headphones"></i> ico-headphones</li>
+                                <li><i class="ico-volume-off"></i> ico-volume-off</li>
+                                <li><i class="ico-volume-down"></i> ico-volume-down</li>
+                                <li><i class="ico-volume-up"></i> ico-volume-up</li>
+                                <li><i class="ico-qrcode"></i> ico-qrcode</li>
+                                <li><i class="ico-barcode"></i> ico-barcode</li>
+                                <li><i class="ico-tag"></i> ico-tag</li>
+                                <li><i class="ico-tags"></i> ico-tags</li>
+                                <li><i class="ico-book"></i> ico-book</li>
+                                <li><i class="ico-bookmark"></i> ico-bookmark</li>
+                                <li><i class="ico-print"></i> ico-print</li>
+                                <li><i class="ico-camera"></i> ico-camera</li>
+                                <li><i class="ico-font"></i> ico-font</li>
+                                <li><i class="ico-bold"></i> ico-bold</li>
+                                <li><i class="ico-italic"></i> ico-italic</li>
+                                <li><i class="ico-text-height"></i> ico-text-height</li>
+                                <li><i class="ico-text-width"></i> ico-text-width</li>
+                                <li><i class="ico-align-left"></i> ico-align-left</li>
+                                <li><i class="ico-align-center"></i> ico-align-center</li>
+                                <li><i class="ico-align-right"></i> ico-align-right</li>
+                                <li><i class="ico-align-justify"></i> ico-align-justify</li>
+                                <li><i class="ico-list"></i> ico-list</li>
+                                
+                                <li><i class="ico-indent-left"></i> ico-indent-left</li>
+                                <li><i class="ico-indent-right"></i> ico-indent-right</li>
+                                <li><i class="ico-facetime-video"></i> ico-facetime-video</li>
+                                <li><i class="ico-picture"></i> ico-picture</li>
+                                <li><i class="ico-pencil"></i> ico-pencil</li>
+                                <li><i class="ico-map-marker"></i> ico-map-marker</li>
+                                <li><i class="ico-adjust"></i> ico-adjust</li>
+                                <li><i class="ico-tint"></i> ico-tint</li>
+                                <li><i class="ico-edit"></i> ico-edit</li>
+                                <li><i class="ico-share"></i> ico-share</li>
+                                <li><i class="ico-check"></i> ico-check</li>
+                                <li><i class="ico-move"></i> ico-move</li>
+                                <li><i class="ico-step-backward"></i> ico-step-backward</li>
+                                <li><i class="ico-fast-backward"></i> ico-fast-backward</li>
+                                <li><i class="ico-backward"></i> ico-backward</li>
+                                <li><i class="ico-play"></i> ico-play</li>
+                                <li><i class="ico-pause"></i> ico-pause</li>
+                                <li><i class="ico-stop"></i> ico-stop</li>
+                                <li><i class="ico-forward"></i> ico-forward</li>
+                                <li><i class="ico-fast-forward"></i> ico-fast-forward</li>
+                                <li><i class="ico-step-forward"></i> ico-step-forward</li>
+                                <li><i class="ico-eject"></i> ico-eject</li>
+                                <li><i class="ico-chevron-left"></i> ico-chevron-left</li>
+                                <li><i class="ico-chevron-right"></i> ico-chevron-right</li>
+                                <li><i class="ico-plus-sign"></i> ico-plus-sign</li>
+                                <li><i class="ico-minus-sign"></i> ico-minus-sign</li>
+                                <li><i class="ico-remove-sign"></i> ico-remove-sign</li>
+                                <li><i class="ico-ok-sign"></i> ico-ok-sign</li>
+                                
+                                <li><i class="ico-question-sign"></i> ico-question-sign</li>
+                                <li><i class="ico-info-sign"></i> ico-info-sign</li>
+                                <li><i class="ico-screenshot"></i> ico-screenshot</li>
+                                <li><i class="ico-remove-circle"></i> ico-remove-circle</li>
+                                <li><i class="ico-ok-circle"></i> ico-ok-circle</li>
+                                <li><i class="ico-ban-circle"></i> ico-ban-circle</li>
+                                <li><i class="ico-arrow-left"></i> ico-arrow-left</li>
+                                <li><i class="ico-arrow-right"></i> ico-arrow-right</li>
+                                <li><i class="ico-arrow-up"></i> ico-arrow-up</li>
+                                <li><i class="ico-arrow-down"></i> ico-arrow-down</li>
+                                <li><i class="ico-share-alt"></i> ico-share-alt</li>
+                                <li><i class="ico-resize-full"></i> ico-resize-full</li>
+                                <li><i class="ico-resize-small"></i> ico-resize-small</li>
+                                <li><i class="ico-plus"></i> ico-plus</li>
+                                <li><i class="ico-minus"></i> ico-minus</li>
+                                <li><i class="ico-asterisk"></i> ico-asterisk</li>
+                                <li><i class="ico-exclamation-sign"></i> ico-exclamation-sign</li>
+                                <li><i class="ico-gift"></i> ico-gift</li>
+                                <li><i class="ico-leaf"></i> ico-leaf</li>
+                                <li><i class="ico-fire"></i> ico-fire</li>
+                                <li><i class="ico-eye-open"></i> ico-eye-open</li>
+                                <li><i class="ico-eye-close"></i> ico-eye-close</li>
+                                <li><i class="ico-warning-sign"></i> ico-warning-sign</li>
+                                <li><i class="ico-plane"></i> ico-plane</li>
+                                <li><i class="ico-calendar"></i> ico-calendar</li>
+                                <li><i class="ico-random"></i> ico-random</li>
+                                <li><i class="ico-comment"></i> ico-comment</li>
+                                <li><i class="ico-magnet"></i> ico-magnet</li>
+                                
+                                <li><i class="ico-chevron-up"></i> ico-chevron-up</li>
+                                <li><i class="ico-chevron-down"></i> ico-chevron-down</li>
+                                <li><i class="ico-retweet"></i> ico-retweet</li>
+                                <li><i class="ico-shopping-cart"></i> ico-shopping-cart</li>
+                                <li><i class="ico-folder-close"></i> ico-folder-close</li>
+                                <li><i class="ico-folder-open"></i> ico-folder-open</li>
+                                <li><i class="ico-resize-vertical"></i> ico-resize-vertical</li>
+                                <li><i class="ico-resize-horizontal"></i> ico-resize-horizontal</li>
+                                <li><i class="ico-hdd"></i> ico-hdd</li>
+                                <li><i class="ico-bullhorn"></i> ico-bullhorn</li>
+                                <li><i class="ico-bell"></i> ico-bell</li>
+                                <li><i class="ico-certificate"></i> ico-certificate</li>
+                                <li><i class="ico-thumbs-up"></i> ico-thumbs-up</li>
+                                <li><i class="ico-thumbs-down"></i> ico-thumbs-down</li>
+                                <li><i class="ico-hand-right"></i> ico-hand-right</li>
+                                <li><i class="ico-hand-left"></i> ico-hand-left</li>
+                                <li><i class="ico-hand-up"></i> ico-hand-up</li>
+                                <li><i class="ico-hand-down"></i> ico-hand-down</li>
+                                <li><i class="ico-circle-arrow-right"></i> ico-circle-arrow-right</li>
+                                <li><i class="ico-circle-arrow-left"></i> ico-circle-arrow-left</li>
+                                <li><i class="ico-circle-arrow-up"></i> ico-circle-arrow-up</li>
+                                <li><i class="ico-circle-arrow-down"></i> ico-circle-arrow-down</li>
+                                <li><i class="ico-globe"></i> ico-globe</li>
+                                <li><i class="ico-wrench"></i> ico-wrench</li>
+                                <li><i class="ico-tasks"></i> ico-tasks</li>
+                                <li><i class="ico-filter"></i> ico-filter</li>
+                                <li><i class="ico-briefcase"></i> ico-briefcase</li>
+                                <li><i class="ico-fullscreen"></i> ico-fullscreen</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="fontawesome">
+                            <ul class="clearfix icons-showcase">
+                              <li><i class="icon-adjust"></i> icon-adjust</li>
+                              <li><i class="icon-asterisk"></i> icon-asterisk</li>
+                              <li><i class="icon-ban-circle"></i> icon-ban-circle</li>
+                              <li><i class="icon-bar-chart"></i> icon-bar-chart</li>
+                              <li><i class="icon-barcode"></i> icon-barcode</li>
+                              <li><i class="icon-beaker"></i> icon-beaker</li>
+                              <li><i class="icon-bell"></i> icon-bell</li>
+                              <li><i class="icon-bolt"></i> icon-bolt</li>
+                              <li><i class="icon-book"></i> icon-book</li>
+                              <li><i class="icon-bookmark"></i> icon-bookmark</li>
+                              <li><i class="icon-bookmark-empty"></i> icon-bookmark-empty</li>
+                              <li><i class="icon-briefcase"></i> icon-briefcase</li>
+                              <li><i class="icon-bullhorn"></i> icon-bullhorn</li>
+                              <li><i class="icon-calendar"></i> icon-calendar</li>
+                              <li><i class="icon-camera"></i> icon-camera</li>
+                              <li><i class="icon-camera-retro"></i> icon-camera-retro</li>
+                              <li><i class="icon-certificate"></i> icon-certificate</li>
+                              <li><i class="icon-check"></i> icon-check</li>
+                              <li><i class="icon-check-empty"></i> icon-check-empty</li>
+                              <li><i class="icon-cloud"></i> icon-cloud</li>
+                              <li><i class="icon-cog"></i> icon-cog</li>
+                              <li><i class="icon-cogs"></i> icon-cogs</li>
+                              <li><i class="icon-comment"></i> icon-comment</li>
+                              <li><i class="icon-comment-alt"></i> icon-comment-alt</li>
+                              <li><i class="icon-comments"></i> icon-comments</li>
+                              <li><i class="icon-comments-alt"></i> icon-comments-alt</li>
+                              <li><i class="icon-credit-card"></i> icon-credit-card</li>
+                              <li><i class="icon-dashboard"></i> icon-dashboard</li>
+                              <li><i class="icon-download"></i> icon-download</li>
+                              <li><i class="icon-download-alt"></i> icon-download-alt</li>
+                              <li><i class="icon-edit"></i> icon-edit</li>
+                              <li><i class="icon-envelope"></i> icon-envelope</li>
+                              <li><i class="icon-envelope-alt"></i> icon-envelope-alt</li>
+                              <li><i class="icon-exclamation-sign"></i> icon-exclamation-sign</li>
+                              <li><i class="icon-external-link"></i> icon-external-link</li>
+                              <li><i class="icon-eye-close"></i> icon-eye-close</li>
+                              <li><i class="icon-eye-open"></i> icon-eye-open</li>
+                              <li><i class="icon-facetime-video"></i> icon-facetime-video</li>
+                              <li><i class="icon-film"></i> icon-film</li>
+                              <li><i class="icon-filter"></i> icon-filter</li>
+                              <li><i class="icon-fire"></i> icon-fire</li>
+                              <li><i class="icon-flag"></i> icon-flag</li>
+                              <li><i class="icon-folder-close"></i> icon-folder-close</li>
+                              <li><i class="icon-folder-open"></i> icon-folder-open</li>
+                              <li><i class="icon-gift"></i> icon-gift</li>
+                              <li><i class="icon-glass"></i> icon-glass</li>
+                              <li><i class="icon-globe"></i> icon-globe</li>
+                              <li><i class="icon-group"></i> icon-group</li>
+                              <li><i class="icon-hdd"></i> icon-hdd</li>
+                              <li><i class="icon-headphones"></i> icon-headphones</li>
+                              <li><i class="icon-heart"></i> icon-heart</li>
+                              <li><i class="icon-heart-empty"></i> icon-heart-empty</li>
+                              <li><i class="icon-home"></i> icon-home</li>
+                              <li><i class="icon-inbox"></i> icon-inbox</li>
+                              <li><i class="icon-info-sign"></i> icon-info-sign</li>
+                              <li><i class="icon-key"></i> icon-key</li>
+                              <li><i class="icon-leaf"></i> icon-leaf</li>
+                              <li><i class="icon-legal"></i> icon-legal</li>
+                              <li><i class="icon-lemon"></i> icon-lemon</li>
+                              <li><i class="icon-lock"></i> icon-lock</li>
+                              <li><i class="icon-unlock"></i> icon-unlock</li>
+                              <li><i class="icon-magic"></i> icon-magic</li>
+                              <li><i class="icon-magnet"></i> icon-magnet</li>
+                              <li><i class="icon-map-marker"></i> icon-map-marker</li>
+                              <li><i class="icon-minus"></i> icon-minus</li>
+                              <li><i class="icon-minus-sign"></i> icon-minus-sign</li>
+                              <li><i class="icon-money"></i> icon-money</li>
+                              <li><i class="icon-move"></i> icon-move</li>
+                              <li><i class="icon-music"></i> icon-music</li>
+                              <li><i class="icon-off"></i> icon-off</li>
+                              <li><i class="icon-ok"></i> icon-ok</li>
+                              <li><i class="icon-ok-circle"></i> icon-ok-circle</li>
+                              <li><i class="icon-ok-sign"></i> icon-ok-sign</li>
+                              <li><i class="icon-pencil"></i> icon-pencil</li>
+                              <li><i class="icon-picture"></i> icon-picture</li>
+                              <li><i class="icon-plane"></i> icon-plane</li>
+                              <li><i class="icon-plus"></i> icon-plus</li>
+                              <li><i class="icon-plus-sign"></i> icon-plus-sign</li>
+                              <li><i class="icon-print"></i> icon-print</li>
+                              <li><i class="icon-pushpin"></i> icon-pushpin</li>
+                              <li><i class="icon-qrcode"></i> icon-qrcode</li>
+                              <li><i class="icon-question-sign"></i> icon-question-sign</li>
+                              <li><i class="icon-random"></i> icon-random</li>
+                              <li><i class="icon-refresh"></i> icon-refresh</li>
+                              <li><i class="icon-remove"></i> icon-remove</li>
+                              <li><i class="icon-remove-circle"></i> icon-remove-circle</li>
+                              <li><i class="icon-remove-sign"></i> icon-remove-sign</li>
+                              <li><i class="icon-reorder"></i> icon-reorder</li>
+                              <li><i class="icon-resize-horizontal"></i> icon-resize-horizontal</li>
+                              <li><i class="icon-resize-vertical"></i> icon-resize-vertical</li>
+                              <li><i class="icon-retweet"></i> icon-retweet</li>
+                              <li><i class="icon-road"></i> icon-road</li>
+                              <li><i class="icon-rss"></i> icon-rss</li>
+                              <li><i class="icon-screenshot"></i> icon-screenshot</li>
+                              <li><i class="icon-search"></i> icon-search</li>
+                              <li><i class="icon-share"></i> icon-share</li>
+                              <li><i class="icon-share-alt"></i> icon-share-alt</li>
+                              <li><i class="icon-shopping-cart"></i> icon-shopping-cart</li>
+                              <li><i class="icon-signal"></i> icon-signal</li>
+                              <li><i class="icon-signin"></i> icon-signin</li>
+                              <li><i class="icon-signout"></i> icon-signout</li>
+                              <li><i class="icon-sitemap"></i> icon-sitemap</li>
+                              <li><i class="icon-sort"></i> icon-sort</li>
+                              <li><i class="icon-sort-down"></i> icon-sort-down</li>
+                              <li><i class="icon-sort-up"></i> icon-sort-up</li>
+                              <li><i class="icon-star"></i> icon-star</li>
+                              <li><i class="icon-star-empty"></i> icon-star-empty</li>
+                              <li><i class="icon-star-half"></i> icon-star-half</li>
+                              <li><i class="icon-tag"></i> icon-tag</li>
+                              <li><i class="icon-tags"></i> icon-tags</li>
+                              <li><i class="icon-tasks"></i> icon-tasks</li>
+                              <li><i class="icon-thumbs-down"></i> icon-thumbs-down</li>
+                              <li><i class="icon-thumbs-up"></i> icon-thumbs-up</li>
+                              <li><i class="icon-time"></i> icon-time</li>
+                              <li><i class="icon-tint"></i> icon-tint</li>
+                              <li><i class="icon-trash"></i> icon-trash</li>
+                              <li><i class="icon-trophy"></i> icon-trophy</li>
+                              <li><i class="icon-truck"></i> icon-truck</li>
+                              <li><i class="icon-umbrella"></i> icon-umbrella</li>
+                              <li><i class="icon-upload"></i> icon-upload</li>
+                              <li><i class="icon-upload-alt"></i> icon-upload-alt</li>
+                              <li><i class="icon-user"></i> icon-user</li>
+                              <li><i class="icon-user-md"></i> icon-user-md</li>
+                              <li><i class="icon-volume-off"></i> icon-volume-off</li>
+                              <li><i class="icon-volume-down"></i> icon-volume-down</li>
+                              <li><i class="icon-volume-up"></i> icon-volume-up</li>
+                              <li><i class="icon-warning-sign"></i> icon-warning-sign</li>
+                              <li><i class="icon-wrench"></i> icon-wrench</li>
+                              <li><i class="icon-zoom-in"></i> icon-zoom-in</li>
+                              <li><i class="icon-zoom-out"></i> icon-zoom-out</li>
+                              <li><i class="icon-file"></i> icon-file</li>
+                              <li><i class="icon-cut"></i> icon-cut</li>
+                              <li><i class="icon-copy"></i> icon-copy</li>
+                              <li><i class="icon-paste"></i> icon-paste</li>
+                              <li><i class="icon-save"></i> icon-save</li>
+                              <li><i class="icon-undo"></i> icon-undo</li>
+                              <li><i class="icon-repeat"></i> icon-repeat</li>
+                              <li><i class="icon-paper-clip"></i> icon-paper-clip</li>
+                              <li><i class="icon-text-height"></i> icon-text-height</li>
+                              <li><i class="icon-text-width"></i> icon-text-width</li>
+                              <li><i class="icon-align-left"></i> icon-align-left</li>
+                              <li><i class="icon-align-center"></i> icon-align-center</li>
+                              <li><i class="icon-align-right"></i> icon-align-right</li>
+                              <li><i class="icon-align-justify"></i> icon-align-justify</li>
+                              <li><i class="icon-indent-left"></i> icon-indent-left</li>
+                              <li><i class="icon-indent-right"></i> icon-indent-right</li>
+                              <li><i class="icon-font"></i> icon-font</li>
+                              <li><i class="icon-bold"></i> icon-bold</li>
+                              <li><i class="icon-italic"></i> icon-italic</li>
+                              <li><i class="icon-strikethrough"></i> icon-strikethrough</li>
+                              <li><i class="icon-underline"></i> icon-underline</li>
+                              <li><i class="icon-link"></i> icon-link</li>
+                              <li><i class="icon-columns"></i> icon-columns</li>
+                              <li><i class="icon-table"></i> icon-table</li>
+                              <li><i class="icon-th-large"></i> icon-th-large</li>
+                              <li><i class="icon-th"></i> icon-th</li>
+                              <li><i class="icon-th-list"></i> icon-th-list</li>
+                              <li><i class="icon-list"></i> icon-list</li>
+                              <li><i class="icon-list-ol"></i> icon-list-ol</li>
+                              <li><i class="icon-list-ul"></i> icon-list-ul</li>
+                              <li><i class="icon-list-alt"></i> icon-list-alt</li>
+                              <li><i class="icon-arrow-down"></i> icon-arrow-down</li>
+                              <li><i class="icon-arrow-left"></i> icon-arrow-left</li>
+                              <li><i class="icon-arrow-right"></i> icon-arrow-right</li>
+                              <li><i class="icon-arrow-up"></i> icon-arrow-up</li>
+                              <li><i class="icon-chevron-down"></i> icon-chevron-down</li>
+                              <li><i class="icon-circle-arrow-down"></i> icon-circle-arrow-down</li>
+                              <li><i class="icon-circle-arrow-left"></i> icon-circle-arrow-left</li>
+                              <li><i class="icon-circle-arrow-right"></i> icon-circle-arrow-right</li>
+                              <li><i class="icon-circle-arrow-up"></i> icon-circle-arrow-up</li>
+                              <li><i class="icon-chevron-left"></i> icon-chevron-left</li>
+                              <li><i class="icon-caret-down"></i> icon-caret-down</li>
+                              <li><i class="icon-caret-left"></i> icon-caret-left</li>
+                              <li><i class="icon-caret-right"></i> icon-caret-right</li>
+                              <li><i class="icon-caret-up"></i> icon-caret-up</li>
+                              <li><i class="icon-chevron-right"></i> icon-chevron-right</li>
+                              <li><i class="icon-hand-down"></i> icon-hand-down</li>
+                              <li><i class="icon-hand-left"></i> icon-hand-left</li>
+                              <li><i class="icon-hand-right"></i> icon-hand-right</li>
+                              <li><i class="icon-hand-up"></i> icon-hand-up</li>
+                              <li><i class="icon-chevron-up"></i> icon-chevron-up</li>
+                              <li><i class="icon-play-circle"></i> icon-play-circle</li>
+                              <li><i class="icon-play"></i> icon-play</li>
+                              <li><i class="icon-pause"></i> icon-pause</li>
+                              <li><i class="icon-stop"></i> icon-stop</li>
+                              <li><i class="icon-step-backward"></i> icon-step-backward</li>
+                              <li><i class="icon-fast-backward"></i> icon-fast-backward</li>
+                              <li><i class="icon-backward"></i> icon-backward</li>
+                              <li><i class="icon-forward"></i> icon-forward</li>
+                              <li><i class="icon-fast-forward"></i> icon-fast-forward</li>
+                              <li><i class="icon-step-forward"></i> icon-step-forward</li>
+                              <li><i class="icon-eject"></i> icon-eject</li>
+                              <li><i class="icon-fullscreen"></i> icon-fullscreen</li>
+                              <li><i class="icon-resize-full"></i> icon-resize-full</li>
+                              <li><i class="icon-resize-small"></i> icon-resize-small</li>
+                              <li><i class="icon-phone"></i> icon-phone</li>
+                              <li><i class="icon-phone-sign"></i> icon-phone-sign</li>
+                              <li><i class="icon-facebook"></i> icon-facebook</li>
+                              <li><i class="icon-facebook-sign"></i> icon-facebook-sign</li>
+                              <li><i class="icon-twitter"></i> icon-twitter</li>
+                              <li><i class="icon-twitter-sign"></i> icon-twitter-sign</li>
+                              <li><i class="icon-github"></i> icon-github</li>
+                              <li><i class="icon-github-sign"></i> icon-github-sign</li>
+                              <li><i class="icon-linkedin"></i> icon-linkedin</li>
+                              <li><i class="icon-linkedin-sign"></i> icon-linkedin-sign</li>
+                              <li><i class="icon-pinterest"></i> icon-pinterest</li>
+                              <li><i class="icon-pinterest-sign"></i> icon-pinterest-sign</li>
+                              <li><i class="icon-google-plus"></i> icon-google-plus</li>
+                              <li><i class="icon-google-plus-sign"></i> icon-google-plus-sign</li>
+                              <li><i class="icon-sign-blank"></i> icon-sign-blank</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="famfam">
+                        	<ul class="clearfix icons-showcase">
+								<li><i class="fam-accept"></i> fam-accept</li>
+								<li><i class="fam-add"></i> fam-add</li>
+								<li><i class="fam-anchor"></i> fam-anchor</li>
+								<li><i class="fam-application-add"></i> fam-application-add</li>
+								<li><i class="fam-application-cascade"></i> fam-application-cascade</li>
+								<li><i class="fam-application-delete"></i> fam-application-delete</li>
+								<li><i class="fam-application-double"></i> fam-application-double</li>
+								<li><i class="fam-application-edit"></i> fam-application-edit</li>
+								<li><i class="fam-application-error"></i> fam-application-error</li>
+								<li><i class="fam-application-form-add"></i> fam-application-form-add</li>
+								<li><i class="fam-application-form-delete"></i> fam-application-form-delete</li>
+								<li><i class="fam-application-form-edit"></i> fam-application-form-edit</li>
+								<li><i class="fam-application-form-magnify"></i> fam-application-form-magnify</li>
+								<li><i class="fam-application-form"></i> fam-application-form</li>
+								<li><i class="fam-application-get"></i> fam-application-get</li>
+								<li><i class="fam-application-go"></i> fam-application-go</li>
+								<li><i class="fam-application-home"></i> fam-application-home</li>
+								<li><i class="fam-application-key"></i> fam-application-key</li>
+								<li><i class="fam-application-lightning"></i> fam-application-lightning</li>
+								<li><i class="fam-application-link"></i> fam-application-link</li>
+								<li><i class="fam-application-osx-terminal"></i> fam-application-osx-terminal</li>
+								<li><i class="fam-application-osx"></i> fam-application-osx</li>
+								<li><i class="fam-application-put"></i> fam-application-put</li>
+								<li><i class="fam-application-side-boxes"></i> fam-application-side-boxes</li>
+								<li><i class="fam-application-side-contract"></i> fam-application-side-contract</li>
+								<li><i class="fam-application-side-expand"></i> fam-application-side-expand</li>
+								<li><i class="fam-application-side-list"></i> fam-application-side-list</li>
+								<li><i class="fam-application-side-tree"></i> fam-application-side-tree</li>
+								<li><i class="fam-application-split"></i> fam-application-split</li>
+								<li><i class="fam-application-tile-horizontal"></i> fam-application-tile-horizontal</li>
+								<li><i class="fam-application-tile-vertical"></i> fam-application-tile-vertical</li>
+								<li><i class="fam-application-view-columns"></i> fam-application-view-columns</li>
+								<li><i class="fam-application-view-detail"></i> fam-application-view-detail</li>
+								<li><i class="fam-application-view-gallery"></i> fam-application-view-gallery</li>
+								<li><i class="fam-application-view-icons"></i> fam-application-view-icons</li>
+								<li><i class="fam-application-view-list"></i> fam-application-view-list</li>
+								<li><i class="fam-application-view-tile"></i> fam-application-view-tile</li>
+								<li><i class="fam-application-xp-terminal"></i> fam-application-xp-terminal</li>
+								<li><i class="fam-application-xp"></i> fam-application-xp</li>
+								<li><i class="fam-application"></i> fam-application</li>
+								<li><i class="fam-arrow-branch"></i> fam-arrow-branch</li>
+								<li><i class="fam-arrow-divide"></i> fam-arrow-divide</li>
+								<li><i class="fam-arrow-down"></i> fam-arrow-down</li>
+								<li><i class="fam-arrow-in"></i> fam-arrow-in</li>
+								<li><i class="fam-arrow-inout"></i> fam-arrow-inout</li>
+								<li><i class="fam-arrow-join"></i> fam-arrow-join</li>
+								<li><i class="fam-arrow-left"></i> fam-arrow-left</li>
+								<li><i class="fam-arrow-merge"></i> fam-arrow-merge</li>
+								<li><i class="fam-arrow-out"></i> fam-arrow-out</li>
+								<li><i class="fam-arrow-redo"></i> fam-arrow-redo</li>
+								<li><i class="fam-arrow-refresh-small"></i> fam-arrow-refresh-small</li>
+								<li><i class="fam-arrow-refresh"></i> fam-arrow-refresh</li>
+								<li><i class="fam-arrow-right"></i> fam-arrow-right</li>
+								<li><i class="fam-arrow-rotate-anticlockwise"></i> fam-arrow-rotate-anticlockwise</li>
+								<li><i class="fam-arrow-rotate-clockwise"></i> fam-arrow-rotate-clockwise</li>
+								<li><i class="fam-arrow-switch"></i> fam-arrow-switch</li>
+								<li><i class="fam-arrow-turn-left"></i> fam-arrow-turn-left</li>
+								<li><i class="fam-arrow-turn-right"></i> fam-arrow-turn-right</li>
+								<li><i class="fam-arrow-undo"></i> fam-arrow-undo</li>
+								<li><i class="fam-arrow-up"></i> fam-arrow-up</li>
+								<li><i class="fam-asterisk-orange"></i> fam-asterisk-orange</li>
+								<li><i class="fam-asterisk-yellow"></i> fam-asterisk-yellow</li>
+								<li><i class="fam-attach"></i> fam-attach</li>
+								<li><i class="fam-award-star-add"></i> fam-award-star-add</li>
+								<li><i class="fam-award-star-bronze-1"></i> fam-award-star-bronze-1</li>
+								<li><i class="fam-award-star-bronze-2"></i> fam-award-star-bronze-2</li>
+								<li><i class="fam-award-star-bronze-3"></i> fam-award-star-bronze-3</li>
+								<li><i class="fam-award-star-delete"></i> fam-award-star-delete</li>
+								<li><i class="fam-award-star-gold-1"></i> fam-award-star-gold-1</li>
+								<li><i class="fam-award-star-gold-2"></i> fam-award-star-gold-2</li>
+								<li><i class="fam-award-star-gold-3"></i> fam-award-star-gold-3</li>
+								<li><i class="fam-award-star-silver-1"></i> fam-award-star-silver-1</li>
+								<li><i class="fam-award-star-silver-2"></i> fam-award-star-silver-2</li>
+								<li><i class="fam-award-star-silver-3"></i> fam-award-star-silver-3</li>
+								<li><i class="fam-basket-add"></i> fam-basket-add</li>
+								<li><i class="fam-basket-delete"></i> fam-basket-delete</li>
+								<li><i class="fam-basket-edit"></i> fam-basket-edit</li>
+								<li><i class="fam-basket-error"></i> fam-basket-error</li>
+								<li><i class="fam-basket-go"></i> fam-basket-go</li>
+								<li><i class="fam-basket-put"></i> fam-basket-put</li>
+								<li><i class="fam-basket-remove"></i> fam-basket-remove</li>
+								<li><i class="fam-basket"></i> fam-basket</li>
+								<li><i class="fam-bell-add"></i> fam-bell-add</li>
+								<li><i class="fam-bell-delete"></i> fam-bell-delete</li>
+								<li><i class="fam-bell-error"></i> fam-bell-error</li>
+								<li><i class="fam-bell-go"></i> fam-bell-go</li>
+								<li><i class="fam-bell-link"></i> fam-bell-link</li>
+								<li><i class="fam-bell"></i> fam-bell</li>
+								<li><i class="fam-bin-closed"></i> fam-bin-closed</li>
+								<li><i class="fam-bin-empty"></i> fam-bin-empty</li>
+								<li><i class="fam-bin"></i> fam-bin</li>
+								<li><i class="fam-bomb"></i> fam-bomb</li>
+								<li><i class="fam-book-add"></i> fam-book-add</li>
+								<li><i class="fam-book-addresses"></i> fam-book-addresses</li>
+								<li><i class="fam-book-delete"></i> fam-book-delete</li>
+								<li><i class="fam-book-edit"></i> fam-book-edit</li>
+								<li><i class="fam-book-error"></i> fam-book-error</li>
+								<li><i class="fam-book-go"></i> fam-book-go</li>
+								<li><i class="fam-book-key"></i> fam-book-key</li>
+								<li><i class="fam-book-link"></i> fam-book-link</li>
+								<li><i class="fam-book-next"></i> fam-book-next</li>
+								<li><i class="fam-book-open"></i> fam-book-open</li>
+								<li><i class="fam-book-previous"></i> fam-book-previous</li>
+								<li><i class="fam-book"></i> fam-book</li>
+								<li><i class="fam-box"></i> fam-box</li>
+								<li><i class="fam-brick-add"></i> fam-brick-add</li>
+								<li><i class="fam-brick-delete"></i> fam-brick-delete</li>
+								<li><i class="fam-brick-edit"></i> fam-brick-edit</li>
+								<li><i class="fam-brick-error"></i> fam-brick-error</li>
+								<li><i class="fam-brick-go"></i> fam-brick-go</li>
+								<li><i class="fam-brick-link"></i> fam-brick-link</li>
+								<li><i class="fam-brick"></i> fam-brick</li>
+								<li><i class="fam-bricks"></i> fam-bricks</li>
+								<li><i class="fam-briefcase"></i> fam-briefcase</li>
+								<li><i class="fam-bug-add"></i> fam-bug-add</li>
+								<li><i class="fam-bug-delete"></i> fam-bug-delete</li>
+								<li><i class="fam-bug-edit"></i> fam-bug-edit</li>
+								<li><i class="fam-bug-error"></i> fam-bug-error</li>
+								<li><i class="fam-bug-go"></i> fam-bug-go</li>
+								<li><i class="fam-bug-link"></i> fam-bug-link</li>
+								<li><i class="fam-bug"></i> fam-bug</li>
+								<li><i class="fam-building-add"></i> fam-building-add</li>
+								<li><i class="fam-building-delete"></i> fam-building-delete</li>
+
+								<li><i class="fam-building-edit"></i> fam-building-edit</li>
+								<li><i class="fam-building-error"></i> fam-building-error</li>
+								<li><i class="fam-building-go"></i> fam-building-go</li>
+								<li><i class="fam-building-key"></i> fam-building-key</li>
+								<li><i class="fam-building-link"></i> fam-building-link</li>
+								<li><i class="fam-building"></i> fam-building</li>
+								<li><i class="fam-bullet-add"></i> fam-bullet-add</li>
+								<li><i class="fam-bullet-arrow-bottom"></i> fam-bullet-arrow-bottom</li>
+								<li><i class="fam-bullet-arrow-down"></i> fam-bullet-arrow-down</li>
+								<li><i class="fam-bullet-arrow-top"></i> fam-bullet-arrow-top</li>
+								<li><i class="fam-bullet-arrow-up"></i> fam-bullet-arrow-up</li>
+								<li><i class="fam-bullet-black"></i> fam-bullet-black</li>
+								<li><i class="fam-bullet-blue"></i> fam-bullet-blue</li>
+								<li><i class="fam-bullet-delete"></i> fam-bullet-delete</li>
+								<li><i class="fam-bullet-disk"></i> fam-bullet-disk</li>
+								<li><i class="fam-bullet-error"></i> fam-bullet-error</li>
+								<li><i class="fam-bullet-feed"></i> fam-bullet-feed</li>
+								<li><i class="fam-bullet-go"></i> fam-bullet-go</li>
+								<li><i class="fam-bullet-green"></i> fam-bullet-green</li>
+								<li><i class="fam-bullet-key"></i> fam-bullet-key</li>
+								<li><i class="fam-bullet-orange"></i> fam-bullet-orange</li>
+								<li><i class="fam-bullet-picture"></i> fam-bullet-picture</li>
+								<li><i class="fam-bullet-pink"></i> fam-bullet-pink</li>
+								<li><i class="fam-bullet-purple"></i> fam-bullet-purple</li>
+								<li><i class="fam-bullet-red"></i> fam-bullet-red</li>
+								<li><i class="fam-bullet-star"></i> fam-bullet-star</li>
+								<li><i class="fam-bullet-toggle-minus"></i> fam-bullet-toggle-minus</li>
+								<li><i class="fam-bullet-toggle-plus"></i> fam-bullet-toggle-plus</li>
+								<li><i class="fam-bullet-white"></i> fam-bullet-white</li>
+								<li><i class="fam-bullet-wrench"></i> fam-bullet-wrench</li>
+								<li><i class="fam-bullet-yellow"></i> fam-bullet-yellow</li>
+								<li><i class="fam-cake"></i> fam-cake</li>
+								<li><i class="fam-calculator-add"></i> fam-calculator-add</li>
+								<li><i class="fam-calculator-delete"></i> fam-calculator-delete</li>
+								<li><i class="fam-calculator-edit"></i> fam-calculator-edit</li>
+								<li><i class="fam-calculator-error"></i> fam-calculator-error</li>
+								<li><i class="fam-calculator-link"></i> fam-calculator-link</li>
+								<li><i class="fam-calculator"></i> fam-calculator</li>
+								<li><i class="fam-calendar-add"></i> fam-calendar-add</li>
+								<li><i class="fam-calendar-delete"></i> fam-calendar-delete</li>
+								<li><i class="fam-calendar-edit"></i> fam-calendar-edit</li>
+								<li><i class="fam-calendar-link"></i> fam-calendar-link</li>
+								<li><i class="fam-calendar-view-day"></i> fam-calendar-view-day</li>
+								<li><i class="fam-calendar-view-month"></i> fam-calendar-view-month</li>
+								<li><i class="fam-calendar-view-week"></i> fam-calendar-view-week</li>
+								<li><i class="fam-calendar"></i> fam-calendar</li>
+								<li><i class="fam-camera-add"></i> fam-camera-add</li>
+								<li><i class="fam-camera-delete"></i> fam-camera-delete</li>
+								<li><i class="fam-camera-edit"></i> fam-camera-edit</li>
+								<li><i class="fam-camera-error"></i> fam-camera-error</li>
+								<li><i class="fam-camera-go"></i> fam-camera-go</li>
+								<li><i class="fam-camera-link"></i> fam-camera-link</li>
+								<li><i class="fam-camera-small"></i> fam-camera-small</li>
+								<li><i class="fam-camera"></i> fam-camera</li>
+								<li><i class="fam-cancel"></i> fam-cancel</li>
+								<li><i class="fam-car-add"></i> fam-car-add</li>
+								<li><i class="fam-car-delete"></i> fam-car-delete</li>
+								<li><i class="fam-car"></i> fam-car</li>
+								<li><i class="fam-cart-add"></i> fam-cart-add</li>
+								<li><i class="fam-cart-delete"></i> fam-cart-delete</li>
+								<li><i class="fam-cart-edit"></i> fam-cart-edit</li>
+								<li><i class="fam-cart-error"></i> fam-cart-error</li>
+								<li><i class="fam-cart-go"></i> fam-cart-go</li>
+								<li><i class="fam-cart-put"></i> fam-cart-put</li>
+								<li><i class="fam-cart-remove"></i> fam-cart-remove</li>
+								<li><i class="fam-cart"></i> fam-cart</li>
+								<li><i class="fam-cd-add"></i> fam-cd-add</li>
+								<li><i class="fam-cd-burn"></i> fam-cd-burn</li>
+								<li><i class="fam-cd-delete"></i> fam-cd-delete</li>
+								<li><i class="fam-cd-edit"></i> fam-cd-edit</li>
+								<li><i class="fam-cd-eject"></i> fam-cd-eject</li>
+								<li><i class="fam-cd-go"></i> fam-cd-go</li>
+								<li><i class="fam-cd"></i> fam-cd</li>
+								<li><i class="fam-chart-bar-add"></i> fam-chart-bar-add</li>
+								<li><i class="fam-chart-bar-delete"></i> fam-chart-bar-delete</li>
+								<li><i class="fam-chart-bar-edit"></i> fam-chart-bar-edit</li>
+								<li><i class="fam-chart-bar-error"></i> fam-chart-bar-error</li>
+								<li><i class="fam-chart-bar-link"></i> fam-chart-bar-link</li>
+								<li><i class="fam-chart-bar"></i> fam-chart-bar</li>
+								<li><i class="fam-chart-curve-add"></i> fam-chart-curve-add</li>
+								<li><i class="fam-chart-curve-delete"></i> fam-chart-curve-delete</li>
+								<li><i class="fam-chart-curve-edit"></i> fam-chart-curve-edit</li>
+								<li><i class="fam-chart-curve-error"></i> fam-chart-curve-error</li>
+								<li><i class="fam-chart-curve-go"></i> fam-chart-curve-go</li>
+								<li><i class="fam-chart-curve-link"></i> fam-chart-curve-link</li>
+								<li><i class="fam-chart-curve"></i> fam-chart-curve</li>
+								<li><i class="fam-chart-line-add"></i> fam-chart-line-add</li>
+								<li><i class="fam-chart-line-delete"></i> fam-chart-line-delete</li>
+								<li><i class="fam-chart-line-edit"></i> fam-chart-line-edit</li>
+								<li><i class="fam-chart-line-error"></i> fam-chart-line-error</li>
+								<li><i class="fam-chart-line-link"></i> fam-chart-line-link</li>
+								<li><i class="fam-chart-line"></i> fam-chart-line</li>
+								<li><i class="fam-chart-organisation-add"></i> fam-chart-organisation-add</li>
+								<li><i class="fam-chart-organisation-delete"></i> fam-chart-organisation-delete</li>
+								<li><i class="fam-chart-organisation"></i> fam-chart-organisation</li>
+								<li><i class="fam-chart-pie-add"></i> fam-chart-pie-add</li>
+								<li><i class="fam-chart-pie-delete"></i> fam-chart-pie-delete</li>
+								<li><i class="fam-chart-pie-edit"></i> fam-chart-pie-edit</li>
+								<li><i class="fam-chart-pie-error"></i> fam-chart-pie-error</li>
+								<li><i class="fam-chart-pie-link"></i> fam-chart-pie-link</li>
+								<li><i class="fam-chart-pie"></i> fam-chart-pie</li>
+								<li><i class="fam-clock-add"></i> fam-clock-add</li>
+								<li><i class="fam-clock-delete"></i> fam-clock-delete</li>
+								<li><i class="fam-clock-edit"></i> fam-clock-edit</li>
+								<li><i class="fam-clock-error"></i> fam-clock-error</li>
+								<li><i class="fam-clock-go"></i> fam-clock-go</li>
+								<li><i class="fam-clock-link"></i> fam-clock-link</li>
+								<li><i class="fam-clock-pause"></i> fam-clock-pause</li>
+								<li><i class="fam-clock-play"></i> fam-clock-play</li>
+								<li><i class="fam-clock-red"></i> fam-clock-red</li>
+								<li><i class="fam-clock-stop"></i> fam-clock-stop</li>
+								<li><i class="fam-clock"></i> fam-clock</li>
+								<li><i class="fam-cog-add"></i> fam-cog-add</li>
+								<li><i class="fam-cog-delete"></i> fam-cog-delete</li>
+								<li><i class="fam-cog-edit"></i> fam-cog-edit</li>
+								<li><i class="fam-cog-error"></i> fam-cog-error</li>
+								<li><i class="fam-cog-go"></i> fam-cog-go</li>
+								<li><i class="fam-cog"></i> fam-cog</li>
+								<li><i class="fam-coins-add"></i> fam-coins-add</li>
+								<li><i class="fam-coins-delete"></i> fam-coins-delete</li>
+								<li><i class="fam-coins"></i> fam-coins</li>
+								<li><i class="fam-color-swatch"></i> fam-color-swatch</li>
+								<li><i class="fam-color-wheel"></i> fam-color-wheel</li>
+								<li><i class="fam-comment-add"></i> fam-comment-add</li>
+								<li><i class="fam-comment-delete"></i> fam-comment-delete</li>
+								<li><i class="fam-comment-edit"></i> fam-comment-edit</li>
+								<li><i class="fam-comment"></i> fam-comment</li>
+								<li><i class="fam-comments-add"></i> fam-comments-add</li>
+								<li><i class="fam-comments-delete"></i> fam-comments-delete</li>
+								<li><i class="fam-comments"></i> fam-comments</li>
+								<li><i class="fam-compress"></i> fam-compress</li>
+								<li><i class="fam-computer-add"></i> fam-computer-add</li>
+								<li><i class="fam-computer-delete"></i> fam-computer-delete</li>
+								<li><i class="fam-computer-edit"></i> fam-computer-edit</li>
+								<li><i class="fam-computer-error"></i> fam-computer-error</li>
+								<li><i class="fam-computer-go"></i> fam-computer-go</li>
+								<li><i class="fam-computer-key"></i> fam-computer-key</li>
+								<li><i class="fam-computer-link"></i> fam-computer-link</li>
+								<li><i class="fam-computer"></i> fam-computer</li>
+								<li><i class="fam-connect"></i> fam-connect</li>
+								<li><i class="fam-contrast-decrease"></i> fam-contrast-decrease</li>
+								<li><i class="fam-contrast-high"></i> fam-contrast-high</li>
+								<li><i class="fam-contrast-increase"></i> fam-contrast-increase</li>
+								<li><i class="fam-contrast-low"></i> fam-contrast-low</li>
+								<li><i class="fam-contrast"></i> fam-contrast</li>
+								<li><i class="fam-control-eject-blue"></i> fam-control-eject-blue</li>
+								<li><i class="fam-control-eject"></i> fam-control-eject</li>
+								<li><i class="fam-control-end-blue"></i> fam-control-end-blue</li>
+								<li><i class="fam-control-end"></i> fam-control-end</li>
+								<li><i class="fam-control-equalizer-blue"></i> fam-control-equalizer-blue</li>
+								<li><i class="fam-control-equalizer"></i> fam-control-equalizer</li>
+								<li><i class="fam-control-fastforward-blue"></i> fam-control-fastforward-blue</li>
+								<li><i class="fam-control-fastforward"></i> fam-control-fastforward</li>
+								<li><i class="fam-control-pause-blue"></i> fam-control-pause-blue</li>
+								<li><i class="fam-control-pause"></i> fam-control-pause</li>
+								<li><i class="fam-control-play-blue"></i> fam-control-play-blue</li>
+								
+								<li><i class="fam-control-play"></i> fam-control-play</li>
+								<li><i class="fam-control-repeat-blue"></i> fam-control-repeat-blue</li>
+								<li><i class="fam-control-repeat"></i> fam-control-repeat</li>
+								<li><i class="fam-control-rewind-blue"></i> fam-control-rewind-blue</li>
+								<li><i class="fam-control-rewind"></i> fam-control-rewind</li>
+								<li><i class="fam-control-start-blue"></i> fam-control-start-blue</li>
+								<li><i class="fam-control-start"></i> fam-control-start</li>
+								<li><i class="fam-control-stop-blue"></i> fam-control-stop-blue</li>
+								<li><i class="fam-control-stop"></i> fam-control-stop</li>
+								<li><i class="fam-controller-add"></i> fam-controller-add</li>
+								<li><i class="fam-controller-delete"></i> fam-controller-delete</li>
+								<li><i class="fam-controller-error"></i> fam-controller-error</li>
+								<li><i class="fam-controller"></i> fam-controller</li>
+								<li><i class="fam-creditcards"></i> fam-creditcards</li>
+								<li><i class="fam-cross"></i> fam-cross</li>
+								<li><i class="fam-css-add"></i> fam-css-add</li>
+								<li><i class="fam-css-delete"></i> fam-css-delete</li>
+								<li><i class="fam-css-go"></i> fam-css-go</li>
+								<li><i class="fam-css-valid"></i> fam-css-valid</li>
+								<li><i class="fam-css"></i> fam-css</li>
+								<li><i class="fam-cup-add"></i> fam-cup-add</li>
+								<li><i class="fam-cup-delete"></i> fam-cup-delete</li>
+								<li><i class="fam-cup-edit"></i> fam-cup-edit</li>
+								<li><i class="fam-cup-error"></i> fam-cup-error</li>
+								<li><i class="fam-cup-go"></i> fam-cup-go</li>
+								<li><i class="fam-cup-key"></i> fam-cup-key</li>
+								<li><i class="fam-cup-link"></i> fam-cup-link</li>
+								<li><i class="fam-cup"></i> fam-cup</li>
+								<li><i class="fam-cursor"></i> fam-cursor</li>
+								<li><i class="fam-cut-red"></i> fam-cut-red</li>
+								<li><i class="fam-cut"></i> fam-cut</li>
+								<li><i class="fam-database-add"></i> fam-database-add</li>
+								<li><i class="fam-database-connect"></i> fam-database-connect</li>
+								<li><i class="fam-database-delete"></i> fam-database-delete</li>
+								<li><i class="fam-database-edit"></i> fam-database-edit</li>
+								<li><i class="fam-database-error"></i> fam-database-error</li>
+								<li><i class="fam-database-gear"></i> fam-database-gear</li>
+								<li><i class="fam-database-go"></i> fam-database-go</li>
+								<li><i class="fam-database-key"></i> fam-database-key</li>
+								<li><i class="fam-database-lightning"></i>fam-database-lightning</li>
+								<li><i class="fam-database-link"></i> fam-database-link</li>
+								<li><i class="fam-database-refresh"></i> fam-database-refresh</li>
+								<li><i class="fam-database-save"></i> fam-database-save</li>
+								<li><i class="fam-database-table"></i> fam-database-table</li>
+								<li><i class="fam-database"></i> fam-database</li>
+								<li><i class="fam-date-add"></i> fam-date-add</li>
+								<li><i class="fam-date-delete"></i> fam-date-delete</li>
+								<li><i class="fam-date-edit"></i> fam-date-edit</li>
+								<li><i class="fam-date-error"></i> fam-date-error</li>
+								<li><i class="fam-date-go"></i> fam-date-go</li>
+								<li><i class="fam-date-link"></i> fam-date-link</li>
+								<li><i class="fam-date-magnify"></i> fam-date-magnify</li>
+								<li><i class="fam-date-next"></i> fam-date-next</li>
+								<li><i class="fam-date-previous"></i> fam-date-previous</li>
+								<li><i class="fam-date"></i> fam-date</li>
+								<li><i class="fam-delete"></i> fam-delete</li>
+								<li><i class="fam-disconnect"></i> fam-disconnect</li>
+								<li><i class="fam-disk-multiple"></i> fam-disk-multiple</li>
+								<li><i class="fam-disk"></i> fam-disk</li>
+								<li><i class="fam-door-in"></i> fam-door-in</li>
+								<li><i class="fam-door-open"></i> fam-door-open</li>
+								<li><i class="fam-door-out"></i> fam-door-out</li>
+								<li><i class="fam-door"></i> fam-door</li>
+								<li><i class="fam-drink-empty"></i> fam-drink-empty</li>
+								<li><i class="fam-drink"></i> fam-drink</li>
+								<li><i class="fam-drive-add"></i> fam-drive-add</li>
+								<li><i class="fam-drive-burn"></i> fam-drive-burn</li>
+								<li><i class="fam-drive-cd-empty"></i> fam-drive-cd-empty</li>
+								<li><i class="fam-drive-cd"></i> fam-drive-cd</li>
+								<li><i class="fam-drive-delete"></i> fam-drive-delete</li>
+								<li><i class="fam-drive-disk"></i> fam-drive-disk</li>
+								<li><i class="fam-drive-edit"></i> fam-drive-edit</li>
+								<li><i class="fam-drive-error"></i> fam-drive-error</li>
+								<li><i class="fam-drive-go"></i> fam-drive-go</li>
+								<li><i class="fam-drive-key"></i> fam-drive-key</li>
+								<li><i class="fam-drive-link"></i> fam-drive-link</li>
+								<li><i class="fam-drive-magnify"></i> fam-drive-magnify</li>
+								<li><i class="fam-drive-network"></i> fam-drive-network</li>
+								<li><i class="fam-drive-rename"></i> fam-drive-rename</li>
+								<li><i class="fam-drive-user"></i> fam-drive-user</li>
+								<li><i class="fam-drive-web"></i> fam-drive-web</li>
+								<li><i class="fam-drive"></i> fam-drive</li>
+								<li><i class="fam-dvd-add"></i> fam-dvd-add</li>
+								<li><i class="fam-dvd-delete"></i> fam-dvd-delete</li>
+								<li><i class="fam-dvd-edit"></i> fam-dvd-edit</li>
+								<li><i class="fam-dvd-error"></i> fam-dvd-error</li>
+								<li><i class="fam-dvd-go"></i> fam-dvd-go</li>
+								<li><i class="fam-dvd-key"></i> fam-dvd-key</li>
+								<li><i class="fam-dvd-link"></i> fam-dvd-link</li>
+								<li><i class="fam-dvd"></i> fam-dvd</li>
+								<li><i class="fam-email-add"></i> fam-email-add</li>
+								<li><i class="fam-email-attach"></i> fam-email-attach</li>
+								<li><i class="fam-email-delete"></i> fam-email-delete</li>
+								<li><i class="fam-email-edit"></i> fam-email-edit</li>
+								<li><i class="fam-email-error"></i> fam-email-error</li>
+								<li><i class="fam-email-go"></i> fam-email-go</li>
+								<li><i class="fam-email-link"></i> fam-email-link</li>
+								<li><i class="fam-email-open-image"></i> fam-email-open-image</li>
+								<li><i class="fam-email-open"></i> fam-email-open</li>
+								<li><i class="fam-email"></i> fam-email</li>
+								<li><i class="fam-emoticon-evilgrin"></i> fam-emoticon-evilgrin</li>
+								<li><i class="fam-emoticon-grin"></i> fam-emoticon-grin</li>
+								<li><i class="fam-emoticon-happy"></i> fam-emoticon-happy</li>
+								<li><i class="fam-emoticon-smile"></i> fam-emoticon-smile</li>
+								<li><i class="fam-emoticon-surprised"></i> fam-emoticon-surprised</li>
+								<li><i class="fam-emoticon-tongue"></i> fam-emoticon-tongue</li>
+								<li><i class="fam-emoticon-unhappy"></i> fam-emoticon-unhappy</li>
+								<li><i class="fam-emoticon-waii"></i> fam-emoticon-waii</li>
+								<li><i class="fam-emoticon-wink"></i> fam-emoticon-wink</li>
+								<li><i class="fam-error-add"></i> fam-error-add</li>
+								<li><i class="fam-error-delete"></i> fam-error-delete</li>
+								<li><i class="fam-error-go"></i> fam-error-go</li>
+								<li><i class="fam-error"></i> fam-error</li>
+								<li><i class="fam-exclamation"></i> fam-exclamation</li>
+								<li><i class="fam-eye"></i> fam-eye</li>
+								<li><i class="fam-feed-add"></i> fam-feed-add</li>
+								<li><i class="fam-feed-delete"></i> fam-feed-delete</li>
+								<li><i class="fam-feed-disk"></i> fam-feed-disk</li>
+								<li><i class="fam-feed-edit"></i> fam-feed-edit</li>
+								<li><i class="fam-feed-error"></i> fam-feed-error</li>
+								<li><i class="fam-feed-go"></i> fam-feed-go</li>
+								<li><i class="fam-feed-key"></i> fam-feed-key</li>
+								<li><i class="fam-feed-link"></i> fam-feed-link</li>
+								<li><i class="fam-feed-magnify"></i> fam-feed-magnify</li>
+								<li><i class="fam-feed"></i> fam-feed</li>
+								<li><i class="fam-female"></i> fam-female</li>
+								<li><i class="fam-film-add"></i> fam-film-add</li>
+								<li><i class="fam-film-delete"></i> fam-film-delete</li>
+								<li><i class="fam-film-edit"></i> fam-film-edit</li>
+								<li><i class="fam-film-error"></i> fam-film-error</li>
+								<li><i class="fam-film-go"></i> fam-film-go</li>
+								<li><i class="fam-film-key"></i> fam-film-key</li>
+								<li><i class="fam-film-link"></i> fam-film-link</li>
+								<li><i class="fam-film-save"></i> fam-film-save</li>
+								<li><i class="fam-film"></i> fam-film</li>
+								<li><i class="fam-find"></i> fam-find</li>
+								<li><i class="fam-flag-blue"></i> fam-flag-blue</li>
+								<li><i class="fam-flag-green"></i> fam-flag-green</li>
+								<li><i class="fam-flag-orange"></i> fam-flag-orange</li>
+								<li><i class="fam-flag-pink"></i> fam-flag-pink</li>
+								<li><i class="fam-flag-purple"></i> fam-flag-purple</li>
+								<li><i class="fam-flag-red"></i> fam-flag-red</li>
+								<li><i class="fam-flag-yellow"></i> fam-flag-yellow</li>
+								<li><i class="fam-folder-add"></i> fam-folder-add</li>
+								<li><i class="fam-folder-bell"></i> fam-folder-bell</li>
+								<li><i class="fam-folder-brick"></i> fam-folder-brick</li>
+								<li><i class="fam-folder-bug"></i> fam-folder-bug</li>
+								<li><i class="fam-folder-camera"></i> fam-folder-camera</li>
+								<li><i class="fam-folder-database"></i> fam-folder-database</li>
+								<li><i class="fam-folder-delete"></i> fam-folder-delete</li>
+								<li><i class="fam-folder-edit"></i> fam-folder-edit</li>
+								<li><i class="fam-folder-error"></i> fam-folder-error</li>
+								<li><i class="fam-folder-explore"></i> fam-folder-explore</li>
+								<li><i class="fam-folder-feed"></i> fam-folder-feed</li>
+								<li><i class="fam-folder-find"></i> fam-folder-find</li>
+								<li><i class="fam-folder-go"></i> fam-folder-go</li>
+								<li><i class="fam-folder-heart"></i> fam-folder-heart</li>
+								<li><i class="fam-folder-image"></i> fam-folder-image</li>
+								<li><i class="fam-folder-key"></i> fam-folder-key</li>
+								<li><i class="fam-folder-lightbulb"></i> fam-folder-lightbulb</li>
+								<li><i class="fam-folder-link"></i> fam-folder-link</li>
+								<li><i class="fam-folder-magnify"></i> fam-folder-magnify</li>
+								<li><i class="fam-folder-page-white"></i> fam-folder-page-white</li>
+								<li><i class="fam-folder-page"></i> fam-folder-page</li>
+								<li><i class="fam-folder-palette"></i> fam-folder-palette</li>
+								<li><i class="fam-folder-picture"></i> fam-folder-picture</li>
+								<li><i class="fam-folder-star"></i> fam-folder-star</li>
+								<li><i class="fam-folder-table"></i> fam-folder-table</li>
+								<li><i class="fam-folder-user"></i> fam-folder-user</li>
+								<li><i class="fam-folder-wrench"></i> fam-folder-wrench</li>
+								<li><i class="fam-folder"></i> fam-folder</li>
+								<li><i class="fam-font-add"></i> fam-font-add</li>
+								<li><i class="fam-font-delete"></i> fam-font-delete</li>
+								<li><i class="fam-font-go"></i> fam-font-go</li>
+								<li><i class="fam-font"></i> fam-font</li>
+								<li><i class="fam-group-add"></i> fam-group-add</li>
+								<li><i class="fam-group-delete"></i> fam-group-delete</li>
+								<li><i class="fam-group-edit"></i> fam-group-edit</li>
+								<li><i class="fam-group-error"></i> fam-group-error</li>
+								<li><i class="fam-group-gear"></i> fam-group-gear</li>
+								<li><i class="fam-group-go"></i> fam-group-go</li>
+								<li><i class="fam-group-key"></i> fam-group-key</li>
+								<li><i class="fam-group-link"></i> fam-group-link</li>
+								<li><i class="fam-group"></i> fam-group</li>
+								<li><i class="fam-heart-add"></i> fam-heart-add</li>
+								<li><i class="fam-heart-delete"></i> fam-heart-delete</li>
+								<li><i class="fam-heart"></i> fam-heart</li>
+								<li><i class="fam-help"></i> fam-help</li>
+								<li><i class="fam-hourglass-add"></i> fam-hourglass-add</li>
+								<li><i class="fam-hourglass-delete"></i> fam-hourglass-delete</li>
+								<li><i class="fam-hourglass-go"></i> fam-hourglass-go</li>
+								<li><i class="fam-hourglass-link"></i> fam-hourglass-link</li>
+								<li><i class="fam-hourglass"></i> fam-hourglass</li>
+								<li><i class="fam-house-go"></i> fam-house-go</li>
+								<li><i class="fam-house-link"></i> fam-house-link</li>
+								<li><i class="fam-house"></i> fam-house</li>
+								<li><i class="fam-html-add"></i> fam-html-add</li>
+								<li><i class="fam-html-delete"></i> fam-html-delete</li>
+								<li><i class="fam-html-go"></i> fam-html-go</li>
+								<li><i class="fam-html-valid"></i> fam-html-valid</li>
+								<li><i class="fam-html"></i> fam-html</li>
+								<li><i class="fam-image-add"></i> fam-image-add</li>
+								<li><i class="fam-image-delete"></i> fam-image-delete</li>
+								<li><i class="fam-image-edit"></i> fam-image-edit</li>
+								<li><i class="fam-image-link"></i> fam-image-link</li>
+								<li><i class="fam-image"></i> fam-image</li>
+								<li><i class="fam-images"></i> fam-images</li>
+								<li><i class="fam-information"></i> fam-information</li>
+								<li><i class="fam-ipod-cast-add"></i> fam-ipod-cast-add</li>
+								<li><i class="fam-ipod-cast-delete"></i> fam-ipod-cast-delete</li>
+								<li><i class="fam-ipod-cast"></i> fam-ipod-cast</li>
+								<li><i class="fam-ipod-sound"></i> fam-ipod-sound</li>
+								<li><i class="fam-ipod"></i> fam-ipod</li>
+								<li><i class="fam-joystick-add"></i> fam-joystick-add</li>
+								<li><i class="fam-joystick-delete"></i> fam-joystick-delete</li>
+								<li><i class="fam-joystick-error"></i> fam-joystick-error</li>
+								<li><i class="fam-joystick"></i> fam-joystick</li>
+								<li><i class="fam-key-add"></i> fam-key-add</li>
+								<li><i class="fam-key-delete"></i> fam-key-delete</li>
+								<li><i class="fam-key-go"></i> fam-key-go</li>
+								<li><i class="fam-key"></i> fam-key</li>
+								<li><i class="fam-keyboard-add"></i> fam-keyboard-add</li>
+								<li><i class="fam-keyboard-delete"></i> fam-keyboard-delete</li>
+								<li><i class="fam-keyboard-magnify"></i> fam-keyboard-magnify</li>
+								<li><i class="fam-keyboard"></i> fam-keyboard</li>
+								<li><i class="fam-layers"></i> fam-layers</li>
+								<li><i class="fam-layout-add"></i> fam-layout-add</li>
+								<li><i class="fam-layout-content"></i> fam-layout-content</li>
+								<li><i class="fam-layout-delete"></i> fam-layout-delete</li>
+								<li><i class="fam-layout-edit"></i> fam-layout-edit</li>
+								<li><i class="fam-layout-error"></i> fam-layout-error</li>
+								<li><i class="fam-layout-header"></i> fam-layout-header</li>
+								<li><i class="fam-layout-link"></i> fam-layout-link</li>
+								<li><i class="fam-layout-sidebar"></i> fam-layout-sidebar</li>
+								<li><i class="fam-layout"></i> fam-layout</li>
+								<li><i class="fam-lightbulb-add"></i> fam-lightbulb-add</li>
+								<li><i class="fam-lightbulb-delete"></i> fam-lightbulb-delete</li>
+								<li><i class="fam-lightbulb-off"></i> fam-lightbulb-off</li>
+								<li><i class="fam-lightbulb"></i> fam-lightbulb</li>
+								<li><i class="fam-lightning-add"></i> fam-lightning-add</li>
+								<li><i class="fam-lightning-delete"></i> fam-lightning-delete</li>
+								<li><i class="fam-lightning-go"></i> fam-lightning-go</li>
+								<li><i class="fam-lightning"></i> fam-lightning</li>
+								<li><i class="fam-link-add"></i> fam-link-add</li>
+								<li><i class="fam-link-break"></i> fam-link-break</li>
+								<li><i class="fam-link-delete"></i> fam-link-delete</li>
+								<li><i class="fam-link-edit"></i> fam-link-edit</li>
+								<li><i class="fam-link-error"></i> fam-link-error</li>
+								<li><i class="fam-link-go"></i> fam-link-go</li>
+								<li><i class="fam-link"></i> fam-link</li>
+								<li><i class="fam-lock-add"></i> fam-lock-add</li>
+								<li><i class="fam-lock-break"></i> fam-lock-break</li>
+								<li><i class="fam-lock-delete"></i> fam-lock-delete</li>
+								<li><i class="fam-lock-edit"></i> fam-lock-edit</li>
+								<li><i class="fam-lock-go"></i> fam-lock-go</li>
+								<li><i class="fam-lock-open"></i> fam-lock-open</li>
+								<li><i class="fam-lock"></i> fam-lock</li>
+								<li><i class="fam-lorry-add"></i> fam-lorry-add</li>
+								<li><i class="fam-lorry-delete"></i> fam-lorry-delete</li>
+								<li><i class="fam-lorry-error"></i> fam-lorry-error</li>
+								<li><i class="fam-lorry-flatbed"></i> fam-lorry-flatbed</li>
+								<li><i class="fam-lorry-go"></i> fam-lorry-go</li>
+								<li><i class="fam-lorry-link"></i> fam-lorry-link</li>
+								<li><i class="fam-lorry"></i> fam-lorry</li>
+								<li><i class="fam-magifier-zoom-out"></i> fam-magifier-zoom-out</li>
+								<li><i class="fam-magnifier-zoom-in"></i> fam-magnifier-zoom-in</li>
+								<li><i class="fam-magnifier"></i> fam-magnifier</li>
+								<li><i class="fam-male"></i> fam-male</li>
+								<li><i class="fam-map-add"></i> fam-map-add</li>
+								<li><i class="fam-map-delete"></i> fam-map-delete</li>
+								<li><i class="fam-map-edit"></i> fam-map-edit</li>
+								<li><i class="fam-map-go"></i> fam-map-go</li>
+								<li><i class="fam-map-magnify"></i> fam-map-magnify</li>
+								<li><i class="fam-map"></i> fam-map</li>
+								<li><i class="fam-medal-bronze-1"></i> fam-medal-bronze-1</li>
+								<li><i class="fam-medal-bronze-2"></i> fam-medal-bronze-2</li>
+								<li><i class="fam-medal-bronze-3"></i> fam-medal-bronze-3</li>
+								<li><i class="fam-medal-bronze-add"></i> fam-medal-bronze-add</li>
+								<li><i class="fam-medal-bronze-delete"></i> fam-medal-bronze-delete</li>
+								<li><i class="fam-medal-gold-1"></i> fam-medal-gold-1</li>
+								<li><i class="fam-medal-gold-2"></i> fam-medal-gold-2</li>
+								<li><i class="fam-medal-gold-3"></i> fam-medal-gold-3</li>
+								<li><i class="fam-medal-gold-add"></i> fam-medal-gold-add</li>
+								<li><i class="fam-medal-gold-delete"></i> fam-medal-gold-delete</li>
+								<li><i class="fam-medal-silver-1"></i> fam-medal-silver-1</li>
+								<li><i class="fam-medal-silver-2"></i> fam-medal-silver-2</li>
+								<li><i class="fam-medal-silver-3"></i> fam-medal-silver-3</li>
+								<li><i class="fam-medal-silver-add"></i> fam-medal-silver-add</li>
+								<li><i class="fam-medal-silver-delete"></i> fam-medal-silver-delete</li>
+								<li><i class="fam-money-add"></i> fam-money-add</li>
+								<li><i class="fam-money-delete"></i> fam-money-delete</li>
+								<li><i class="fam-money-dollar"></i> fam-money-dollar</li>
+								<li><i class="fam-money-euro"></i> fam-money-euro</li>
+								<li><i class="fam-money-pound"></i> fam-money-pound</li>
+								<li><i class="fam-money-yen"></i> fam-money-yen</li>
+								<li><i class="fam-money"></i> fam-money</li>
+								<li><i class="fam-monitor-add"></i> fam-monitor-add</li>
+								<li><i class="fam-monitor-delete"></i> fam-monitor-delete</li>
+								<li><i class="fam-monitor-edit"></i> fam-monitor-edit</li>
+								<li><i class="fam-monitor-error"></i> fam-monitor-error</li>
+								<li><i class="fam-monitor-go"></i> fam-monitor-go</li>
+								<li><i class="fam-monitor-lightning"></i> fam-monitor-lightning</li>
+								<li><i class="fam-monitor-link"></i> fam-monitor-link</li>
+								<li><i class="fam-monitor"></i> fam-monitor</li>
+								<li><i class="fam-mouse-add"></i> fam-mouse-add</li>
+								<li><i class="fam-mouse-delete"></i> fam-mouse-delete</li>
+								<li><i class="fam-mouse-error"></i> fam-mouse-error</li>
+								<li><i class="fam-mouse"></i> fam-mouse</li>
+								<li><i class="fam-music"></i> fam-music</li>
+								<li><i class="fam-new"></i> fam-new</li>
+								<li><i class="fam-newspaper-add"></i> fam-newspaper-add</li>
+								<li><i class="fam-newspaper-delete"></i> fam-newspaper-delete</li>
+								<li><i class="fam-newspaper-go"></i> fam-newspaper-go</li>
+								<li><i class="fam-newspaper-link"></i> fam-newspaper-link</li>
+								<li><i class="fam-newspaper"></i> fam-newspaper</li>
+								<li><i class="fam-note-add"></i> fam-note-add</li>
+								<li><i class="fam-note-delete"></i> fam-note-delete</li>
+								<li><i class="fam-note-edit"></i> fam-note-edit</li>
+								<li><i class="fam-note-error"></i> fam-note-error</li>
+								<li><i class="fam-note-go"></i> fam-note-go</li>
+								<li><i class="fam-note"></i> fam-note</li>
+								<li><i class="fam-overlays"></i> fam-overlays</li>
+								<li><i class="fam-package-add"></i> fam-package-add</li>
+								<li><i class="fam-package-delete"></i> fam-package-delete</li>
+								<li><i class="fam-package-go"></i> fam-package-go</li>
+								<li><i class="fam-package-green"></i> fam-package-green</li>
+								<li><i class="fam-package-link"></i> fam-package-link</li>
+								<li><i class="fam-package"></i> fam-package</li>
+								<li><i class="fam-page-add"></i> fam-page-add</li>
+								<li><i class="fam-page-attach"></i> fam-page-attach</li>
+								<li><i class="fam-page-code"></i> fam-page-code</li>
+								<li><i class="fam-page-copy"></i> fam-page-copy</li>
+								<li><i class="fam-page-delete"></i> fam-page-delete</li>
+								<li><i class="fam-page-edit"></i> fam-page-edit</li>
+								<li><i class="fam-page-error"></i> fam-page-error</li>
+								<li><i class="fam-page-excel"></i> fam-page-excel</li>
+								<li><i class="fam-page-find"></i> fam-page-find</li>
+								<li><i class="fam-page-gear"></i> fam-page-gear</li>
+								<li><i class="fam-page-go"></i> fam-page-go</li>
+								<li><i class="fam-page-green"></i> fam-page-green</li>
+								<li><i class="fam-page-key"></i> fam-page-key</li>
+								<li><i class="fam-page-lightning"></i> fam-page-lightning</li>
+								<li><i class="fam-page-link"></i> fam-page-link</li>
+								<li><i class="fam-page-paintbrush"></i> fam-page-paintbrush</li>
+								<li><i class="fam-page-paste"></i> fam-page-paste</li>
+								<li><i class="fam-page-red"></i> fam-page-red</li>
+								<li><i class="fam-page-refresh"></i> fam-page-refresh</li>
+								<li><i class="fam-page-save"></i> fam-page-save</li>
+								<li><i class="fam-page-white-acrobat"></i> fam-page-white-acrobat</li>
+								<li><i class="fam-page-white-actionscript"></i> fam-page-white-actionscript</li>
+								<li><i class="fam-page-white-add"></i> fam-page-white-add</li>
+								<li><i class="fam-page-white-c"></i> fam-page-white-c</li>
+								<li><i class="fam-page-white-camera"></i> fam-page-white-camera</li>
+								<li><i class="fam-page-white-cd"></i> fam-page-white-cd</li>
+								<li><i class="fam-page-white-code-red"></i> fam-page-white-code-red</li>
+								<li><i class="fam-page-white-code"></i> fam-page-white-code</li>
+								<li><i class="fam-page-white-coldfusion"></i> fam-page-white-coldfusion</li>
+								<li><i class="fam-page-white-compressed"></i> fam-page-white-compressed</li>
+								<li><i class="fam-page-white-copy"></i> fam-page-white-copy</li>
+								<li><i class="fam-page-white-cplusplus"></i> fam-page-white-cplusplus</li>
+								<li><i class="fam-page-white-csharp"></i> fam-page-white-csharp</li>
+								<li><i class="fam-page-white-cup"></i> fam-page-white-cup</li>
+								<li><i class="fam-page-white-database"></i> fam-page-white-database</li>
+								<li><i class="fam-page-white-delete"></i> fam-page-white-delete</li>
+								<li><i class="fam-page-white-dvd"></i> fam-page-white-dvd</li>
+								<li><i class="fam-page-white-edit"></i> fam-page-white-edit</li>
+								<li><i class="fam-page-white-error"></i> fam-page-white-error</li>
+								<li><i class="fam-page-white-excel"></i> fam-page-white-excel</li>
+								<li><i class="fam-page-white-find"></i> fam-page-white-find</li>
+								<li><i class="fam-page-white-flash"></i> fam-page-white-flash</li>
+								<li><i class="fam-page-white-freehand"></i> fam-page-white-freehand</li>
+								<li><i class="fam-page-white-gear"></i> fam-page-white-gear</li>
+								<li><i class="fam-page-white-get"></i> fam-page-white-get</li>
+								<li><i class="fam-page-white-go"></i> fam-page-white-go</li>
+								<li><i class="fam-page-white-h"></i> fam-page-white-h</li>
+								<li><i class="fam-page-white-horizontal"></i> fam-page-white-horizontal</li>
+								<li><i class="fam-page-white-key"></i> fam-page-white-key</li>
+								<li><i class="fam-page-white-lightning"></i> fam-page-white-lightning</li>
+								<li><i class="fam-page-white-link"></i> fam-page-white-link</li>
+								<li><i class="fam-page-white-magnify"></i> fam-page-white-magnify</li>
+								<li><i class="fam-page-white-medal"></i> fam-page-white-medal</li>
+								<li><i class="fam-page-white-office"></i> fam-page-white-office</li>
+								<li><i class="fam-page-white-paint"></i> fam-page-white-paint</li>
+								<li><i class="fam-page-white-paintbrush"></i> fam-page-white-paintbrush</li>
+								<li><i class="fam-page-white-paste"></i> fam-page-white-paste</li>
+								<li><i class="fam-page-white-php"></i> fam-page-white-php</li>
+								<li><i class="fam-page-white-picture"></i> fam-page-white-picture</li>
+								<li><i class="fam-page-white-powerpoint"></i> fam-page-white-powerpoint</li>
+								<li><i class="fam-page-white-put"></i> fam-page-white-put</li>
+								<li><i class="fam-page-white-ruby"></i> fam-page-white-ruby</li>
+								<li><i class="fam-page-white-stack"></i> fam-page-white-stack</li>
+								<li><i class="fam-page-white-star"></i> fam-page-white-star</li>
+								<li><i class="fam-page-white-swoosh"></i> fam-page-white-swoosh</li>
+								<li><i class="fam-page-white-text-width"></i> fam-page-white-text-width</li>
+								<li><i class="fam-page-white-text"></i> fam-page-white-text</li>
+								<li><i class="fam-page-white-tux"></i> fam-page-white-tux</li>
+								<li><i class="fam-page-white-vector"></i> fam-page-white-vector</li>
+								<li><i class="fam-page-white-visualstudio"></i> fam-page-white-visualstudio</li>
+								<li><i class="fam-page-white-width"></i> fam-page-white-width</li>
+								<li><i class="fam-page-white-word"></i> fam-page-white-word</li>
+								<li><i class="fam-page-white-world"></i> fam-page-white-world</li>
+								<li><i class="fam-page-white-wrench"></i> fam-page-white-wrench</li>
+								<li><i class="fam-page-white-zip"></i> fam-page-white-zip</li>
+								<li><i class="fam-page-white"></i> fam-page-white</li>
+								<li><i class="fam-page-word"></i> fam-page-word</li>
+								<li><i class="fam-page-world"></i> fam-page-world</li>
+								<li><i class="fam-page"></i> fam-page</li>
+								<li><i class="fam-paintbrush"></i> fam-paintbrush</li>
+								<li><i class="fam-paintcan"></i> fam-paintcan</li>
+								<li><i class="fam-palette"></i> fam-palette</li>
+								<li><i class="fam-paste-plain"></i> fam-paste-plain</li>
+								<li><i class="fam-paste-word"></i> fam-paste-word</li>
+								<li><i class="fam-pencil-add"></i> fam-pencil-add</li>
+								<li><i class="fam-pencil-delete"></i> fam-pencil-delete</li>
+								<li><i class="fam-pencil-go"></i> fam-pencil-go</li>
+								<li><i class="fam-pencil"></i> fam-pencil</li>
+								<li><i class="fam-phone-add"></i> fam-phone-add</li>
+								<li><i class="fam-phone-delete"></i> fam-phone-delete</li>
+								<li><i class="fam-phone-sound"></i> fam-phone-sound</li>
+								<li><i class="fam-phone"></i> fam-phone</li>
+								<li><i class="fam-photo-add"></i> fam-photo-add</li>
+								<li><i class="fam-photo-delete"></i> fam-photo-delete</li>
+								<li><i class="fam-photo-link"></i> fam-photo-link</li>
+								<li><i class="fam-photo"></i> fam-photo</li>
+								<li><i class="fam-photos"></i> fam-photos</li>
+								<li><i class="fam-picture-add"></i> fam-picture-add</li>
+								<li><i class="fam-picture-delete"></i> fam-picture-delete</li>
+								<li><i class="fam-picture-edit"></i> fam-picture-edit</li>
+								<li><i class="fam-picture-empty"></i> fam-picture-empty</li>
+								<li><i class="fam-picture-error"></i> fam-picture-error</li>
+								<li><i class="fam-picture-go"></i> fam-picture-go</li>
+								<li><i class="fam-picture-key"></i> fam-picture-key</li>
+								<li><i class="fam-picture-link"></i> fam-picture-link</li>
+								<li><i class="fam-picture-save"></i> fam-picture-save</li>
+								<li><i class="fam-picture"></i> fam-picture</li>
+								<li><i class="fam-pictures"></i> fam-pictures</li>
+								<li><i class="fam-pilcrow"></i> fam-pilcrow</li>
+								<li><i class="fam-pill-add"></i> fam-pill-add</li>
+								<li><i class="fam-pill-delete"></i> fam-pill-delete</li>
+								<li><i class="fam-pill-go"></i> fam-pill-go</li>
+								<li><i class="fam-pill"></i> fam-pill</li>
+								<li><i class="fam-plugin-add"></i> fam-plugin-add</li>
+								<li><i class="fam-plugin-delete"></i> fam-plugin-delete</li>
+								<li><i class="fam-plugin-disabled"></i> fam-plugin-disabled</li>
+								<li><i class="fam-plugin-edit"></i> fam-plugin-edit</li>
+								<li><i class="fam-plugin-error"></i> fam-plugin-error</li>
+								<li><i class="fam-plugin-go"></i> fam-plugin-go</li>
+								<li><i class="fam-plugin-link"></i> fam-plugin-link</li>
+								<li><i class="fam-plugin"></i> fam-plugin</li>
+								<li><i class="fam-printer-add"></i> fam-printer-add</li>
+								<li><i class="fam-printer-delete"></i> fam-printer-delete</li>
+								<li><i class="fam-printer-empty"></i> fam-printer-empty</li>
+								<li><i class="fam-printer-error"></i> fam-printer-error</li>
+								<li><i class="fam-printer"></i> fam-printer</li>
+								<li><i class="fam-rainbow"></i> fam-rainbow</li>
+								<li><i class="fam-report-add"></i> fam-report-add</li>
+								<li><i class="fam-report-delete"></i> fam-report-delete</li>
+								<li><i class="fam-report-disk"></i> fam-report-disk</li>
+								<li><i class="fam-report-edit"></i> fam-report-edit</li>
+								<li><i class="fam-report-go"></i> fam-report-go</li>
+								<li><i class="fam-report-key"></i> fam-report-key</li>
+								<li><i class="fam-report-link"></i> fam-report-link</li>
+								<li><i class="fam-report-magnify"></i> fam-report-magnify</li>
+								<li><i class="fam-report-picture"></i> fam-report-picture</li>
+								<li><i class="fam-report-user"></i> fam-report-user</li>
+								<li><i class="fam-report-word"></i> fam-report-word</li>
+								<li><i class="fam-report"></i> fam-report</li>
+								<li><i class="fam-resultset-first"></i> fam-resultset-first</li>
+								<li><i class="fam-resultset-last"></i> fam-resultset-last</li>
+								<li><i class="fam-resultset-next"></i> fam-resultset-next</li>
+								<li><i class="fam-resultset-previous"></i> fam-resultset-previous</li>
+								<li><i class="fam-rosette"></i> fam-rosette</li>
+								<li><i class="fam-rss-add"></i> fam-rss-add</li>
+								<li><i class="fam-rss-delete"></i> fam-rss-delete</li>
+								<li><i class="fam-rss-go"></i> fam-rss-go</li>
+								<li><i class="fam-rss-valid"></i> fam-rss-valid</li>
+								<li><i class="fam-rss"></i> fam-rss</li>
+								<li><i class="fam-ruby-add"></i> fam-ruby-add</li>
+								<li><i class="fam-ruby-delete"></i> fam-ruby-delete</li>
+								<li><i class="fam-ruby-gear"></i> fam-ruby-gear</li>
+								<li><i class="fam-ruby-get"></i> fam-ruby-get</li>
+								<li><i class="fam-ruby-go"></i> fam-ruby-go</li>
+								<li><i class="fam-ruby-key"></i> fam-ruby-key</li>
+								<li><i class="fam-ruby-link"></i> fam-ruby-link</li>
+								<li><i class="fam-ruby-put"></i> fam-ruby-put</li>
+								<li><i class="fam-ruby"></i> fam-ruby</li>
+								<li><i class="fam-script-add"></i> fam-script-add</li>
+								<li><i class="fam-script-code-red"></i> fam-script-code-red</li>
+								<li><i class="fam-script-code"></i> fam-script-code</li>
+								<li><i class="fam-script-delete"></i> fam-script-delete</li>
+								<li><i class="fam-script-edit"></i> fam-script-edit</li>
+								<li><i class="fam-script-error"></i> fam-script-error</li>
+								<li><i class="fam-script-gear"></i> fam-script-gear</li>
+								<li><i class="fam-script-go"></i> fam-script-go</li>
+								<li><i class="fam-script-key"></i> fam-script-key</li>
+								<li><i class="fam-script-lightning"></i> fam-script-lightning</li>
+								<li><i class="fam-script-link"></i> fam-script-link</li>
+								<li><i class="fam-script-palette"></i> fam-script-palette</li>
+								<li><i class="fam-script-save"></i> fam-script-save</li>
+								<li><i class="fam-script"></i> fam-script</li>
+								<li><i class="fam-server-add"></i> fam-server-add</li>
+								<li><i class="fam-server-chart"></i> fam-server-chart</li>
+								<li><i class="fam-server-compressed"></i> fam-server-compressed</li>
+								<li><i class="fam-server-connect"></i> fam-server-connect</li>
+								<li><i class="fam-server-database"></i> fam-server-database</li>
+								<li><i class="fam-server-delete"></i> fam-server-delete</li>
+								<li><i class="fam-server-edit"></i> fam-server-edit</li>
+								<li><i class="fam-server-error"></i> fam-server-error</li>
+								<li><i class="fam-server-go"></i> fam-server-go</li>
+								<li><i class="fam-server-key"></i> fam-server-key</li>
+								<li><i class="fam-server-lightning"></i> fam-server-lightning</li>
+								<li><i class="fam-server-link"></i> fam-server-link</li>
+								<li><i class="fam-server-uncompressed"></i> fam-server-uncompressed</li>
+								<li><i class="fam-server"></i> fam-server</li>
+								<li><i class="fam-shading"></i> fam-shading</li>
+								<li><i class="fam-shape-align-bottom"></i> fam-shape-align-bottom</li>
+								<li><i class="fam-shape-align-center"></i> fam-shape-align-center</li>
+								<li><i class="fam-shape-align-left"></i> fam-shape-align-left</li>
+								<li><i class="fam-shape-align-middle"></i> fam-shape-align-middle</li>
+								<li><i class="fam-shape-align-right"></i> fam-shape-align-right</li>
+								<li><i class="fam-shape-align-top"></i> fam-shape-align-top</li>
+								<li><i class="fam-shape-flip-horizontal"></i> fam-shape-flip-horizontal</li>
+								<li><i class="fam-shape-flip-vertical"></i> fam-shape-flip-vertical</li>
+								<li><i class="fam-shape-group"></i> fam-shape-group</li>
+								<li><i class="fam-shape-handles"></i> fam-shape-handles</li>
+								<li><i class="fam-shape-move-back"></i> fam-shape-move-back</li>
+								<li><i class="fam-shape-move-backwards"></i> fam-shape-move-backwards</li>
+								<li><i class="fam-shape-move-forwards"></i> fam-shape-move-forwards</li>
+								<li><i class="fam-shape-move-front"></i> fam-shape-move-front</li>
+								<li><i class="fam-shape-rotate-anticlockwise"></i> fam-shape-rotate-anticlockwise</li>
+								<li><i class="fam-shape-rotate-clockwise"></i> fam-shape-rotate-clockwise</li>
+								<li><i class="fam-shape-square-add"></i> fam-shape-square-add</li>
+								<li><i class="fam-shape-square-delete"></i> fam-shape-square-delete</li>
+								<li><i class="fam-shape-square-edit"></i> fam-shape-square-edit</li>
+								<li><i class="fam-shape-square-error"></i> fam-shape-square-error</li>
+								<li><i class="fam-shape-square-go"></i> fam-shape-square-go</li>
+								<li><i class="fam-shape-square-key"></i> fam-shape-square-key</li>
+								<li><i class="fam-shape-square-link"></i> fam-shape-square-link</li>
+								<li><i class="fam-shape-square"></i> fam-shape-square</li>
+								<li><i class="fam-shape-ungroup"></i> fam-shape-ungroup</li>
+								<li><i class="fam-shield-add"></i> fam-shield-add</li>
+								<li><i class="fam-shield-delete"></i> fam-shield-delete</li>
+								<li><i class="fam-shield-go"></i> fam-shield-go</li>
+								<li><i class="fam-shield"></i> fam-shield</li>
+								<li><i class="fam-sitemap-color"></i> fam-sitemap-color</li>
+								<li><i class="fam-sitemap"></i> fam-sitemap</li>
+								<li><i class="fam-sound-add"></i> fam-sound-add</li>
+								<li><i class="fam-sound-delete"></i> fam-sound-delete</li>
+								<li><i class="fam-sound-low"></i> fam-sound-low</li>
+								<li><i class="fam-sound-mute"></i> fam-sound-mute</li>
+								<li><i class="fam-sound-none"></i> fam-sound-none</li>
+								<li><i class="fam-sound"></i> fam-sound</li>
+								<li><i class="fam-spellcheck"></i> fam-spellcheck</li>
+								<li><i class="fam-sport-8ball"></i> fam-sport-8ball</li>
+								<li><i class="fam-sport-basketball"></i> fam-sport-basketball</li>
+								<li><i class="fam-sport-football"></i> fam-sport-football</li>
+								<li><i class="fam-sport-golf"></i> fam-sport-golf</li>
+								<li><i class="fam-sport-raquet"></i> fam-sport-raquet</li>
+								<li><i class="fam-sport-shuttlecock"></i> fam-sport-shuttlecock</li>
+								<li><i class="fam-sport-soccer"></i> fam-sport-soccer</li>
+								<li><i class="fam-sport-tennis"></i> fam-sport-tennis</li>
+								<li><i class="fam-star"></i> fam-star</li>
+								<li><i class="fam-status-away"></i> fam-status-away</li>
+								<li><i class="fam-status-busy"></i> fam-status-busy</li>
+								<li><i class="fam-status-offline"></i> fam-status-offline</li>
+								<li><i class="fam-status-online"></i> fam-status-online</li>
+								<li><i class="fam-stop"></i> fam-stop</li>
+								<li><i class="fam-style-add"></i> fam-style-add</li>
+								<li><i class="fam-style-delete"></i> fam-style-delete</li>
+								<li><i class="fam-style-edit"></i> fam-style-edit</li>
+								<li><i class="fam-style-go"></i> fam-style-go</li>
+								<li><i class="fam-style"></i> fam-style</li>
+								<li><i class="fam-sum"></i> fam-sum</li>
+								<li><i class="fam-tab-add"></i> fam-tab-add</li>
+								<li><i class="fam-tab-delete"></i> fam-tab-delete</li>
+								<li><i class="fam-tab-edit"></i> fam-tab-edit</li>
+								<li><i class="fam-tab-go"></i> fam-tab-go</li>
+								<li><i class="fam-tab"></i> fam-tab</li>
+								<li><i class="fam-table-add"></i> fam-table-add</li>
+								<li><i class="fam-table-delete"></i> fam-table-delete</li>
+								<li><i class="fam-table-edit"></i> fam-table-edit</li>
+								<li><i class="fam-table-error"></i> fam-table-error</li>
+								<li><i class="fam-table-gear"></i> fam-table-gear</li>
+								<li><i class="fam-table-go"></i> fam-table-go</li>
+								<li><i class="fam-table-key"></i> fam-table-key</li>
+								<li><i class="fam-table-lightning"></i> fam-table-lightning</li>
+								<li><i class="fam-table-link"></i> fam-table-link</li>
+								<li><i class="fam-table-multiple"></i> fam-table-multiple</li>
+								<li><i class="fam-table-refresh"></i> fam-table-refresh</li>
+								<li><i class="fam-table-relationship"></i> fam-table-relationship</li>
+								<li><i class="fam-table-row-delete"></i> fam-table-row-delete</li>
+								<li><i class="fam-table-row-insert"></i> fam-table-row-insert</li>
+								<li><i class="fam-table-save"></i> fam-table-save</li>
+								<li><i class="fam-table-sort"></i> fam-table-sort</li>
+								<li><i class="fam-table"></i> fam-table</li>
+								<li><i class="fam-tag-blue-add"></i> fam-tag-blue-add</li>
+								<li><i class="fam-tag-blue-delete"></i> fam-tag-blue-delete</li>
+								<li><i class="fam-tag-blue-edit"></i> fam-tag-blue-edit</li>
+								<li><i class="fam-tag-blue"></i> fam-tag-blue</li>
+								<li><i class="fam-tag-green"></i> fam-tag-green</li>
+								<li><i class="fam-tag-orange"></i> fam-tag-orange</li>
+								<li><i class="fam-tag-pink"></i> fam-tag-pink</li>
+								<li><i class="fam-tag-purple"></i> fam-tag-purple</li>
+								<li><i class="fam-tag-red"></i> fam-tag-red</li>
+								<li><i class="fam-tag-yellow"></i> fam-tag-yellow</li>
+								<li><i class="fam-tag"></i> fam-tag</li>
+								<li><i class="fam-telephone-add"></i> fam-telephone-add</li>
+								<li><i class="fam-telephone-delete"></i> fam-telephone-delete</li>
+								<li><i class="fam-telephone-edit"></i> fam-telephone-edit</li>
+								<li><i class="fam-telephone-error"></i> fam-telephone-error</li>
+								<li><i class="fam-telephone-go"></i> fam-telephone-go</li>
+								<li><i class="fam-telephone-key"></i> fam-telephone-key</li>
+								<li><i class="fam-telephone-link"></i> fam-telephone-link</li>
+								<li><i class="fam-telephone"></i> fam-telephone</li>
+								<li><i class="fam-television-add"></i> fam-television-add</li>
+								<li><i class="fam-television-delete"></i> fam-television-delete</li>
+								<li><i class="fam-television"></i> fam-television</li>
+								<li><i class="fam-text-align-center"></i> fam-text-align-center</li>
+								<li><i class="fam-text-align-justify"></i> fam-text-align-justify</li>
+								<li><i class="fam-text-align-left"></i> fam-text-align-left</li>
+								<li><i class="fam-text-align-right"></i> fam-text-align-right</li>
+								<li><i class="fam-text-allcaps"></i> fam-text-allcaps</li>
+								<li><i class="fam-text-bold"></i> fam-text-bold</li>
+								<li><i class="fam-text-columns"></i> fam-text-columns</li>
+								<li><i class="fam-text-dropcaps"></i> fam-text-dropcaps</li>
+								<li><i class="fam-text-heading-1"></i> fam-text-heading-1</li>
+								<li><i class="fam-text-heading-2"></i> fam-text-heading-2</li>
+								<li><i class="fam-text-heading-3"></i> fam-text-heading-3</li>
+								<li><i class="fam-text-heading-4"></i> fam-text-heading-4</li>
+								<li><i class="fam-text-heading-5"></i> fam-text-heading-5</li>
+								<li><i class="fam-text-heading-6"></i> fam-text-heading-6</li>
+								<li><i class="fam-text-horizontalrule"></i> fam-text-horizontalrule</li>
+								<li><i class="fam-text-indent-remove"></i> fam-text-indent-remove</li>
+								<li><i class="fam-text-indent"></i> fam-text-indent</li>
+								<li><i class="fam-text-italic"></i> fam-text-italic</li>
+								<li><i class="fam-text-kerning"></i> fam-text-kerning</li>
+								<li><i class="fam-text-letter-omega"></i> fam-text-letter-omega</li>
+								<li><i class="fam-text-letterspacing"></i> fam-text-letterspacing</li>
+								<li><i class="fam-text-linespacing"></i> fam-text-linespacing</li>
+								<li><i class="fam-text-list-bullets"></i> fam-text-list-bullets</li>
+								<li><i class="fam-text-list-numbers"></i> fam-text-list-numbers</li>
+								<li><i class="fam-text-lowercase"></i> fam-text-lowercase</li>
+								<li><i class="fam-text-padding-bottom"></i> fam-text-padding-bottom</li>
+								<li><i class="fam-text-padding-left"></i> fam-text-padding-left</li>
+								<li><i class="fam-text-padding-right"></i> fam-text-padding-right</li>
+								<li><i class="fam-text-padding-top"></i> fam-text-padding-top</li>
+								<li><i class="fam-text-replace"></i> fam-text-replace</li>
+								<li><i class="fam-text-signature"></i> fam-text-signature</li>
+								<li><i class="fam-text-smallcaps"></i> fam-text-smallcaps</li>
+								<li><i class="fam-text-strikethrough"></i> fam-text-strikethrough</li>
+								<li><i class="fam-text-subscript"></i> fam-text-subscript</li>
+								<li><i class="fam-text-superscript"></i> fam-text-superscript</li>
+								<li><i class="fam-text-underline"></i> fam-text-underline</li>
+								<li><i class="fam-text-uppercase"></i> fam-text-uppercase</li>
+								<li><i class="fam-textfield-add"></i> fam-textfield-add</li>
+								<li><i class="fam-textfield-delete"></i> fam-textfield-delete</li>
+								<li><i class="fam-textfield-key"></i> fam-textfield-key</li>
+								<li><i class="fam-textfield-rename"></i> fam-textfield-rename</li>
+								<li><i class="fam-textfield"></i> fam-textfield</li>
+								<li><i class="fam-thumb-down"></i> fam-thumb-down</li>
+								<li><i class="fam-thumb-up"></i> fam-thumb-up</li>
+								<li><i class="fam-tick"></i> fam-tick</li>
+								<li><i class="fam-time-add"></i> fam-time-add</li>
+								<li><i class="fam-time-delete"></i> fam-time-delete</li>
+								<li><i class="fam-time-go"></i> fam-time-go</li>
+								<li><i class="fam-time"></i> fam-time</li>
+								<li><i class="fam-timeline-marker"></i> fam-timeline-marker</li>
+								<li><i class="fam-transmit-add"></i> fam-transmit-add</li>
+								<li><i class="fam-transmit-blue"></i> fam-transmit-blue</li>
+								<li><i class="fam-transmit-delete"></i> fam-transmit-delete</li>
+								<li><i class="fam-transmit-edit"></i> fam-transmit-edit</li>
+								<li><i class="fam-transmit-error"></i> fam-transmit-error</li>
+								<li><i class="fam-transmit-go"></i> fam-transmit-go</li>
+								<li><i class="fam-transmit"></i> fam-transmit</li>
+								<li><i class="fam-tux"></i> fam-tux</li>
+								<li><i class="fam-user-add"></i> fam-user-add</li>
+								<li><i class="fam-user-comment"></i> fam-user-comment</li>
+								<li><i class="fam-user-delete"></i> fam-user-delete</li>
+								<li><i class="fam-user-edit"></i> fam-user-edit</li>
+								<li><i class="fam-user-female"></i> fam-user-female</li>
+								<li><i class="fam-user-go"></i> fam-user-go</li>
+								<li><i class="fam-user-gray"></i> fam-user-gray</li>
+								<li><i class="fam-user-green"></i> fam-user-green</li>
+								<li><i class="fam-user-orange"></i> fam-user-orange</li>
+								<li><i class="fam-user-red"></i> fam-user-red</li>
+								<li><i class="fam-user-suit"></i> fam-user-suit</li>
+								<li><i class="fam-user"></i> fam-user</li>
+								<li><i class="fam-vcard-add"></i> fam-vcard-add</li>
+								<li><i class="fam-vcard-delete"></i> fam-vcard-delete</li>
+								<li><i class="fam-vcard-edit"></i> fam-vcard-edit</li>
+								<li><i class="fam-vcard"></i> fam-vcard</li>
+								<li><i class="fam-vector-add"></i> fam-vector-add</li>
+								<li><i class="fam-vector-delete"></i> fam-vector-delete</li>
+								<li><i class="fam-vector"></i> fam-vector</li>
+								<li><i class="fam-wand"></i> fam-wand</li>
+								<li><i class="fam-weather-clouds"></i> fam-weather-clouds</li>
+								<li><i class="fam-weather-cloudy"></i> fam-weather-cloudy</li>
+								<li><i class="fam-weather-lightning"></i> fam-weather-lightning</li>
+								<li><i class="fam-weather-rain"></i> fam-weather-rain</li>
+								<li><i class="fam-weather-snow"></i> fam-weather-snow</li>
+								<li><i class="fam-weather-sun"></i> fam-weather-sun</li>
+								<li><i class="fam-webcam-add"></i> fam-webcam-add</li>
+								<li><i class="fam-webcam-delete"></i> fam-webcam-delete</li>
+								<li><i class="fam-webcam-error"></i> fam-webcam-error</li>
+								<li><i class="fam-webcam"></i> fam-webcam</li>
+								<li><i class="fam-world-add"></i> fam-world-add</li>
+								<li><i class="fam-world-delete"></i> fam-world-delete</li>
+								<li><i class="fam-world-edit"></i> fam-world-edit</li>
+								<li><i class="fam-world-go"></i> fam-world-go</li>
+								<li><i class="fam-world-link"></i> fam-world-link</li>
+								<li><i class="fam-world"></i> fam-world</li>
+								<li><i class="fam-wrench-orange"></i> fam-wrench-orange</li>
+								<li><i class="fam-wrench"></i> fam-wrench</li>
+								<li><i class="fam-xhtml-add"></i> fam-xhtml-add</li>
+								<li><i class="fam-xhtml-delete"></i> fam-xhtml-delete</li>
+								<li><i class="fam-xhtml-go"></i> fam-xhtml-go</li>
+								<li><i class="fam-xhtml-valid"></i> fam-xhtml-valid</li>
+								<li><i class="fam-xhtml"></i> fam-xhtml</li>
+								<li><i class="fam-zoom-in"></i> fam-zoom-in</li>
+								<li><i class="fam-zoom-out"></i> fam-zoom-out</li>
+								<li><i class="fam-zoom"></i> fam-zoom</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /icons -->
+	                        
+		    </div>
+		    <!-- /content wrapper -->
+
+		</div>
+		<!-- /content -->
+
+	</div>
+	<!-- /content container -->
+
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="copyrights">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+		<ul class="footer-links">
+			<li><a href="" title=""><i class="icon-cogs"></i>Contact admin</a></li>
+			<li><a href="" title=""><i class="icon-screenshot"></i>Report bug</a></li>
+		</ul>
+	</div>
+	<!-- /footer -->
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

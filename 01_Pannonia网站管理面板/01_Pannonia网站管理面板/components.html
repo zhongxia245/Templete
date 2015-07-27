@@ -1,0 +1,3273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Pannonia - premium responsive admin template by Eugene Kopyov</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+
+<script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.bootbox.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fullcalendar.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.elfinder.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputmask.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.select2.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.listbox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validation.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.form.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="js/files/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/files/functions.js"></script>
+
+<script type="text/javascript" src="js/charts/chart1.js"></script>
+<script type="text/javascript" src="js/charts/chart2.js"></script>
+<script type="text/javascript" src="js/charts/chart3.js"></script>
+<script type="text/javascript" src="js/charts/updating_widget_1.js"></script>
+<script type="text/javascript" src="js/charts/updating_widget_2.js"></script>
+<script type="text/javascript" src="js/charts/updating_widget_3.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Fixed top -->
+	<div id="top">
+		<div class="fixed">
+			<a href="index.html" title="" class="logo"><img src="img/logo.png" alt="" /></a>
+			<ul class="top-menu">
+				<li><a class="fullview"></a></li>
+				<li><a class="showmenu"></a></li>
+				<li><a href="#" title="" class="messages"><i class="new-message"></i></a></li>
+				<li class="dropdown">
+					<a class="user-menu" data-toggle="dropdown"><img src="img/userpic.png" alt="" /><span>Howdy, Eugene! <b class="caret"></b></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#" title=""><i class="icon-user"></i>Profile</a></li>
+						<li><a href="#" title=""><i class="icon-inbox"></i>Messages<span class="badge badge-info">9</span></a></li>
+						<li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+						<li><a href="#" title=""><i class="icon-remove"></i>Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /fixed top -->
+
+
+	<!-- Main container -->
+	<div id="container">
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+
+			<div class="sidebar-tabs">
+		        <ul class="tabs-nav three-items">
+		            <li><a href="#general" title=""><i class="icon-reorder"></i></a></li>
+		            <li><a href="#stuff" title=""><i class="icon-beaker"></i></a></li>
+		            <li><a href="#new" title=""><i class="icon-cogs"></i></a></li>
+		        </ul>
+
+		        <div id="general">
+
+			        <!-- Sidebar user -->
+			        <div class="sidebar-user widget">
+						<div class="navbar"><div class="navbar-inner"><h6>Wazzup, Eugene!</h6></div></div>
+			            <a href="#" title="" class="user"><img src="http://placehold.it/210x110" alt="" /></a>
+			            <ul class="user-links">
+			            	<li><a href="" title="">New users<strong>+12</strong></a></li>
+			            	<li><a href="" title="">New orders<strong>+156</strong></a></li>
+			            	<li><a href="" title="">New messages<strong>+45</strong></a></li>
+			            </ul>
+			        </div>
+			        <!-- /sidebar user -->
+
+
+			        <!-- General stats -->
+			        <div class="general-stats widget">
+				        <ul class="head">
+				        	<li><span>Users</span></li>
+				        	<li><span>Orders</span></li>
+				        	<li><span>Visits</span></li>
+				        </ul>
+				        <ul class="body">
+				        	<li><strong>116k+</strong></li>
+				        	<li><strong>1290</strong></li>
+				        	<li><strong>554</strong></li>
+				        </ul>
+				    </div>
+				    <!-- /general stats -->
+
+
+				    <!-- Main navigation -->
+			        <ul class="navigation widget">
+			            <li><a href="index.html" title=""><i class="icon-home"></i>Dashboard</a></li>
+			            <li><a href="#" title="" class="expand"><i class="icon-reorder"></i>Form elements<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="forms.html" title="">Form components</a></li>
+			                    <li><a href="wysiwyg.html" title="">WYSIWYG editor</a></li>
+			                    <li><a href="form_wizards.html" title="">Wizards</a></li>
+			                </ul>
+			            </li>
+			            <li class="active"><a href="#" title="" class="expand" id="current"><i class="icon-tasks"></i>Components<strong>4</strong></a>
+			                <ul>
+			                    <li><a href="components.html" title="" class="current">Content components</a></li>
+			                    <li><a href="content_grid.html" title="">Content grid</a></li>
+			                    <li><a href="blank.html" title="">Blank page</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="media.html" title=""><i class="icon-picture"></i>Media</a></li>
+			            <li><a href="icons.html" title=""><i class="icon-th"></i>Icons</a></li>
+			            <li><a href="charts.html" title=""><i class="icon-signal"></i>Charts &amp; graphs</a></li>
+			            <li><a href="invoice.html" title=""><i class="icon-copy"></i>Invoice</a></li>
+			            <li><a href="tables.html" title=""><i class="icon-table"></i>Tables</a></li>
+			            <li><a href="#" title="" class="expand"><i class="icon-warning-sign"></i>Error pages<strong>6</strong></a>
+			                <ul>
+			                    <li><a href="403.html" title="">403 page</a></li>
+			                    <li><a href="404.html" title="">404 page</a></li>
+			                    <li><a href="405.html" title="">405 page</a></li>
+			                    <li><a href="500.html" title="">500 page</a></li>
+			                    <li><a href="503.html" title="">503 page</a></li>
+			                    <li><a href="offline.html" title="">Offline page</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="typography.html" title=""><i class="icon-text-height"></i>Typography</a></li>
+			            <li><a href="calendar.html" title=""><i class="icon-calendar"></i>Calendar</a></li>
+			            <li><a href="file_management.html" title=""><i class="icon-cogs"></i>File management</a></li>
+	                    <li><a href="#" title="" class="expand"><i class="icon-indent-right"></i>Menu levels<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="#" title="">Link</a></li>
+			                    <li><a href="#" title="" class="expand">Link with submenu</a>
+					                <ul>
+					                    <li><a href="#" title="">Lorem ipsum</a></li>
+					                    <li><a href="#" title="">Dolor sit amet</a></li>
+					                </ul>
+			                    </li>
+			                    <li><a href="#" title="">Link</a></li>
+			                </ul>
+	                    </li>
+			            <li><a href="#" title="" class="expand"><i class="icon-sitemap"></i>Page layouts<strong>3</strong></a>
+			                <ul>
+			                    <li><a href="no_sidebar_tabs.html" title="">No sidebar tabs</a></li>
+			                    <li><a href="no_action_tabs.html" title="">No action tabs</a></li>
+			                    <li><a href="actions_on_top.html" title="">Action tabs on top</a></li>
+			                    <li><a href="no_breadcrumbs.html" title="">No breadcrumbs line</a></li>
+			                </ul>
+			            </li>
+			        </ul>
+			        <!-- /main navigation -->
+
+		        </div>
+
+		        <div id="stuff">
+
+                    <!-- 2 items tab panel -->
+                    <ul class="tabs-nav two-items" style="border-top: 1px solid #d5d5d5; margin-top: 25px;">
+						<li class="active"><a href="#" title="" class="active"><i class="icon-search"></i></a></li>
+						<li><a href="#" title=""><i class="icon-cogs"></i></a></li>
+                    </ul>
+        
+                    
+                    <!-- 3 items tab panel -->
+                    <ul class="tabs-nav three-items semi-widget" style="border-top: 1px solid #d5d5d5">
+						<li class="active"><a href="#" title="" class="active"><i class="icon-search"></i></a></li>
+						<li><a href="#" title=""><i class="icon-cogs"></i></a></li>
+						<li><a href="#" title=""><i class="icon-link"></i></a></li>
+                    </ul>
+        
+                    
+                    <!-- 4 items tab panel -->
+					<ul class="tabs-nav four-items semi-widget" style="border-top: 1px solid #d5d5d5">
+						<li class="active"><a href="#" title="" class="active"><i class="icon-search"></i></a></li>
+						<li><a href="#" title=""><i class="icon-cogs"></i></a></li>
+						<li><a href="#" title=""><i class="icon-link"></i></a></li>
+						<li><a href="#" title=""><i class="icon-signal"></i></a></li>
+					</ul>     
+
+                    
+                    <!-- 5 items tab panel -->
+                    <ul class="tabs-nav five-items semi-widget" style="border-top: 1px solid #d5d5d5">
+						<li class="active"><a href="#" title="" class="active"><i class="icon-search"></i></a></li>
+						<li><a href="#" title=""><i class="icon-cogs"></i></a></li>
+						<li><a href="#" title=""><i class="icon-link"></i></a></li>
+						<li><a href="#" title=""><i class="icon-signal"></i></a></li>
+						<li><a href="#" title=""><i class="icon-signal"></i></a></li>
+                    </ul>
+
+
+                    <!-- Datepicker -->
+		        	<div class="widget">
+		        		<h6 class="widget-name"><i class="icon-calendar"></i>Datepicker</h6>
+		                <div class="inlinepicker datepicker-liquid"></div>
+		            </div>
+		            <!-- /datepicker -->
+
+
+		            <!-- Dates range -->
+                    <ul class="widget dates-range">
+                        <li><input type="text" id="fromDate" name="from" placeholder="From" /></li>
+                        <li class="sep">-</li>
+                        <li><input type="text" id="toDate" name="to" placeholder="To" /></li>
+                    </ul>
+                    <!-- /dates range -->
+
+
+                    <!-- Color picker -->
+                    <div class="widget input-append color" data-color="rgb(255, 146, 180)" data-color-format="rgb" id="cp3">
+                        <input type="text" value="" readonly >
+                        <span class="add-on"><i style="background-color: rgb(255, 146, 180)"></i></span>
+                    </div>
+                    <!-- /color picker -->
+
+
+                    <!-- Time picker range -->
+                    <ul class="widget dates-range">
+                        <li><input id="timeformatExample1" type="text" placeholder="Start" /></li>
+                        <li class="sep">-</li>
+                        <li><input id="timeformatExample2" type="text" placeholder="End" /></li>
+                    </ul>
+                    <!-- /time picker range -->
+
+
+                    <!-- Sliders -->
+                    <div class="widget">
+		                <h6 class="widget-name"><i class="icon-resize-horizontal"></i>Sliders</h6>
+
+	                	<div class="slider-controls">
+	                    	<label for="price-amount">Price range:</label>
+							<input type="text" id="price-amount" />
+						</div>
+	                	<div id="range-slider"></div>
+
+		                <div class="semi-widget">
+	                    	<div class="slider-controls">
+		                    	<label for="min-amount">Maximum range:</label>
+								<input type="text" id="min-amount" />
+							</div>
+		                	<div id="slider-range-min"></div>
+		                </div>
+
+		                <div class="semi-widget">
+	                    	<div class="slider-controls">
+		                    	<label for="max-amount">Minimum range:</label>
+								<input type="text" id="max-amount" />
+							</div>
+		                	<div id="slider-range-max"></div>
+		                </div>
+		            </div>
+		            <!-- /sliders -->
+
+
+			        <!-- Progress bars -->
+			        <div class="widget">
+			        	<h6 class="widget-name"><i class="icon-align-left"></i>Progress bars</h6>
+						<div class="progress">
+							<div class="bar" style="width: 60%;"></div>
+						</div>
+						<div class="progress progress-danger progress-striped semi-widget">
+							<div class="bar" style="width: 60%;"></div>
+						</div>
+						<div class="progress progress-info progress-striped active semi-widget">
+							<div class="bar" style="width: 60%;"></div>
+						</div>
+						<div class="progress progress-success progress-slim semi-widget">
+							<div class="bar" style="width: 60%;"></div>
+						</div>
+
+						<div class="progress semi-widget">
+							<div class="bar bar-success" style="width: 35%;"></div>
+							<div class="bar bar-warning" style="width: 20%;"></div>
+							<div class="bar bar-danger" style="width: 10%;"></div>
+						</div>
+					</div>
+					<!-- /progress bars -->
+
+					
+					<!-- Tags input -->
+					<div class="widget">
+						<h6 class="widget-name"><i class="icon-plus"></i>Tags input</h6>
+						<input type="text" id="tags1" class="tags" value="these,are,sample,tags" />
+					</div>
+					<!-- /tags input -->
+
+		        </div>
+
+		        <div id="new">
+
+		        	<!-- Action buttons -->
+		        	<div class="widget">
+		        		<h6 class="widget-name"><i class="icon-hand-up"></i>Action buttons</h6>
+			        	<ul class="sidebar-buttons">
+			        		<li><a href="" title="" class="red-square"><i class="icon-user"></i></a></li>
+			        		<li><a href="" title="" class="blue-square"><i class="icon-comments"></i></a></li>
+			        		<li><a href="" title="" class="green-square"><i class="icon-paste"></i></a></li>
+			        		<li><a href="" title="" class="purple-square"><i class="icon-cogs"></i></a></li>
+			        	</ul>
+
+			        	<ul class="sidebar-buttons grey semi-widget">
+			        		<li><a href="" title=""><i class="icon-user"></i></a></li>
+			        		<li><a href="" title=""><i class="icon-comments"></i></a></li>
+			        		<li><a href="" title=""><i class="icon-paste"></i></a></li>
+			        		<li><a href="" title=""><i class="icon-cogs"></i></a></li>
+			        	</ul>
+			        </div>
+			        <!-- /action buttons -->
+
+
+			        <!-- Statistics -->
+			        <div class="widget">
+						<h6 class="widget-name"><i class="icon-signal"></i>Statistics</h6>
+				    	<ul class="sidebar-stats well">
+				    		<li>
+				    			<div class="showcase">
+				    				<span>Total visits</span>
+				    				<h2>22.504</h2>
+				    			</div>
+				    			<div id="visits" class="chart">22,31,19,12,28,21,24,28,21,24</div>
+				    		</li>
+				    		<li>
+				    			<div class="showcase">
+				    				<span>Total clicks</span>
+				    				<h2>32.098</h2>
+				    			</div>
+				    			<div id="clicks" class="chart">22,31,19,12,28,21,24,28,21,24</div>
+				    		</li>
+				    		<li>
+				    			<div class="showcase">
+				    				<span>Click rate</span>
+				    				<h2>30.36</h2>
+				    			</div>
+				    			<div id="rate" class="chart">22,31,19,12,28,21,24,28,21,24</div>
+				    		</li>
+				    	</ul>
+			        </div>
+			        <!-- /statistics -->
+
+
+			        <!-- OS stats widget -->
+			        <div class="widget">
+			        	<h6 class="widget-name"><i class="icon-tasks"></i>OS statistics</h6>
+				        <ul class="progress-statistics">
+				            <li>
+				                <strong>Windows PC</strong><strong class="pull-right">60%</strong>
+								<div class="progress progress-success progress-slim"><div class="bar" style="width: 60%;"></div></div>
+				            </li>
+				            <li>
+				                <strong>MacOS</strong><strong class="pull-right">70%</strong>
+				                <div class="progress progress-danger progress-slim"><div class="bar" style="width: 70%;"></div></div>
+				            </li>
+				            <li>
+				                <strong>iPad/iPhone</strong><strong class="pull-right">50%</strong>
+				                <div class="progress progress-info progress-slim"><div class="bar" style="width: 50%;"></div></div>
+				            </li>
+				            <li>
+				                <strong>Windows 8</strong><strong class="pull-right">20%</strong>
+				                <div class="progress progress-warning progress-slim"><div class="bar" style="width: 20%;"></div></div>
+				            </li>
+				        </ul>
+				    </div>
+			        <!-- /OS stats widget -->
+
+
+			        <!-- Social stats -->
+			        <div class="widget">
+			        	<h6 class="widget-name"><i class="icon-twitter"></i>Social statistics</h6>
+			        	<ul class="social-stats">
+			        		<li>
+			        			<a href="" title="" class="orange-square"><i class="icon-rss"></i></a>
+			        			<div>
+				        			<h4>1,286</h4>
+				        			<span>total feed subscribers</span>
+				        		</div>
+			        		</li>
+			        		<li>
+			        			<a href="" title="" class="blue-square"><i class="icon-twitter"></i></a>
+			        			<div>
+				        			<h4>12,683</h4>
+				        			<span>total twitter followers</span>
+				        		</div>
+			        		</li>
+			        		<li>
+			        			<a href="" title="" class="dark-blue-square"><i class="icon-facebook"></i></a>
+			        			<div>
+				        			<h4>530,893</h4>
+				        			<span>total facebook likes</span>
+				        		</div>
+			        		</li>
+			        	</ul>
+			        </div>
+			        <!-- /social stats -->
+
+
+			        <!-- Categories -->
+			        <div class="widget">
+			        	<h6 class="widget-name"><i class="icon-list"></i>Categories</h6>
+				        <ul class="plus-list categories">
+				        	<li>
+				        		<a href="#" title="">Company documents</a>
+				        		<strong>1232</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Media entries</a>
+				        		<strong>7638</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Blog posts</a>
+				        		<strong>221</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Job positions</a>
+				        		<strong>49</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Team members</a>
+				        		<strong>80</strong>
+				        	</li>
+				        	<li>
+				        		<a href="#" title="">Projects</a>
+				        		<strong>43</strong>
+				        	</li>
+				        </ul>
+				    </div>
+				    <!-- /categories -->
+
+
+				    <!-- Gallery thumbs -->
+				    <div class="widget">
+				    	<h6 class="widget-name"><i class="icon-picture"></i>Gallery thumbs</h6>
+				    	<div class="row-fluid thumbs">
+					    	<div class="span6">
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    	</div>
+					    	<div class="span6">
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    		<a href="img/demo/big.jpg" class="lightbox"><img src="http://placehold.it/580x380" alt="" /></a>
+					    	</div>
+					    </div>
+				    </div>
+				    <!-- /gallery thumbs -->
+
+
+		            <!-- Contact list -->
+		            <div class="widget">
+		            	<h6 class="widget-name"><i class="icon-user"></i>Contacts</h6>
+			            <ul class="user-list">
+			                <li>
+			                    <a href="#" title="">
+			                        <img src="http://placehold.it/37x37" alt="" />
+			                        <span class="contact-name">
+			                            <strong>Eugene Kopyov <span>(5)</span></strong>
+			                            <i>web &amp; ui designer</i>
+			                        </span>
+			                        <span class="status_away"></span>
+			                    </a>
+			                </li>
+			                <li class="active">
+			                    <a href="#" title="">
+			                        <img src="http://placehold.it/37x37" alt="" />
+			                        <span class="contact-name">
+			                            <strong>Lucy Wilkinson <span>(12)</span></strong>
+			                            <i>Team leader</i>
+			                        </span>
+			                        <span class="status_off"></span>
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="#" title="">
+			                        <img src="http://placehold.it/37x37" alt="" />
+			                        <span class="contact-name">
+			                            <strong>John Dow</strong>
+			                            <i>PHP developer</i>
+			                        </span>
+			                        <span class="status_available"></span>
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="#" title="">
+			                        <img src="http://placehold.it/37x37" alt="" />
+			                        <span class="contact-name">
+			                            <strong>The Incredible</strong>
+			                            <i>web &amp; ui designer</i>
+			                        </span>
+			                        <span class="status_available"></span>
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="#" title="">
+			                        <img src="http://placehold.it/37x37" alt="" />
+			                        <span class="contact-name">
+			                            <strong>The wazzup guy</strong>
+			                            <i>web &amp; ui designer</i>
+			                        </span>
+			                        <span class="status_available"></span>
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="#" title="">
+			                        <img src="http://placehold.it/37x37" alt="" />
+			                        <span class="contact-name">
+			                            <strong>Viktor Fedorovich<span class="status_available"></span></strong>
+			                            <i>web &amp; ui designer</i>
+			                        </span>
+			                        
+			                    </a>
+			                </li>
+			            </ul>
+			            <div class="more">
+			            	<img src="img/elements/loaders/7s.gif" alt="" />
+				            <a href="#" title="">Load more</a>
+				        </div>
+			        </div>
+		            <!-- /contact list -->
+
+
+		            <!-- Action buttons -->
+	                <div class="widget">
+	                	<h6 class="widget-name"><i class="icon-hand-up"></i>Action buttons</h6>
+	                	<button class="btn btn-block btn-danger">Action button</button>
+	                	<button class="btn btn-block btn-info">Action button</button>
+	                	<button class="btn btn-block btn-success">Action button</button>
+	                </div>
+	                <!-- /action buttons -->
+
+
+	                <!-- Alerts -->
+	                <div class="widget">
+	                	<h6 class="widget-name"><i class="icon-warning-sign"></i>Alerts</h6>
+	                    <div class="alert">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        Warning alert
+	                    </div>
+	                    <div class="alert alert-error">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        Error alert
+	                    </div>
+	                    <div class="alert alert-success">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        Success alert
+	                    </div>
+	                    <div class="alert alert-info">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        Good to know! Info alert
+	                    </div>
+	                </div>
+	                <!-- /alerts -->
+					
+
+		            <!-- Form elements -->
+		            <form action="#" class="widget">
+		            	<h6 class="widget-name"><i class="icon-indent-right"></i>Form elements</h6>
+		                <input type="text" value="" placeholder="Your name" />
+		                <input type="password" value="" placeholder="Your password" />
+		                <input type="file" class="styled" />
+		                <select name="select2" class="styled" >
+		                    <option value="opt1">Usual select box</option>
+		                    <option value="opt2">Option 2</option>
+		                    <option value="opt3">Option 3</option>
+		                    <option value="opt4">Option 4</option>
+		                    <option value="opt5">Option 5</option>
+		                    <option value="opt6">Option 6</option>
+		                    <option value="opt7">Option 7</option>
+		                    <option value="opt8">Option 8</option>
+		                </select>
+		                <select data-placeholder="Choose a Country..." class="select" tabindex="2">
+		                    <option value=""></option> 
+		                    <option value="Cambodia">Cambodia</option> 
+		                    <option value="Cameroon">Cameroon</option> 
+		                    <option value="Canada">Canada</option> 
+		                    <option value="Cape Verde">Cape Verde</option> 
+		                </select>
+		                <div class="sidebar-checks">
+		                    <label class="checkbox"><input type="checkbox" name="checkbox1" class="styled" value="" checked="checked" />Checkbox checked</label>
+		                    <label class="radio"><input type="radio" name="radio" class="styled" value="" />Unchecked radio</label>
+		                    <label class="radio"><input type="radio" name="radio" class="styled" value="" checked="checked" />Checked radio</label>
+		                </div>
+		                <textarea cols="4" rows="4" placeholder="Your message"></textarea>
+		                <div class="form-actions">
+		                    <input type="submit" value="Submit form" class="btn btn-info pull-left" />
+		                    <input type="reset" value="Reset form" class="btn btn-danger pull-right" />
+		                </div>
+		            </form>
+		            <!-- /form elements -->
+
+
+		            <!-- Accordion -->
+                    <div class="accordion widget" id="sidebar-accordion">
+                    	<h6 class="widget-name"><i class="icon-chevron-up"></i>Accordion</h6>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#sidebar-accordion" href="#collapseOne"><i class="icon-ok"></i>Collapsible Group Item #1</a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse in">
+                                <div class="accordion-inner">Anim pariatur cliche...</div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#sidebar-accordion" href="#collapseTwo"><i class="icon-reorder"></i>Collapsible Group Item #2</a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner">Anim pariatur cliche...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /accordion -->
+
+
+                    <!-- Toggle -->
+                    <div class="accordion widget" id="sidebar-toggle">
+                    	<h6 class="widget-name"><i class="icon-chevron-down"></i>Toggle group</h6>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-target="#column1"><i class="fam-feed"></i>Collapsible Group Item #1</a>
+                            </div>
+                            <div id="column1" class="accordion-body collapse in">
+                                <div class="accordion-inner">Anim pariatur cliche...</div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-target="#column2"><i class="fam-arrow-out"></i>Collapsible Group Item #2</a>
+                            </div>
+                            <div id="column2" class="accordion-body collapse">
+                                <div class="accordion-inner">Anim pariatur cliche...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /toggle -->
+
+		        </div>
+
+		    </div>
+		</div>
+		<!-- /sidebar -->
+
+
+		<!-- Content -->
+		<div id="content">
+
+		    <!-- Content wrapper -->
+		    <div class="wrapper">
+
+			    <!-- Breadcrumbs line -->
+			    <div class="crumbs">
+
+		            <ul id="breadcrumbs" class="breadcrumb"> 
+		                <li><a href="index.html">Dashboard</a></li>
+		                <li><a href="forms.html">Forms</a></li>
+		                <li class="active"><a href="messages.html" title="">Messages</a></li>
+		            </ul>
+			        
+		            <ul class="alt-buttons">
+		                <li><a href="#" title=""><i class="icon-signal"></i><span>Stats</span></a></li>
+		                <li><a href="#" title=""><i class="icon-comments"></i><span>Messages</span></a></li>
+		                <li class="dropdown"><a href="#" title="" data-toggle="dropdown"><i class="icon-tasks"></i><span>Tasks</span> <strong>(+16)</strong></a>
+		                	<ul class="dropdown-menu pull-right">
+		                        <li><a href="#" title=""><i class="icon-plus"></i>Add new task</a></li>
+		                        <li><a href="#" title=""><i class="icon-reorder"></i>Statement</a></li>
+		                        <li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+		                	</ul>
+		                </li>
+		            </ul>
+			    </div>
+
+			    <!-- Page header -->
+			    <div class="page-header">
+
+			    	<div class="page-title">
+				    	<h5>Content components</h5>
+				    	<span>Including Bootstrap components</span>
+			    	</div>
+
+			    	<ul class="page-stats">
+			    		<li>
+			    			<div class="showcase">
+			    				<span>New visits</span>
+			    				<h2>22.504</h2>
+			    			</div>
+			    			<div id="total-visits" class="chart">10,14,8,45,23,41,22,31,19,12, 28, 21, 24, 20</div>
+			    		</li>
+			    		<li>
+			    			<div class="showcase">
+			    				<span>My balance</span>
+			    				<h2>$16.290</h2>
+			    			</div>
+			    			<div id="balance" class="chart">10,14,8,45,23,41,22,31,19,12, 28, 21, 24, 20</div>
+			    		</li>
+			    	</ul>
+			    </div>
+			    <!-- /page header -->
+
+			    <!-- Action tabs -->
+			    <div class="actions-wrapper">
+				    <div class="actions">
+
+				    	<div id="user-stats">
+					        <ul class="round-buttons">
+					            <li><div class="depth"><a href="" title="Add new post" class="tip"><i class="icon-plus"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="View statement" class="tip"><i class="icon-signal"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Media posts" class="tip"><i class="icon-reorder"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="RSS feed" class="tip"><i class="icon-rss"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Create new task" class="tip"><i class="icon-tasks"></i></a></div></li>
+					            <li><div class="depth"><a href="" title="Layout settings" class="tip"><i class="icon-cogs"></i></a></div></li>
+					        </ul>
+				    	</div>
+
+				    	<div id="quick-actions">
+				    		<ul class="statistics">
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="blue-square"><i class="icon-plus"></i></a>
+					    				<strong>12,476</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 60%;"></div></div>
+									<span>User registrations</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="red-square"><i class="icon-hand-up"></i></a>
+					    				<strong>621,873</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 20%;"></div></div>
+									<span>Total clicks</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="purple-square"><i class="icon-shopping-cart"></i></a>
+					    				<strong>562</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 90%;"></div></div>
+									<span>New orders</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="green-square"><i class="icon-ok"></i></a>
+					    				<strong>$45,360</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 70%;"></div></div>
+									<span>General balance</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="sea-square"><i class="icon-group"></i></a>
+					    				<strong>562K+</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 50%;"></div></div>
+									<span>Total users</span>
+				    			</li>
+				    			<li>
+				    				<div class="top-info">
+					    				<a href="#" title="" class="dark-blue-square"><i class="icon-facebook"></i></a>
+					    				<strong>36,290</strong>
+					    			</div>
+									<div class="progress progress-micro"><div class="bar" style="width: 93%;"></div></div>
+									<span>Facebook fans</span>
+				    			</li>
+				    		</ul>
+				    	</div>
+
+				    	<div id="map">
+				    		<div id="google-map"></div>
+				    	</div>
+
+				    	<ul class="action-tabs">
+				    		<li><a href="#user-stats" title="">Quick actions</a></li>
+				    		<li><a href="#quick-actions" title="">Website statistics</a></li>
+				    		<li><a href="#map" title="" id="map-link">Google map</a></li>
+				    	</ul>
+				    </div>
+				</div>
+			    <!-- /action tabs -->
+
+			    <!-- Alert -->
+		    	<div class="alert widget">
+		    		<button type="button" class="close" data-dismiss="alert">×</button>
+		    		This page contains all UI elements, including bootstrap components and custom elements
+		    	</div>
+		    	<!-- /alert -->
+
+
+		    	<h5 class="widget-name"><i class="icon-search"></i>Search boxes</h5>
+
+		    	<!-- Search widgets -->
+		    	<form class="search widget" action="#" style="margin-bottom:15px;">
+		    		<div class="autocomplete-append">
+			    		<ul class="search-options">
+			    			<li><a href="#" title="Go to search page" class="go-option tip"></a></li>
+			    			<li><a href="#" title="Advanced search" class="advanced-option tip"></a></li>
+			    			<li><a href="#" title="Settings" class="settings-option tip"></a></li>
+			    		</ul>
+			    		<input type="text" placeholder="field with autocomplete" id="autocomplete" />
+			    		<input type="submit" class="btn btn-info" value="Search" />
+			    	</div>
+		    	</form>
+
+		    	<form class="search widget" action="#">
+		    		<div class="typeahead-append">
+			    		<ul class="search-options">
+			    			<li><a href="#" title="Go to search page" class="go-option tip"></a></li>
+			    			<li><a href="#" title="Advanced search" class="advanced-option tip"></a></li>
+			    			<li><a href="#" title="Settings" class="settings-option tip"></a></li>
+			    		</ul>
+			    		<input type="text" placeholder="field with typeahead" id="typeahead" autocomplete="off" />
+			    		<input type="submit" class="btn btn-danger" value="Search" />
+			    	</div>
+		    	</form>
+		    	<!-- /search widgets -->
+
+
+	            <div class="widget-title">
+		            <h5 class="widget-name"><i class="icon-signal"></i>Statistic widgets</h5>
+		            <a href="charts.html" class="pull-right">Charts page &rarr;</a>
+		        </div>
+
+		    	<!-- Earnings stats widgets -->
+		    	<div class="row-fluid">
+
+		    		<div class="span4">
+				        <div class="widget">
+							<div class="navbar"><div class="navbar-inner"><h6>Earnings statistic</h6></div></div>
+				            <div class="well body">
+				            	<ul class="stats-details">
+				            		<li>
+				            			<strong>Current balance</strong>
+				            			<span>latest update on 12:39 am</span>
+				            		</li>
+				            		<li>
+				            			<div class="number">
+					            			<a href="#" title="" data-toggle="dropdown"></a>
+											<ul class="dropdown-menu pull-right">
+												<li><a href="#" title=""><i class="icon-refresh"></i>Reload data</a></li>
+												<li><a href="#" title=""><i class="icon-calendar"></i>Change time period</a></li>
+												<li><a href="#" title=""><i class="icon-cog"></i>Parameters</a></li>
+												<li><a href="#" title=""><i class="icon-download-alt"></i>Download statement</a></li>
+											</ul>
+											<span>$6,458</span>
+										</div>
+				            		</li>
+				            	</ul>
+				            	<div class="graph" id="chart1"></div>
+				            </div>
+				        </div>
+		    		</div>
+
+		    		<div class="span4">
+				        <div class="widget">
+							<div class="navbar"><div class="navbar-inner"><h6>Visitor statistics</h6></div></div>
+				            <div class="well body">
+				            	<ul class="stats-details">
+				            		<li>
+				            			<strong>Today's visitors</strong>
+				            			<span>latest update on 4:42 pm</span>
+				            		</li>
+				            		<li>
+				            			<div class="number">
+					            			<a href="#" title="" data-toggle="dropdown"></a>
+											<ul class="dropdown-menu pull-right">
+												<li><a href="#" title=""><i class="icon-refresh"></i>Reload data</a></li>
+												<li><a href="#" title=""><i class="icon-calendar"></i>Change time period</a></li>
+												<li><a href="#" title=""><i class="icon-cog"></i>Parameters</a></li>
+												<li><a href="#" title=""><i class="icon-download-alt"></i>Download statement</a></li>
+											</ul>
+											<span>+12,127</span>
+										</div>
+				            		</li>
+				            	</ul>
+				            	<div class="graph" id="chart2"></div>
+				            </div>
+				        </div>
+		    		</div>
+
+		    		<div class="span4">
+				        <div class="widget">
+							<div class="navbar"><div class="navbar-inner"><h6>Click statistics</h6></div></div>
+				            <div class="well body">
+				            	<ul class="stats-details">
+				            		<li>
+				            			<strong>Total clicks</strong>
+				            			<span>latest update on 3:09 pm</span>
+				            		</li>
+				            		<li>
+				            			<div class="number">
+					            			<a href="#" title="" data-toggle="dropdown"></a>
+											<ul class="dropdown-menu pull-right">
+												<li><a href="#" title=""><i class="icon-refresh"></i>Reload data</a></li>
+												<li><a href="#" title=""><i class="icon-calendar"></i>Change time period</a></li>
+												<li><a href="#" title=""><i class="icon-cog"></i>Parameters<strong class="badge badge-info">9</strong></a></li>
+												<li><a href="#" title=""><i class="icon-download-alt"></i>Download statement</a></li>
+											</ul>
+											<span>168k+</span>
+										</div>
+				            		</li>
+				            	</ul>
+				            	<div class="graph" id="chart3"></div>
+				            </div>
+				        </div>
+		    		</div>
+		    	</div>
+		    	<!-- /earnings stats widgets -->
+
+
+		    	<!-- Real time stats -->
+		    	<div class="row-fluid">
+		    		<div class="span4">
+		    			<div class="widget">
+			    			<div class="navbar"><div class="navbar-inner"><h6>Earnings statistic</h6></div></div>
+
+							<div class="section-graph body">
+								<div id="updating-widget-1" class="widget-chart"></div>
+							</div>
+
+							<div class="well">
+
+								<div class="section-info">
+
+									<div class="section-title">
+										<a href="#" title="" class="">Products page activity</a>
+										<div class="graph-info grow">
+											<span>634.39</span>
+											<i>(+3.71%)</i>
+										</div>
+									</div>
+
+									<ul class="info-blocks">
+										<li>13.5 M <span>total visits</span></li>
+										<li>285 <span>new orders</span></li>
+									</ul>
+
+									<ul class="stats-changes">
+										<li>
+											<strong>Real time changes</strong>
+											<ul class="info-aapl">
+												<li><span class="orange" style="height: 37.5%"></span></li>
+												<li><span class="orange" style="height: 47.5%"></span></li>
+												<li><span class="orange" style="height: 70%"></span></li>
+												<li><span class="orange" style="height: 85%"></span></li>
+												<li><span class="orange" style="height: 40%"></span></li>
+												<li><span class="green" style="height: 95%"></span></li>
+												<li><span class="green" style="height: 75%"></span></li>
+												<li><span class="green" style="height: 50%"></span></li>
+												<li><span class="green" style="height: 15%"></span></li>
+												<li><span class="green" style="height: 25%"></span></li>
+											</ul>
+										</li>
+
+										<li>
+											<div class="yearly-change">
+												<strong>Yearly Change</strong>
+												<span>+ $1207.01</span>
+												<i>including something</i>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+		    		</div>
+
+		    		<div class="span4">
+		    			<div class="widget">
+			    			<div class="navbar"><div class="navbar-inner"><h6>Visitor statistics</h6></div></div>
+
+							<div class="section-graph body">
+								<div id="updating-widget-2" class="widget-chart"></div>
+							</div>
+
+							<div class="well">
+
+								<div class="section-info">
+
+									<div class="section-title">
+										<a href="#" title="" class="">Stats for last 7 days</a>
+										<div class="graph-info drop">
+											<span>16,155</span>
+											<i>(-5.57%)</i>
+										</div>
+									</div>
+
+									<ul class="info-blocks">
+										<li>13.5 M <span>total visits</span></li>
+										<li>285 <span>new orders</span></li>
+									</ul>
+
+									<ul class="stats-changes">
+										<li>
+											<strong>Real time changes</strong>
+											<ul class="info-aapl">
+												<li><span class="orange" style="height: 56%"></span></li>
+												<li><span class="orange" style="height: 27%"></span></li>
+												<li><span class="orange" style="height: 40%"></span></li>
+												<li><span class="orange" style="height: 54%"></span></li>
+												<li><span class="orange" style="height: 94%"></span></li>
+												<li><span class="green" style="height: 95%"></span></li>
+												<li><span class="green" style="height: 37%"></span></li>
+												<li><span class="green" style="height: 83%"></span></li>
+												<li><span class="green" style="height: 28%"></span></li>
+												<li><span class="green" style="height: 25%"></span></li>
+											</ul>
+										</li>
+
+										<li>
+											<div class="yearly-change">
+												<strong>Yearly Change</strong>
+												<span>- 3,793</span>
+												<i>including something</i>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+		    		</div>
+
+		    		<div class="span4">
+		    			<div class="widget">
+			    			<div class="navbar"><div class="navbar-inner"><h6>Click statistics</h6></div></div>
+
+							<div class="section-graph body">
+								<div id="updating-widget-3" class="widget-chart"></div>
+							</div>
+
+							<div class="well">
+
+								<div class="section-info">
+
+									<div class="section-title">
+										<a href="#" title="" class="">Combined statistics</a>
+										<div class="graph-info drop">
+											<span>8391</span>
+											<i>(-31.56%)</i>
+										</div>
+									</div>
+
+									<ul class="info-blocks">
+										<li>13.5 M <span>total visits</span></li>
+										<li>285 <span>new orders</span></li>
+									</ul>
+
+									<ul class="stats-changes">
+										<li>
+											<strong>Real time changes</strong>
+											<ul class="info-aapl">
+												<li><span class="orange" style="height: 10%"></span></li>
+												<li><span class="orange" style="height: 58%"></span></li>
+												<li><span class="orange" style="height: 13%"></span></li>
+												<li><span class="orange" style="height: 85%"></span></li>
+												<li><span class="orange" style="height: 78%"></span></li>
+												<li><span class="green" style="height: 94%"></span></li>
+												<li><span class="green" style="height: 67%"></span></li>
+												<li><span class="green" style="height: 20%"></span></li>
+												<li><span class="green" style="height: 62%"></span></li>
+												<li><span class="green" style="height: 15%"></span></li>
+											</ul>
+										</li>
+
+										<li>
+											<div class="yearly-change">
+												<strong>Yearly Change</strong>
+												<span>+ 73,590</span>
+												<i>including something</i>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+		    		</div>
+		    	</div>
+		    	<!-- /real time stats -->
+
+
+		    	<!-- Tabs -->
+	            <h5 class="widget-name"><i class="icon-columns"></i>Tabs</h5>
+
+	            <div class="row-fluid">
+	                <div class="span6">
+
+	                    <div class="widget">
+	                        <div class="tabbable"><!-- default tabs -->
+	                            <ul class="nav nav-tabs">
+	                                <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+	                                <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+	                            </ul>
+	                            <div class="tab-content">
+	                                <div class="tab-pane active" id="tab1">I'm in Section 1.</div>
+	                                <div class="tab-pane" id="tab2">Howdy, I'm in Section 2.</div>
+	                            </div>
+	                        </div>
+	                    </div>
+
+	                    <div class="widget">
+	                    	<div class="navbar">
+	                        	<div class="navbar-inner">
+	                            	<h6>Toolbar tabs (left)</h6>
+	                            </div>
+	                        </div>
+	                        <div class="tabbable"><!-- default tabs -->
+	                            <ul class="nav nav-tabs">
+	                                <li class="active"><a href="#tab3" data-toggle="tab"><i class="icon-cog"></i>Section 1</a></li>
+	                                <li><a href="#tab4" data-toggle="tab"><i class="icon-heart"></i>Section 2</a></li>
+	                            </ul>
+	                            <div class="tab-content">
+	                                <div class="tab-pane active" id="tab3">I'm in Section 1.</div>
+	                                <div class="tab-pane" id="tab4">Howdy, I'm in Section 2.</div>
+	                            </div>
+	                        </div>
+	                    </div>
+
+
+	                    <div class="widget navbar-tabs">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Fade effect</h6>
+	                                <ul class="nav nav-tabs pull-right">
+	                                    <li class="active"><a href="#tab5" data-toggle="tab">Section 1</a></li>
+	                                    <li><a href="#tab6" data-toggle="tab">Section 2</a></li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                        <div class="tabbable">
+	                            <div class="tab-content">
+	                                <div class="tab-pane active fade in" id="tab5">I'm in Section 1.</div>
+	                                <div class="tab-pane fade" id="tab6">Howdy, I'm in Section 2.</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                
+	                    <div class="widget">
+	                        <div class="tabbable tabs-left">
+	                            <ul class="nav nav-tabs">
+	                                <li class="active"><a href="#tab7" data-toggle="tab"><i class="fam-layout-content"></i>Section 1</a></li>
+	                                <li><a href="#tab8" data-toggle="tab"><i class="fam-date"></i>Section 2</a></li>
+	                            </ul>
+	                            <div class="tab-content">
+	                                <div class="tab-pane active" id="tab7">I'm in Section 1.</div>
+	                                <div class="tab-pane" id="tab8">Howdy, I'm in Section 2.</div>
+	                            </div>
+	                        </div>
+	                    </div>
+
+	                </div>
+	    
+	                <div class="span6">
+
+	                    <div class="widget">
+	                        <div class="tabbable tabs-below"><!-- bottom tabs -->
+	                            <div class="tab-content">
+	                                <div class="tab-pane active" id="tab9">I'm in Section 1.</div>
+	                                <div class="tab-pane" id="tab10">Howdy, I'm in Section 2.</div>
+	                            </div>
+	                            <ul class="nav nav-tabs">
+	                                <li class="active"><a href="#tab9" data-toggle="tab">Section 1</a></li>
+	                                <li><a href="#tab10" data-toggle="tab">Section 2</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+
+	                    <div class="widget">
+	                    	<div class="navbar">
+	                        	<div class="navbar-inner">
+	                            	<h6>Toolbar tabs (right)</h6>
+	                            </div>
+	                        </div>
+	                        <div class="tabbable"><!-- default tabs -->
+	                            <ul class="nav nav-tabs right-aligned-tabs">
+	                                <li class="active"><a href="#tab11" data-toggle="tab"><i class="icon-cog"></i>Section 1</a></li>
+	                                <li><a href="#tab12" data-toggle="tab"><i class="icon-heart"></i>Section 2</a></li>
+	                            </ul>
+	                            <div class="tab-content">
+	                                <div class="tab-pane active" id="tab11">I'm in Section 1.</div>
+	                                <div class="tab-pane" id="tab12">Howdy, I'm in Section 2.</div>
+	                            </div>
+	                        </div>
+	                    </div>
+
+	                    <div class="widget navbar-tabs">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Inside navbar</h6>
+	                                <ul class="nav nav-tabs pull-right">
+	                                    <li class="active"><a href="#tab13" data-toggle="tab"><i class="fam-feed"></i>Section 1</a></li>
+	                                    <li><a href="#tab14" data-toggle="tab"><i class="fam-paste-plain"></i>Section 2</a></li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                        <div class="tabbable">
+	                            <div class="tab-content">
+	                                <div class="tab-pane active" id="tab13">
+	                                   I'm in Section 1.
+	                                </div>
+	                                <div class="tab-pane" id="tab14">Howdy, I'm in Section 2.</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    
+	                    <div class="widget">
+	                        <div class="tabbable tabs-right">
+	                            <ul class="nav nav-tabs">
+	                                <li class="active"><a href="#tab15" data-toggle="tab">Section 1</a></li>
+	                                <li><a href="#tab16" data-toggle="tab">Section 2</a></li>
+	                            </ul>
+	                            <div class="tab-content">
+	                                <div class="tab-pane active" id="tab15">I'm in Section 1.</div>
+	                                <div class="tab-pane" id="tab16">Howdy, I'm in Section 2.</div>
+	                            </div>
+	                        </div>
+	                    </div>
+
+	                </div>
+	            </div>
+	            <!-- /tabs -->
+
+
+	            <!-- Pagination, pager -->
+	            <div class="widget-title">
+		            <h5 class="widget-name"><i class="icon-share-alt"></i>Pagination, pager</h5>
+		            <div class="page-links">
+			            <a href="#" title="">&larr; Previous</a>
+			            <a href="#" title="">Next &rarr;</a>
+			        </div>
+		        </div>
+
+	        	<!-- Pagination -->
+	            <div class="widget">
+	                <div class="navbar">
+	                	<div class="navbar-inner">
+	                		<h6>Pagination</h6>
+		                    <div class="pagination pull-right">
+		                        <ul>
+		                            <li><a href="#">&laquo;</a></li>
+		                            <li><a href="#">1</a></li>
+		                            <li class="active"><a href="#">2</a></li>
+		                            <li><a href="#">3</a></li>
+		                            <li><a href="#">&raquo;</a></li>
+		                        </ul>
+		                    </div>
+	                	</div>
+	                </div>
+
+	                <div class="row-fluid well body">
+
+	                    <div class="span6">
+	                        <strong class="subtitle">Pagination sizes</strong>
+	                        <div class="well-smoke body">
+
+	                        	<div class="align-center">
+	                        		<strong class="subtitle">Large <code>.pagination-large</code></strong>
+		                            <div class="pagination pagination-large">
+		                                <ul>
+		                                    <li><a href="#">&laquo;</a></li>
+		                                    <li class="active"><a href="#">1</a></li>
+		                                    <li><a href="#">2</a></li>
+		                                    <li class="disabled"><a href="#">3</a></li>
+		                                    <li><a href="#">4</a></li>
+		                                    <li><a href="#">5</a></li>
+		                                    <li><a href="#">&raquo;</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+
+	                            <div class="semi-widget align-center">
+	                            	<strong class="subtitle">Default <code>.pagination</code></strong>
+		                            <div class="pagination">
+		                                <ul>
+		                                    <li><a href="#">&laquo;</a></li>
+		                                    <li><a href="#">1</a></li>
+		                                    <li class="active"><a href="#">2</a></li>
+		                                    <li><a href="#">3</a></li>
+		                                    <li><a href="#">4</a></li>
+		                                    <li><a href="#">5</a></li>
+		                                    <li><a href="#">&raquo;</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+
+	                            <div class="semi-widget align-center">
+	                            	<strong class="subtitle">Small <code>.pagination-small</code></strong>
+		                            <div class="pagination pagination-small">
+		                                <ul>
+		                                    <li><a href="#">&laquo;</a></li>
+		                                    <li><a href="#">1</a></li>
+		                                    <li><a href="#">2</a></li>
+		                                    <li class="active"><a href="#">3</a></li>
+		                                    <li><a href="#">4</a></li>
+		                                    <li><a href="#">5</a></li>
+		                                    <li><a href="#">&raquo;</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+
+	                            <div class="semi-widget align-center">
+	                            	<strong class="subtitle">Mini <code>.pagination-mini</code></strong>
+		                            <div class="pagination pagination-mini">
+		                                <ul>
+		                                    <li><a href="#">&laquo;</a></li>
+		                                    <li><a href="#">1</a></li>
+		                                    <li><a href="#">2</a></li>
+		                                    <li><a href="#">3</a></li>
+		                                    <li class="active"><a href="#">4</a></li>
+		                                    <li><a href="#">5</a></li>
+		                                    <li><a href="#">&raquo;</a></li>
+		                                </ul>
+		                            </div>
+		                        </div>
+
+	                        </div>
+	                    </div>
+
+	                    <div class="span6">
+
+	                        <div class="semi-widget">
+	                            <strong class="subtitle">Left aligned pagination (default)</strong>
+	                            <div class="well-smoke body">
+	                                <div class="pagination">
+	                                    <ul>
+	                                        <li class="disabled"><a href="#">Prev</a></li>
+	                                        <li class="active"><a href="#">1</a></li>
+	                                        <li><a href="#">2</a></li>
+	                                        <li><a href="#">3</a></li>
+	                                        <li><a href="#">4</a></li>
+	                                        <li><a href="#">Next</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="semi-widget">
+	                            <strong class="subtitle align-center">Centered pagination <code>.pagination-centered</code></strong>
+	                            <div class="well-smoke body">
+	                                <div class="pagination pagination-centered">
+	                                    <ul>
+	                                        <li><a href="#">Prev</a></li>
+	                                        <li><a href="#">1</a></li>
+	                                        <li class="active"><a href="#">2</a></li>
+	                                        <li><a href="#">3</a></li>
+	                                        <li><a href="#">4</a></li>
+	                                        <li><a href="#">Next</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="semi-widget">
+	                            <strong class="subtitle align-right">Right aligned pagination <code>.pagination-right</code></strong>
+	                            <div class="well-smoke body">
+	                                <div class="pagination pagination-right">
+	                                    <ul>
+	                                        <li><a href="#">Prev</a></li>
+	                                        <li><a href="#">1</a></li>
+	                                        <li><a href="#">2</a></li>
+	                                        <li class="active"><a href="#">3</a></li>
+	                                        <li><a href="#">4</a></li>
+	                                        <li><a href="#">Next</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                    </div>
+
+	                </div>
+	            </div>
+	            <!-- /pagination -->
+
+	            <!-- Pager -->
+	            <div class="widget">
+	                <div class="navbar">
+	                    <div class="navbar-inner">
+	                        <h6>Pager</h6>
+	                        <ul class="pager pull-right">
+	                            <li><a href="#">&larr;</a></li>
+	                            <li><a href="#">&rarr;</a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	                
+	                <div class="row-fluid well body">
+
+	                    <!-- Column -->
+	                    <div class="span4">
+
+	                        <strong class="subtitle">Default pager</strong>
+	                        <div class="well-smoke body">
+	                            <ul class="pager">
+	                                <li><a href="#">Previous</a></li>
+	                                <li><a href="#">Next</a></li>
+	                            </ul>
+	                        </div>
+
+	                    </div>
+	                    <!-- /columm -->
+	                    
+	                    <!-- Column -->
+	                    <div class="span4">
+
+	                        <strong class="subtitle">Unboxed pager</strong>
+	                        <div class="well-smoke body">
+	                            <ul class="pager">
+	                                <li class="previous"><a href="#">&larr; Older</a></li>
+	                                <li class="next"><a href="#">Newer &rarr;</a></li>
+	                            </ul>
+	                        </div>
+
+	                    </div>
+	                    <!-- /column -->
+	                    
+	                    <!-- Column -->
+	                    <div class="span4">
+
+	                        <strong class="subtitle">With disabled button</strong>
+	                        <div class="well-smoke body">
+	                            <ul class="pager">
+	                                <li class="previous disabled"><a href="#">&larr; Older</a></li>
+	                                <li class="next"><a href="#">Newer &rarr;</a></li>
+	                            </ul>
+	                        </div>
+
+	                    </div>
+	                    <!-- /column -->
+
+	                </div>
+	            </div>
+	            <!-- /pager -->
+
+
+	            <!-- Navbar elements -->
+	            <h5 class="widget-name"><i class="icon-tasks"></i>Navbars and navbar elements</h5>
+
+	            <div class="row-fluid">
+	                
+	                <!-- Column -->
+	                <div class="span4">
+	                
+	                    <!-- Collapsible widget -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Collapsible widget</h6>
+	                                <div class="nav pull-right">
+	                                    <a data-toggle="collapse" class="navbar-icon" data-target="#demo"><i class="icon-resize-vertical"></i></a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="collapse in" id="demo">
+	                            <div class="well body">This block is opened by default</div>
+	                        </div>
+	                    </div>
+	                    <!-- /collapsible widget -->
+	                    
+	                    <!-- Progress bar -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Progress bar</h6>
+									<div class="progress progress-danger">
+										<div class="bar" style="width: 60%;"></div>
+									</div>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>class="progress progress-danger"</code></div>
+	                    </div>
+	                    <!-- /progress bar -->
+
+	                    <!-- Progress bar -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Progress bar</h6>
+									<div class="progress progress-slim progress-info">
+										<div class="bar" style="width: 60%;"></div>
+									</div>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>class="progress progress-slim progress-info"</code></div>
+	                    </div>
+	                    <!-- /progress bar -->
+	                    
+	                    <!-- Button -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Button</h6>
+	                                <button type="button" class="btn btn-info pull-right">Button</button>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>class="btn btn-info pull-right"</code></div>
+	                    </div>
+	                    <!-- /button -->
+	                    
+	                    <!-- Pager -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Pager</h6>
+	                                <ul class="pager pull-right">
+	                                    <li><a href="#">&larr; Prev</a></li>
+	                                    <li><a href="#">Next &rarr;</a></li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>ul class="pager pull-right"</code> right after title</div>
+	                    </div>
+	                    <!-- /pager -->
+	                    
+	                    <!-- Links left -->
+						<div class="widget">
+							<div class="navbar">
+								<div class="navbar-inner">
+									<h6>Widget</h6>
+									<ul class="nav">
+										<li class="active"><a href="#">Home</a></li>
+										<li><a href="#">Link</a></li>
+	                                    <li class="dropdown">
+	                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Drops <b class="caret"></b></a>
+	                                        <ul class="dropdown-menu">
+	                                            <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+	                                            <li><a href="#"><i class="icon-reorder"></i>View statistics</a></li>
+	                                            <li class="dropdown-submenu"><a href="#"><i class="icon-cogs"></i>Parameters</a>
+	                                            	<ul class="dropdown-menu">
+	                                            		<li><a href="#">View options</a></li>
+	                                            		<li><a href="#">Code options</a></li>
+	                                            		<li><a href="#">Design options</a></li>
+	                                            	</ul>
+	                                            </li>
+	                                        </ul>
+	                                    </li>
+									</ul>
+								</div>
+							</div>
+							<div class="well body">something</div>
+						</div>
+	                    <!-- /links left -->
+
+	                    <!-- Links right -->
+						<div class="widget">
+							<div class="navbar">
+								<div class="navbar-inner">
+									<h6>Widget</h6>
+									<ul class="nav pull-right">
+										<li class="active"><a href="#">Home</a></li>
+										<li><a href="#">Link</a></li>
+	                                    <li class="dropdown">
+	                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Drops <b class="caret"></b></a>
+	                                        <ul class="dropdown-menu pull-right">
+	                                            <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+	                                            <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+	                                            <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                        </ul>
+	                                    </li>
+									</ul>
+								</div>
+							</div>
+							<div class="well body">something</div>
+						</div>
+	                    <!-- /links right -->
+
+	                    <!-- Navbar form components -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Navbar form</h6>
+	                                <form class="navbar-form pull-right">
+	                                    <input type="text" name="input" placeholder=".navbar-form" />
+	                                    <button type="submit" class="btn btn-mini btn-info">Submit</button>
+	                                </form>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>form class="navbar-form pull-right"</code></div>
+	                    </div>
+	                    <!-- /navbar form conponents -->
+
+	                </div>
+	                <!-- /column -->
+	                
+	                <!-- Column -->
+	                <div class="span4">
+	                
+	                    <!-- Collapsible widget -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Collapsible widget</h6>
+	                                <div class="nav pull-right">
+	                                    <a class="navbar-icon" data-toggle="collapse" data-target="#demo2"><i class="icon-resize-vertical"></i></a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="collapse" id="demo2">
+	                            <div class="well body">And this one is closed by default</div>
+	                        </div>
+	                    </div>
+	                    <!-- /collapsible widget -->
+
+	                    <!-- Datepicker -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Datepicker</h6>
+	                                <div class="pick-a-date no-append">
+	                                	<input type="text" class="navbar-datepicker" placeholder="select date..." />
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="well body">For input field use <code>class="navbar-datepicker"</code></div>
+	                    </div>
+	                    <!-- /datepicker -->
+
+	                    <!-- Label -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Label</h6>
+	                                <span class="label label-inverse pull-right">Inverse</span>
+	                            </div>
+	                        </div>
+	                        <div class="well body">Use <code>class="label label-inverse pull-right"</code> to add label</div>
+	                    </div>
+	                    <!-- /label -->
+	                    
+	                    <!-- Badge -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Badge</h6>
+	                                <span class="badge pull-right">7</span>
+	                            </div>
+	                        </div>
+	                        <div class="well body">Use <code>class="badge pull-right"</code> to place badge</div>
+	                    </div>
+	                    <!-- /badge -->
+	                    
+	                    <!-- Icons (font awesome) -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Icons (font awesome)</h6>
+	                                <ul class="nav pull-right">
+	                                    <li><a href="#"><i class="icon-star"></i>Link</a></li>
+	                                    <li><a href="#"><i class="icon-reorder"></i>Link</a></li>
+	                                    <li class="dropdown">
+	                                        <a href="#" class="dropdown-toggle navbar-caret" data-toggle="dropdown"><i class="caret"></i></a>
+	                                        <ul class="dropdown-menu pull-right">
+	                                            <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+	                                            <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+	                                            <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                        </ul>
+	                                    </li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                        <div class="well body">Font Awesome, FamFam and Glyphicons</div>
+	                    </div>
+	                    <!-- /icons (font awesome) -->
+
+	                    <!-- Icons (famfam) -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Icons (famfam)</h6>
+	                                <ul class="nav pull-right">
+	                                    <li><a href="#"><i class="fam-feed"></i>Link</a></li>
+	                                    <li><a href="#"><i class="fam-cross"></i>Link</a></li>
+	                                    <li class="dropdown">
+	                                        <a href="#" class="dropdown-toggle navbar-caret" data-toggle="dropdown"><i class="caret"></i></a>
+	                                        <ul class="dropdown-menu pull-right">
+	                                            <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+	                                            <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+	                                            <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                        </ul>
+	                                    </li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                        <div class="well body">Font Awesome, FamFam and Glyphicons</div>
+	                    </div>
+	                    <!-- /icons (famfam) -->
+
+	                    <!-- Caret dropdown -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Caret dropdown</h6>
+	                                <div class="nav pull-right">
+	                                    <a href="#" class="dropdown-toggle navbar-caret" data-toggle="dropdown"><i class="caret"></i></a>
+	                                    <ul class="dropdown-menu pull-right">
+	                                        <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+	                                        <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+	                                        <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>ul class="nav pull-right"</code></div>
+	                    </div>
+	                    <!-- /caret dropdown -->
+	                    
+	                    <!-- Icon dropdown -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Icon dropdown</h6>
+	                                <div class="nav pull-right">
+	                                    <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown"><i class="icon-cog"></i></a>
+	                                    <ul class="dropdown-menu pull-right">
+	                                        <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+	                                        <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+	                                        <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>class="dropdown-toggle navbar-icon"</code> for parent link</div>
+	                    </div>
+	                    <!-- /icon dropdown -->
+
+	                </div>
+	                <!-- /column -->
+	                
+	                <!-- Column -->
+	                <div class="span4">
+
+	                    <!-- Title with icon (font awesome) -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6><i class="icon-cog"></i>Title with icon</h6>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>class="dropdown-toggle navbar-icon"</code> for parent link</div>
+	                    </div>
+	                    <!-- /title with icon (font awesome) -->
+
+	                    <!-- Title with icon (famfam) -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6><i class="fam-feed"></i>Title with icon</h6>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>class="dropdown-toggle navbar-icon"</code> for parent link</div>
+	                    </div>
+	                    <!-- /title with icon (famfam) -->
+
+	                    <!-- Checkbox -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6><label class="checkbox"><input type="checkbox" checked="checked" class="styled">Checkbox</label></h6>
+									<div class="nav pull-right">
+	                                    <a href="#" class="dropdown-toggle navbar-icon" data-toggle="dropdown"><i class="fam-feed"></i></a>
+	                                    <ul class="dropdown-menu pull-right">
+	                                        <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+	                                        <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+	                                        <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>div class="dropdown-toggle navbar-icon"</code></div>
+	                    </div>
+	                    <!-- /checkbox -->
+	                    
+	                    <!-- Simple icons -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Simple icons list</h6>
+	                                <ul class="navbar-icons">
+	                                    <li><a href="#" class="tip" title="Add new option"><i class="icon-plus"></i></a></li>
+	                                    <li><a href="#" class="tip" title="View statistics"><i class="icon-reorder"></i></a></li>
+	                                    <li><a href="#" class="tip" title="Parameters"><i class="icon-cogs"></i></a></li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>ul class="navbar-icons"</code></div>
+	                    </div>
+	                    <!-- /simple icons -->
+	                    
+	                    <!-- Simple toolbar -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Simple toolbar</h6>
+	                            </div>
+	                        </div>
+	                        <ul class="toolbar">
+	                            <li><a href="#" title=""><i class="icon-heart"></i><span>Upload file</span></a></li>
+	                            <li><a href="#" title=""><i class="icon-star"></i><span>Download file</span></a></li>
+	                            <li class="dropdown">
+	                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Drops <b class="caret"></b></a>
+	                                <ul class="dropdown-menu pull-right">
+	                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+	                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+	                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                </ul>
+	                            </li>
+	                        </ul>
+	                        <div class="well body"><code>class="toolbar"</code></div>
+	                    </div>
+	                    <!-- /simple toolbar -->
+	                    
+	                    <!-- Pagination -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>Pagination</h6>
+	                                <div class="pagination pagination-small pull-right">
+	                                    <ul>
+	                                        <li class="disabled"><a href="#">Prev</a></li>
+	                                        <li class="active"><a href="#">1</a></li>
+	                                        <li><a href="#">2</a></li>
+	                                        <li><a href="#">3</a></li>
+	                                        <li><a href="#">4</a></li>
+	                                        <li><a href="#">Next</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>div class="pagination pagination-small pull-right"</code> right after title</div>
+	                    </div>
+	                    <!-- /pagination -->
+	                    
+	                    <!-- With loader -->
+	                    <div class="widget">
+	                        <div class="navbar">
+	                            <div class="navbar-inner">
+	                                <h6>With loader</h6>
+	                                <div class="loading pull-right">
+	                                    <span>Updating data</span>
+	                                    <img src="img/elements/loaders/6s.gif" alt="" />
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="well body"><code>div class="loading pull-right"</code> with <strong>span</strong> and loader image inside</div>
+	                    </div>
+	                    <!-- /with loader -->
+
+	                </div>
+	                <!-- /column -->           
+	            </div>
+	            <!-- /navbar elements -->
+
+
+	            <!-- Modals -->
+	            <h5 class="widget-name"><i class="icon-move"></i>Modals and alerts</h5>
+
+	            <div class="widget">
+	                <div class="navbar">
+	                    <div class="navbar-inner">
+	                        <h6>Modals</h6>
+	                    </div>
+	                </div>
+	                <div class="row-fluid well body">
+	                    <div class="span6">
+	                        <ul class="nav nav-list well-white">
+	                            <li class="nav-header">Advanced usage</li>
+	                            <li><a href="#" class="dialog">Custom Dialog</a></li>
+	                            <li><a href="#" class="multiple-dialogs">Multiple Dialogs</a></li>
+	                            <li><a href="#" class="dialog-close">Programmatic Close</a></li>
+	                            <li><a href="#" class="generic-modal">Generic Modal</a></li>
+	                            <li><a href="#" class="dynamic">Dynamic Content</a></li>
+	                            <li><a href="#" class="icons-explicit">Iconified buttons (explicit)</a></li>
+	                            <li><a href="#" class="icons-override">Override alert and confirm icons (programmatic)</a></li>
+	                            <li><a href="#" class="no-close-button">Don&rsquo;t close if callback returns false</a></li>
+	                            <li><a href="#" class="prompt-default">Prompt with default value</a></li>
+	                            </ul>                       
+	                    </div>
+	                
+	                    <div class="span6">
+	                        <strong class="subtitle">Default dialog style</strong>
+	                        <div class="well-smoke body">
+	                            <div class="modal" style="position: relative; top: auto; left: auto; margin: 0 auto; z-index: 1; width: 100%; box-sizing: border-box;">
+	                                <div class="modal-header">
+	                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                                    <h3>Modal header</h3>
+	                                </div>
+	                                <div class="modal-body">
+	                                    <p>One fine body…</p>
+	                                </div>
+	                                <div class="modal-footer">
+	                                    <a href="#" class="btn">Close</a>
+	                                    <a href="#" class="btn btn-primary">Save changes</a>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="semi-widget row-fluid">
+	                            <div class="span4"><a href="#" class="btn btn-danger btn-block bs-alert" title="Simple Alert">Alert dialog</a></div>
+	                            <div class="span4"><a href="#" class="btn btn-success btn-block confirm">Confirm dialog</a></div>
+	                            <div class="span4"><a href="#" class="btn btn-info btn-block bs-prompt">Prompt dialog</a></div>
+	                        </div>
+
+	                    </div>
+	                </div>
+	            </div>                     
+	            <!-- /modals -->
+
+
+	            <!-- Pickers -->
+	            <h5 class="widget-name"><i class="icon-hand-up"></i>Pickers</h5>
+
+	            <form class="form-horizontal">
+	                <div class="row-fluid">
+	                
+	                	<!-- Column -->
+	                    <div class="span6">
+	                    
+	                        <!-- Date pickers -->
+	                        <div class="widget">
+	                            <div class="navbar"><div class="navbar-inner"><h6>Date pickers</h6></div></div>
+	                        	
+	                        	<div class="well">
+		                            <div class="control-group">
+		                                <label class="control-label">Default datepicker:</label>
+		                                <div class="controls">
+		                                    <input type="text" class="datepicker" />
+		                                </div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">Inline fixed:</label>
+		                                <div class="controls">
+		                                    <div class="inlinepicker datepicker-fixed"></div>
+		                                </div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">Inline liquid:</label>
+		                                <div class="controls">
+		                                    <div class="inlinepicker datepicker-liquid"></div>
+		                                </div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">Date range:</label>
+		                                <div class="controls">
+		                                    <ul class="dates-range">
+		                                        <li><input type="text" id="fromDate1" name="from" placeholder="From" /></li>
+		                                        <li class="sep">-</li>
+		                                        <li><input type="text" id="toDate1" name="to" placeholder="To" /></li>
+		                                    </ul>
+		                                </div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">Icon trigger:</label>
+		                                <div class="controls">
+		                                    <div class="date-trigger"><input type="text" name="trigger" placeholder="Select date" id="datepicker-icon" /></div>
+		                                </div>
+		                            </div>
+		                        </div>
+	                            
+	                        </div>
+	                        <!-- /date pickers -->
+	                    
+	                    </div>
+	                    <!-- /column -->
+	                    
+	                    <!-- Column -->
+	                    <div class="span6">
+	                    
+	                    	<!-- Color picker -->
+	                        <div class="widget">
+	                            <div class="navbar"><div class="navbar-inner"><h6>Color picker</h6></div></div>
+	                            
+	                            <div class="well">
+		                            <div class="control-group">
+		                                <label class="control-label">HEX format:</label>
+		                                <div class="controls"><input type="text" value="#8fff00" id="cp1" ></div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">RGBa format:</label>
+		                                <div class="controls"><input type="text" value="rgb(0,194,255,0.78)" id="cp2" data-color-format="rgba" ></div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">As component:</label>
+		                                <div class="controls">
+		                                    <div class="input-append color" data-color="rgb(255, 146, 180)" data-color-format="rgb" id="color-picker">
+		                                        <input type="text" value="" readonly >
+		                                        <span class="add-on"><i style="background-color: rgb(255, 146, 180)"></i></span>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">Using events:</label>
+		                                <div class="controls"><a href="#" class="btn small" id="cp4" data-color-format="hex" data-color="rgb(255, 255, 255)">Change background color</a></div>
+		                            </div>
+		                        </div>
+	                            
+	                        </div>
+	                        <!-- /color picker -->
+	                        
+	                        <!-- Time pickers -->
+	                        <div class="widget">
+	                            <div class="navbar"><div class="navbar-inner"><h6>Time picker</h6></div></div>
+	                            
+	                            <div class="well">
+		                            <div class="control-group">
+		                                <label class="control-label">Default:</label>
+		                                <div class="controls"><input id="defaultValueExample" type="text" /></div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">Duration:</label>
+		                                <div class="controls"><input id="durationExample" type="text" /></div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">Event:</label>
+		                                <div class="controls"><input id="onselectExample" type="text" /><span id="onselectTarget" class="help-inline"></span></div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">Time formats:</label>
+		                                <div class="controls">
+		                                    <ul class="dates-range">
+		                                        <li><input id="timeformatExample3" type="text" /></li>
+		                                        <li class="sep">-</li>
+		                                        <li><input id="timeformatExample4" type="text" /></li>
+		                                    </ul>
+		                                </div>
+		                            </div>
+		                            
+		                            <div class="control-group">
+		                                <label class="control-label">With date picker:</label>
+		                                <div class="controls">
+		                                    <ul class="dates-range no-append">
+		                                        <li><input type="text" placeholder="Select date..." id="date" class="datepicker time" ></li>
+		                                        <li class="sep">-</li>
+		                                        <li><input id="time" type="text" class="time" placeholder="Select time..." /></li>
+		                                    </ul>
+		                                </div>
+		                            </div>
+		                        </div>
+	                            
+	                        </div>
+	                        <!-- /time pickers -->
+	                        
+	                    </div>
+	                    <!-- /column -->
+	                    
+	                </div>
+	            </form>
+	            <!-- /pickers -->
+
+
+	            <!-- Sliders, progress bars -->
+	            <h5 class="widget-name"><i class="icon-resize-horizontal"></i>Sliders, progress bars</h5>
+
+				<!-- Sliders -->
+				<div class="widget form-horizontal">
+					<div class="navbar"><div class="navbar-inner"><h6>Sliders</h6></div></div>
+
+					<div class="well">
+
+		                <div class="control-group">
+		                    <label class="control-label">Default slider:</label>
+		                    <div class="controls"><div id="default-slider"></div></div>
+		                </div>
+
+		                <div class="control-group">
+		                    <label class="control-label">Snap to increments:</label>
+		                    <div class="controls">
+		                    	<div class="slider-controls">
+			                    	<label for="donation-amount">Donation amount ($50 increments):</label>
+									<input type="text" id="donation-amount" />
+								</div>
+		                    	<div id="increments-slider"></div>
+		                    </div>
+		                </div>
+
+		                <div class="control-group">
+		                    <label class="control-label">Range slider:</label>
+		                    <div class="controls">
+		                    	<div class="slider-controls">
+			                    	<label for="price-amount1">Price range:</label>
+									<input type="text" id="price-amount1" />
+								</div>
+		                    	<div id="range-slider1"></div>
+		                    </div>
+		                </div>
+
+		                <div class="control-group">
+		                    <label class="control-label">Range with fixed minimum:</label>
+		                    <div class="controls">
+		                    	<div class="slider-controls">
+			                    	<label for="min-amount1">Maximum price:</label>
+									<input type="text" id="min-amount1" />
+								</div>
+		                    	<div id="slider-range-min1"></div>
+		                    </div>
+		                </div>
+
+		                <div class="control-group">
+		                    <label class="control-label">Range with fixed maximum:</label>
+		                    <div class="controls">
+		                    	<div class="slider-controls">
+			                    	<label for="max-amount1">Minimum number of bedrooms:</label>
+									<input type="text" id="max-amount1" />
+								</div>
+		                    	<div id="slider-range-max1"></div>
+		                    </div>
+		                </div>
+
+		            </div>
+				</div>
+				<!-- /sliders --> 
+
+				<!-- Progress bars -->
+				<div class="row-fluid">
+
+					<div class="span6">
+						<div class="widget">
+							<div class="navbar"><div class="navbar-inner"><h6>Progress bars</h6></div></div>
+							<div class="well">
+
+				                <div class="control-group">
+									<div class="progress">
+										<div class="bar" style="width: 60%;"></div>
+									</div>
+				                </div>
+
+				                <div class="control-group">
+			                    	<div class="progress progress-striped">
+										<div class="bar" style="width: 20%;"></div>
+									</div>
+				                </div>
+
+				                <div class="control-group">
+			                    	<div class="progress progress-striped progress-success active">
+										<div class="bar" style="width: 40%;"></div>
+									</div>
+				                </div>
+
+				                <div class="control-group">
+			                    	<div class="progress progress-slim progress-striped progress-danger active">
+										<div class="bar" style="width: 40%;"></div>
+									</div>
+				                </div>
+
+				                <div class="control-group">
+			                    	<div class="progress">
+										<div class="bar bar-success" style="width: 35%;"></div>
+										<div class="bar bar-warning" style="width: 20%;"></div>
+										<div class="bar bar-danger" style="width: 10%;"></div>
+									</div>
+				                </div>
+
+				            </div>
+						</div>
+					</div>
+
+					<div class="span6">
+						<div class="widget">
+							<div class="navbar"><div class="navbar-inner"><h6>Additional colors</h6></div></div>
+							<div class="well">
+
+				                <div class="control-group">
+									<div class="progress progress-info">
+										<div class="bar" style="width: 60%;"></div>
+									</div>
+				                </div>
+
+				                <div class="control-group">
+			                    	<div class="progress progress-success">
+										<div class="bar" style="width: 20%;"></div>
+									</div>
+				                </div>
+
+				                <div class="control-group">
+			                    	<div class="progress progress-warning">
+										<div class="bar" style="width: 40%;"></div>
+									</div>
+				                </div>
+
+				                <div class="control-group">
+			                    	<div class="progress progress-danger">
+										<div class="bar" style="width: 40%;"></div>
+									</div>
+				                </div>
+
+				            </div>
+						</div>
+					</div>
+				</div>
+				<!-- /progress bars --> 
+
+
+				<!-- Wells -->
+	            <h5 class="widget-name"><i class="icon-file"></i>Wells</h5>
+
+	            <!-- Table with options for wells -->
+	            <div class="widget">
+	            	<div class="navbar">
+	                	<div class="navbar-inner"><h6>Wells</h6></div>
+	                </div>
+	                <div class="table-overflow">
+	                    <table class="table table-bordered table-striped">
+	                        <thead>
+	                            <tr>
+	                                <th>Class</th>
+	                                <th>Description</th>
+	                            </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr>
+	                                <td><code>.well</code></td>
+	                                <td>Default well styling</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.well-smoke</code></td>
+	                                <td>A bit darker background. Usually for nested well usage</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.well-white</code></td>
+	                                <td>White background</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.well-small</code></td>
+	                                <td>Smaller padding</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.well-large</code></td>
+	                                <td>Bigger padding</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.well .body</code></td>
+	                                <td>Well with padding</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                </div>
+	            </div>
+	            <!-- /table with options for wells -->
+
+	            <!-- Wells -->
+	            <div class="row-fluid">
+	            
+	            	<!-- Column -->
+	            	<div class="span6">
+	                	
+	                    <!-- Standard well -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Default</h6></div></div>
+	                        <div class="well body"><code>&lt;div class="well body">&lt;/div></code></div>
+	                    </div>
+	                    <!-- /standard well -->
+	                    
+	                    <!-- Well smoke -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Well smoke</h6></div></div>
+	                        <div class="well-smoke body"><code>&lt;div class="well-smoke body">&lt;/div></code></div>
+	                    </div>
+	                    <!-- /well smoke -->
+	                    
+	                    <!-- Well white -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Well white</h6></div></div>
+	                        <div class="well-white body"><code>&lt;div class="well-white body">&lt;/div></code></div>
+	                    </div>
+	                    <!-- /well white -->
+	                    
+	                    <!-- Well small -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Well small</h6></div></div>
+	                        <div class="well-small body"><code>&lt;div class="well-small body">&lt;/div></code></div>
+	                    </div>
+	                    <!-- /well small -->
+	                    
+	                </div>
+	                <!-- /column -->
+	                
+	                <!-- Column -->
+	            	<div class="span6">
+	                
+	                	<!-- Well large -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Well large</h6></div></div>
+	                        <div class="well-large body"><code>&lt;div class="well-large block">&lt;/div></code></div>
+	                    </div>
+	                    <!-- /well large -->
+	                    
+	                    <!-- Nested wells -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Nested wells</h6></div></div>
+	                        <div class="well body">
+
+	                        	<div class="semi-widget">
+		                        	<strong class="subtitle">Well smoke</strong>
+		                            <div class="well-smoke body"><code>&lt;div class="well-smoke body">&lt;/div></code></div>
+		                        </div>
+	                            
+	                            <div class="semi-widget">
+	                            	<strong class="subtitle">Well white</strong>
+	                                <div class="well-white body"><code>&lt;div class="well-white body">&lt;/div></code></div>
+	                            </div>
+	                            
+	                            <div class="semi-widget">
+	                            	<strong class="subtitle">Well small, well white</strong>
+	                                <div class="well-white well-small body"><code>&lt;div class="well-small body">&lt;/div></code></div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- /nested wells -->
+	                    
+	                </div>
+	                <!-- /column -->                           
+	            </div>
+	            <!-- /wells -->
+
+
+	            <!-- Other bootstrap components -->
+	            <h5 class="widget-name"><i class="icon-beaker"></i>Other Bootstrap components</h5>
+
+	        	<!-- Scrollspy -->
+	            <div class="widget">
+	                <div id="scrollspy-data" class="navbar navbar-static">
+	                    <div class="navbar-inner">
+	                        <div class="container">
+	                            <h6>Scrollspy example</h6>
+	                            <ul class="nav pull-right">
+	                                <li><a href="#fat">@fat</a></li>
+	                                <li><a href="#mdo">@mdo</a></li>
+	                                <li class="dropdown">
+	                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	                                    <ul class="dropdown-menu pull-right">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </div>
+	                
+	                <div data-spy="scroll" data-target="#scrollspy-data" data-offset="0" class="scrollspy well body">
+	                <h4 id="fat">@fat</h4>
+	                <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+	                <h4 id="mdo">@mdo</h4>
+	                <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+	                <h4 id="one">one</h4>
+	                <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+	                <h4 id="two">two</h4>
+	                <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+	                <h4 id="three">three</h4>
+	                <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+	                <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+	                </p>
+	                </div>
+	            </div> 
+	            <!-- /scrollspy -->
+
+	            <!-- Accordion and toggle -->
+	            <div class="widget">
+	                <div class="navbar"><div class="navbar-inner"><h6>Accordion, toggle</h6></div></div>
+	                <div class="well body">
+	                    <div class="alert">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        Accordion supports all icon versions. Just add necessary class or remove icon code to use text only
+	                    </div>
+	                    <div class="row-fluid">
+		                    <div class="span6">
+		                        <div class="accordion" id="accordion2">
+		                            <div class="accordion-group">
+		                                <div class="accordion-heading">
+		                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1"><i class="icon-ok"></i>Collapsible Group Item #1</a>
+		                                </div>
+		                                <div id="collapseOne1" class="accordion-body collapse in">
+		                                    <div class="accordion-inner">Anim pariatur cliche...</div>
+		                                </div>
+		                            </div>
+		                            <div class="accordion-group">
+		                                <div class="accordion-heading">
+		                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo1"><i class="icon-reorder"></i>Collapsible Group Item #2</a>
+		                                </div>
+		                                <div id="collapseTwo1" class="accordion-body collapse">
+		                                    <div class="accordion-inner">Anim pariatur cliche...</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="span6">
+		                        <div class="accordion" id="toggle">
+		                            <div class="accordion-group">
+		                                <div class="accordion-heading">
+		                                    <a class="accordion-toggle" data-toggle="collapse" data-target="#col1"><i class="fam-feed"></i>Collapsible Group Item #1</a>
+		                                </div>
+		                                <div id="col1" class="accordion-body collapse in">
+		                                    <div class="accordion-inner">Anim pariatur cliche...</div>
+		                                </div>
+		                            </div>
+		                            <div class="accordion-group">
+		                                <div class="accordion-heading">
+		                                    <a class="accordion-toggle" data-toggle="collapse" data-target="#col2"><i class="fam-arrow-out"></i>Collapsible Group Item #2</a>
+		                                </div>
+		                                <div id="col2" class="accordion-body collapse">
+		                                    <div class="accordion-inner">Anim pariatur cliche...</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+	                </div>
+	            </div>
+	            <!-- /accordion and toggle -->
+
+
+	            <!-- Notifications -->
+	            <h5 class="widget-name"><i class="icon-warning-sign"></i>Notifications</h5>
+
+	            <!-- Popover -->
+	            <div class="widget">
+	                <div class="navbar">
+	                    <div class="navbar-inner">
+	                        <h6>Popovers</h6>
+	                        <a href="#" role="button" class="btn btn-primary pull-right popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Popover</a>
+	                    </div>
+	                </div>
+	                <div class="row-fluid well body">
+	                    <div class="span3">
+	                        <div class="popover top" style="position: relative; display: block; margin: 0 auto; width: 100%; z-index: 990">
+	                            <div class="arrow"></div>
+	                            <h3 class="popover-title">Popover top</h3>
+	                            <div class="popover-content">
+	                                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="span3">
+	                        <div class="popover bottom" style="position: relative; display: block; margin: 0 auto; width: 100%; z-index: 990">
+	                            <div class="arrow"></div>
+	                            <h3 class="popover-title">Popover bottom</h3>
+	                            <div class="popover-content">
+	                                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="span3">
+	                        <div class="popover right" style="position: relative; display: block; margin: 0 auto; width: 100%; z-index: 990">
+	                            <div class="arrow"></div>
+	                            <h3 class="popover-title">Popover right</h3>
+	                            <div class="popover-content">
+	                                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="span3">
+	                        <div class="popover left" style="position: relative; display: block; margin: 0 auto; width: 100%; z-index: 990">
+	                            <div class="arrow"></div>
+	                            <h3 class="popover-title">Popover left</h3>
+	                            <div class="popover-content">
+	                                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <!-- /popover -->
+
+	            <!-- Growl notifications -->
+	            <div class="row-fluid">
+	            
+	            	<!-- Column -->
+	                <div class="span6">
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Notification options</h6></div></div>
+	                        <div class="well body align-center">
+	                            <button type="button" class="btn btn-primary" onclick="$.jGrowl('Hello world!');">Basic notice</button>
+	                            <button type="button" class="btn btn-primary" onclick="$.jGrowl('Stick this!', { sticky: true });">Sticky notice</button>
+	                            <button type="button" class="btn btn-primary" onclick="$.jGrowl('A message with a header', { header: 'Important' });">Message with header</button>
+	                            <button type="button" class="btn btn-primary" onclick="$.jGrowl('A message that will live a little longer.', { life: 10000 });">Long live message</button>
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- /column -->
+	                
+	                <!-- Column -->
+	                <div class="span6">
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Notification colors</h6></div></div>
+	                        <div class="well body align-center">
+	                            <button type="button" class="btn btn-primary" onclick="$.jGrowl('Basic notice', { sticky: true, header: 'Default notice' });">Default notice</button>
+	                            <button type="button" class="btn btn-danger" onclick="$.jGrowl('Something went wrong here', { sticky: true, theme: 'growl-error', header: 'Error!' });">Error notice</button>
+	                            <button type="button" class="btn btn-success" onclick="$.jGrowl('Everything is fine here', { sticky: true, theme: 'growl-success', header: 'Success!' });">Success notice</button>
+	                            <button type="button" class="btn btn-warning" onclick="$.jGrowl('Be sure you want to do it!', { sticky: true, theme: 'growl-warning', header: 'Attention all units!' });">Warning notice</button>
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- /column -->
+	            </div>
+	            <!-- /growl notifications -->
+
+	            <!-- Loaders/ tooltips -->
+	            <div class="row-fluid">
+	            
+	            	<!-- Column -->
+	                <div class="span6">
+	                	<div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Animated loaders</h6></div></div>
+	                        <div class="well body">
+		                        <ul class="demo-list">
+		                            <li>
+		                            	<img src="img/elements/loaders/1.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/1s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/2.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/2s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/3.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/3s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/4.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/4s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/5.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/5s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/6.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/6s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/7.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/7s.gif" style="float: left; margin: 3px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/8.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/8s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/9.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/9s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                            <li>
+		                            	<img src="img/elements/loaders/10.gif" alt="" style="float: left;" />
+		                            	<img src="img/elements/loaders/10s.gif" style="float: left; margin: 10px 0 0 10px;" alt="" />
+		                            </li>
+		                        </ul>
+		                    </div>
+	                    </div>
+	                </div>
+	                <!-- /column -->
+	                
+	                <!-- Column -->
+	                <div class="span6">
+	                	<div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Tooltips</h6></div></div>
+	                        <div class="well body">
+	                            <ul class="demo-list">
+	                                <li><a href="#" data-placement="top" title="Tooltip on top" class="btn tip">Tooltip on top</a></li>
+	                                <li><a href="#" data-placement="right" title="Tooltip on right" class="btn tip">Tooltip on right</a></li>
+	                                <li><a href="#" data-placement="bottom" title="Tooltip on bottom" class="btn tip">Tooltip on bottom</a></li>
+	                                <li><a href="#" data-placement="left" title="Tooltip on left" class="btn tip">Tooltip on left</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- /column -->                            
+	            </div>
+	            <!-- /loaders/ tooltips -->
+
+	        	<!-- Labels and badges -->
+	            <div class="row-fluid">
+	                <div class="span6">
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Labels</h6></div></div>
+	                        <div class="table-overflow">
+	                            <table class="table table-striped table-bordered">
+	                                <thead>
+	                                <tr>
+	                                    <th>Labels</th>
+	                                    <th>Markup</th>
+	                                </tr>
+	                                </thead>
+	                                <tbody>
+	                                <tr>
+	                                    <td><span class="label">Default</span></td>
+	                                    <td><code>&lt;span class="label"&gt;Default&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="label label-success">Success</span></td>
+	                                    <td><code>&lt;span class="label label-success"&gt;Success&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="label label-warning">Warning</span></td>
+	                                    <td><code>&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="label label-important">Important</span></td>
+	                                    <td><code>&lt;span class="label label-important"&gt;Important&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="label label-info">Info</span></td>
+	                                    <td><code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="label label-inverse">Inverse</span></td>
+	                                    <td><code>&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;</code></td>
+	                                </tr>
+	                                </tbody>
+	                            </table>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="span6">
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Badges</h6></div></div>
+	                        <div class="table-overflow">
+	                            <table class="table table-striped table-bordered">
+	                                <thead>
+	                                <tr>
+	                                    <th>Badges</th>
+	                                    <th>Markup</th>
+	                                </tr>
+	                                </thead>
+	                                <tbody>
+	                                <tr>
+	                                    <td><span class="badge">1</span></td>
+	                                    <td><code>&lt;span class="badge"&gt;1&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="badge badge-success">2</span></td>
+	                                    <td><code>&lt;span class="badge badge-success"&gt;2&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="badge badge-warning">3</span></td>
+	                                    <td><code>&lt;span class="badge badge-warning"&gt;3&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="badge badge-important">4</span></td>
+	                                    <td><code>&lt;span class="badge badge-important"&gt;4&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="badge badge-info">5</span></td>
+	                                    <td><code>&lt;span class="badge badge-info"&gt;5&lt;/span&gt;</code></td>
+	                                </tr>
+	                                <tr>
+	                                    <td><span class="badge badge-inverse">6</span></td>
+	                                    <td><code>&lt;span class="badge badge-inverse"&gt;6&lt;/span&gt;</code></td>
+	                                </tr>
+	                                </tbody>
+	                            </table>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        	<!-- /label and badges -->
+
+	            <!-- Alerts -->
+	            <div class="widget">
+	                <div class="navbar"><div class="navbar-inner"><h6>Alerts</h6></div></div>
+	                <div class="well body">
+	                    <div class="alert">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+	                    </div>
+	                    <div class="alert alert-error" style="margin-top: 16px;">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+	                    </div>
+	                    <div class="alert alert-success" style="margin-top: 16px;">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+	                    </div>
+	                    <div class="alert alert-info" style="margin-top: 16px;">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+	                    </div>
+	                    <div class="alert alert-block" style="margin-top: 16px;">
+	                        <button type="button" class="close" data-dismiss="alert">×</button>
+	                        <h6>Warning!</h6>
+	                        Best check yo self, you're not...
+	                    </div>
+	                </div>
+	            </div>
+	            <!-- /alerts -->
+
+
+	            <!-- Buttons -->
+	            <h5 class="widget-name"><i class="icon-th"></i>Buttons</h5>
+
+	            <!-- Table with options for buttons -->
+	            <div class="widget">
+	                <div class="navbar">
+	                    <div class="navbar-inner"><h6>Default button classes</h6></div>
+	                </div>
+	                <div class="table-overflow">
+	                    <table class="table table-bordered table-striped">
+	                        <thead>
+	                            <tr>
+	                                <th>Class</th>
+	                                <th>Description</th>
+	                            </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr>
+	                                <td><code>.btn</code></td>
+	                                <td>Default light buttons</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.btn .btn-primary</code></td>
+	                                <td>Blue button</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.btn .btn-warning</code></td>
+	                                <td>Warning button with orange background</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.btn .btn-success</code></td>
+	                                <td>Success button with green background</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.btn .btn-danger</code></td>
+	                                <td>Error or danger button with red background</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.btn .btn-info</code></td>
+	                                <td>Info button with light blue background</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.btn .btn-inverse</code></td>
+	                                <td>Inversed button with dark grey background</td>
+	                            </tr>
+	                            <tr>
+	                                <td><code>.btn .btn-link</code></td>
+	                                <td>Button as a link, without background</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                </div>
+	            </div>
+	            <!-- /table with options for buttons -->
+
+	        	<!-- Buttons -->
+	            <div class="row-fluid">
+	            
+	            	<!-- Column -->
+	                <div class="span6">
+	                	
+	                    <!-- Buttons -->
+	                	<div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Buttons</h6></div></div>
+	                        <div class="well body">
+	                        	
+	                            <!-- Button sizes -->
+	                            <strong class="subtitle">Button sizes</strong>
+	                            <div class="well-smoke body">
+	                            	<ul class="demo-list">
+	                                	<li>
+	                                        <p><button class="btn btn-large btn-info" type="button">Large button</button></p>
+	                                        <button class="btn btn-large" type="button">Large button</button>
+	                                    </li>
+	                                    <li>
+	                                        <p><button class="btn btn-info" type="button">Default button</button></p>
+	                                        <button class="btn" type="button">Default button</button>
+	                                    </li>
+	                                    <li>
+	                                        <p><button class="btn btn-small btn-info" type="button">Small button</button></p>
+	                                        <button class="btn btn-small" type="button">Small button</button>
+	                                    </li>
+	                                    <li>
+	                                        <p><button class="btn btn-mini btn-info" type="button">Mini button</button></p>
+	                                        <button class="btn btn-mini" type="button">Mini button</button>
+	                                    </li>
+	                                </ul>
+	                            </div>
+	                            <!-- /button sizes -->
+	                            
+	                            <!-- Button groups -->
+	                            <div class="semi-widget">
+	                                <strong class="subtitle">Button groups</strong>
+	                                <div class="well-smoke body">
+	                                	
+	                                    <div class="pull-left">
+	                                        <div class="btn-toolbar">
+	                                            <div class="btn-group">
+	                                                <button class="btn">1</button>
+	                                                <button class="btn">2</button>
+	                                            </div>
+	                                            <div class="btn-group">
+	                                                <button class="btn">5</button>
+	                                                <button class="btn">6</button>
+	                                                <button class="btn">7</button>
+	                                            </div>
+	                                            <div class="btn-group">
+	                                                <button class="btn">8</button>
+	                                            </div>
+	                                        </div>
+	                                        <div class="btn-group" style="margin-top: 10px;">
+	                                            <button type="button" class="btn"><i class="icon-align-left"></i></button>
+	                                            <button type="button" class="btn"><i class="icon-align-center"></i></button>
+	                                            <button type="button" class="btn"><i class="icon-align-right"></i></button>
+	                                            <button type="button" class="btn"><i class="icon-align-justify"></i></button>
+	                                        </div>
+	                                    </div>
+	                                    
+	                                    <div class="pull-right">
+	                                        <div class="btn-group btn-group-vertical">
+	                                            <button type="button" class="btn"><i class="icon-align-left"></i></button>
+	                                            <button type="button" class="btn"><i class="icon-align-center"></i></button>
+	                                            <button type="button" class="btn"><i class="icon-align-right"></i></button>
+	                                        </div>
+	                                        <div class="btn-group btn-group-vertical">
+	                                            <button type="button" class="btn">First</button>
+	                                            <button type="button" class="btn">Second</button>
+	                                            <button type="button" class="btn">Third</button>
+	                                        </div>
+	                                        <div class="btn-group btn-group-vertical">
+	                                            <button type="button" class="btn">1</button>
+	                                            <button type="button" class="btn">2</button>
+	                                            <button type="button" class="btn">3</button>
+	                                        </div>
+	                                    </div>
+	                                    <div class="clearfix"></div>
+	                                    
+	                                </div>
+	                            </div>
+	                            <!-- /button groups -->
+	                            
+	                        </div>
+	                    </div>
+	                    <!-- /buttons -->
+	                    
+	                </div>
+	                <!-- /column -->
+	            	
+	                <!-- Column -->
+	                <div class="span6">
+	                
+	                	<!-- Buttons -->
+	                	<div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Buttons</h6></div></div>
+	                        <div class="well body">
+	                            <strong class="subtitle">Block buttons<code>.btn-block</code></strong>
+	                            <button class="btn btn-large btn-block btn-primary" type="button">Block level button</button>
+	                            <button class="btn btn-large btn-block btn-danger" type="button">Block level button</button>
+	                            <button class="btn btn-large btn-block btn-success" type="button">Block level button</button>
+	                            <button class="btn btn-large btn-block btn-inverse" type="button">Block level button</button>
+	                            
+	                            <strong class="subtitle semi-widget">One class, multiple tags</strong>
+	                            <div class="well-smoke body">
+	                            <a class="btn btn-info" href="">Link</a>
+	                            <button class="btn btn-info" type="submit">Button</button>
+	                            <input class="btn btn-info" type="button" value="Input">
+	                            <input class="btn btn-info" type="submit" value="Submit">
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- /buttons -->
+	                    
+	                </div>
+	                <!-- /column -->         
+	            </div> 
+	            <!-- /buttons -->
+	            
+	            <!-- Buttons -->
+	            <div class="row-fluid">
+	            
+	            	<!-- Column -->
+	                <div class="span6">
+	                	
+	                    <!-- Default buttons -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Buttons</h6></div>
+	                        </div>
+	                        <div class="well body align-center">
+	                            <button type="button" class="btn">Default</button>
+	                            <button type="button" class="btn btn-primary">Primary</button>
+	                            <button type="button" class="btn btn-info">Info</button>
+	                            <button type="button" class="btn btn-success">Success</button>
+	                            <button type="button" class="btn btn-warning">Warning</button>
+	                            <button type="button" class="btn btn-danger">Danger</button>
+	                            <button type="button" class="btn btn-inverse">Inverse</button>
+	                            <button type="button" class="btn btn-link">Link</button>
+	                        </div>
+	                    </div>
+	                    <!-- /default buttons -->
+	                    
+	                    <!-- Split buttons dropdowns -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Split button dropdowns</h6></div></div>
+	                        <div class="well body">
+	                            <div class="btn-toolbar">
+	                            
+	                                <div class="btn-group">
+	                                    <button class="btn">Action</button>
+	                                    <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-primary">Action</button>
+	                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-danger">Danger</button>
+	                                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-warning">Warning</button>
+	                                    <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-success">Success</button>
+	                                    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-info">Info</button>
+	                                    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-inverse">Inverse</button>
+	                                    <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                            </div>                       
+	                        </div>
+	                    </div>
+	                    <!-- /split buttons dropdowns -->
+	                    
+	                </div>
+	                <!-- /column -->
+	                
+	                <!-- Column -->
+	                <div class="span6">
+	                	
+	                    <!-- Dropdown -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Dropdown</h6></div></div>
+	                        <div class="well body">
+	                            <div class="btn-toolbar">
+	                            
+	                                <div class="btn-group">
+	                                    <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Inverse <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group">
+	                                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">Link <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- /dropdown -->
+	                    
+	                    <!-- Dropup -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>Dropup</h6></div></div>
+	                        <div class="well body">
+	                            <div class="btn-toolbar">
+	                            
+	                                <div class="btn-group dropup">
+	                                    <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group dropup">
+	                                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group dropup">
+	                                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group dropup">
+	                                    <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group dropup">
+	                                    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group dropup">
+	                                    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group dropup">
+	                                    <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">Inverse <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                                <div class="btn-group dropup">
+	                                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">Link <span class="caret dd-caret"></span></button>
+	                                    <ul class="dropdown-menu">
+		                                    <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+		                                    <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+		                                    <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+	                                    </ul>
+	                                </div>
+	                                
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- /dropup -->
+	                    
+	                </div>
+	                <!-- /column -->                    
+	            </div> 
+	            <!-- /buttons -->
+
+	            <!-- Buttons with icons -->
+	            <div class="row-fluid">
+
+	            	<div class="span4">
+
+	                    <!-- With font awesome -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>With icons (Font Awesome)</h6></div></div>
+	                        <div class="well body align-center">
+	                            <button type="button" class="btn"><b class="icon-heart"></b> Button</button>
+	                            <button type="button" class="btn btn-primary"><b class="icon-cog"></b> Button</button>
+	                            <button type="button" class="btn btn-danger"><b class="icon-plus"></b> Button</button>
+	                            <button type="button" class="btn btn-success"><b class="icon-star"></b> Button</button>
+	                        </div>
+	                    </div>
+	                    <!-- /with font awesome -->
+
+	            	</div>
+
+	            	<div class="span4">
+	            		
+	                    <!-- Buttons with Glyphicons -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>With icons (Glyph icons)</h6></div></div>
+	                        <div class="well body align-center">
+	                            <button type="button" class="btn"><b class="ico-refresh"></b> Button</button>
+	                            <button type="button" class="btn btn-primary"><b class="ico-fullscreen"></b> Button</button>
+	                            <button type="button" class="btn btn-danger"><b class="ico-fire"></b> Button</button>
+	                            <button type="button" class="btn btn-success"><b class="ico-star"></b> Button</button>
+	                        </div>
+	                    </div>
+	                    <!-- /buttons with glyphicons -->
+
+	            	</div>
+
+	            	<div class="span4">
+	            		
+	                    <!-- Buttons with FamFam icons -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>With icons (FamFam icons)</h6></div></div>
+	                        <div class="well body align-center">
+	                            <button type="button" class="btn"><b class="fam-feed"></b> Button</button>
+	                            <button type="button" class="btn btn-primary"><b class="fam-email"></b> Button</button>
+	                            <button type="button" class="btn btn-danger"><b class="fam-sitemap"></b> Button</button>
+	                            <button type="button" class="btn btn-success"><b class="fam-comments"></b> Button</button>
+	                        </div>
+	                    </div>
+	                    <!-- /buttons with FamFam icons -->
+
+	            	</div>
+	            </div>
+	            <!-- /buttons with icons -->
+
+
+		    </div>
+		    <!-- /content wrapper -->
+
+		</div>
+		<!-- /content -->
+
+	</div>
+	<!-- /main container -->
+
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="copyrights">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+		<ul class="footer-links">
+			<li><a href="" title=""><i class="icon-cogs"></i>Contact admin</a></li>
+			<li><a href="" title=""><i class="icon-screenshot"></i>Report bug</a></li>
+		</ul>
+	</div>
+	<!-- /footer -->
+
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

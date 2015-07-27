@@ -1,0 +1,1 @@
+Detail Admin 管理模版是一款Responsive Theme响应式主题模板。
